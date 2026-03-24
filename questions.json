@@ -1,0 +1,3042 @@
+[
+  {
+    "question": "Which component of a computer is responsible for performing arithmetic and logic operations?",
+    "options": [
+      "RAM",
+      "CPU",
+      "SSD",
+      "Power Supply"
+    ],
+    "correct": 1,
+    "domain": "Computer Hardware",
+    "explanations": {
+      "correct": "The CPU (Central Processing Unit) is the primary component that performs arithmetic, logic, control, and input/output operations specified by instructions.",
+      "wrong": {
+        "0": "RAM (Random Access Memory) is volatile memory used for temporarily storing data that the CPU needs quick access to, not for performing calculations.",
+        "2": "An SSD (Solid State Drive) is a storage device that holds data persistently using flash memory, but does not perform computations.",
+        "3": "The power supply converts AC electricity from the wall outlet to DC power for internal components but performs no computational tasks."
+      }
+    }
+  },
+  {
+    "question": "What does RAM stand for, and what is its primary characteristic?",
+    "options": [
+      "Random Access Memory \u2014 it is volatile",
+      "Read Access Memory \u2014 it is read-only",
+      "Rapid Application Memory \u2014 it speeds up apps",
+      "Remote Access Module \u2014 it enables networking"
+    ],
+    "correct": 0,
+    "domain": "Computer Hardware",
+    "explanations": {
+      "correct": "RAM stands for Random Access Memory. It is volatile, meaning data is lost when power is removed, and it provides fast temporary storage for active processes.",
+      "wrong": {
+        "1": "Read-only memory is ROM, not RAM. RAM supports both reading and writing of data.",
+        "2": "While RAM does help application performance, the acronym stands for Random Access Memory, not Rapid Application Memory.",
+        "3": "Remote Access Module is not a real hardware term. RAM is local memory on the motherboard, not a networking component."
+      }
+    }
+  },
+  {
+    "question": "Which storage technology has no moving parts and uses NAND flash memory?",
+    "options": [
+      "HDD",
+      "Optical Drive",
+      "Magnetic Tape",
+      "SSD"
+    ],
+    "correct": 3,
+    "domain": "Computer Hardware",
+    "explanations": {
+      "correct": "Solid State Drives (SSDs) use NAND flash memory with no moving parts, resulting in faster read/write speeds and greater durability than mechanical drives.",
+      "wrong": {
+        "0": "HDDs (Hard Disk Drives) use spinning magnetic platters and a read/write head, which are moving mechanical parts.",
+        "1": "Optical drives use a laser to read and write data on spinning discs (CD, DVD, Blu-ray), which involves moving parts.",
+        "2": "Magnetic tape stores data sequentially on a moving strip of magnetic-coated film, used mainly for archival backup."
+      }
+    }
+  },
+  {
+    "question": "What is the role of the motherboard in a computer system?",
+    "options": [
+      "It stores all user data permanently",
+      "It generates electrical power for components",
+      "It connects and allows communication between all hardware components",
+      "It processes graphical output for the display"
+    ],
+    "correct": 2,
+    "domain": "Computer Hardware",
+    "explanations": {
+      "correct": "The motherboard is the main circuit board that connects the CPU, RAM, storage, and peripherals, enabling communication between all system components via buses and chipsets.",
+      "wrong": {
+        "0": "Permanent data storage is the role of drives (HDD/SSD), not the motherboard itself.",
+        "1": "Electrical power generation is the role of the power supply unit (PSU), not the motherboard.",
+        "3": "Processing graphical output is the role of the GPU (Graphics Processing Unit), which is a separate component mounted on the motherboard."
+      }
+    }
+  },
+  {
+    "question": "A technician upgrades a workstation from 8 GB to 32 GB of DDR4 memory. Which performance scenario benefits MOST from this upgrade?",
+    "options": [
+      "Booting the operating system from an SSD",
+      "Improving Wi-Fi signal strength",
+      "Increasing the clock speed of the CPU",
+      "Running multiple virtual machines simultaneously"
+    ],
+    "correct": 3,
+    "domain": "Computer Hardware",
+    "explanations": {
+      "correct": "Running multiple virtual machines requires large amounts of RAM because each VM needs its own allocated memory. More RAM allows more VMs to run concurrently without excessive swapping.",
+      "wrong": {
+        "0": "Boot speed from an SSD depends on the drive's read speed, not the amount of RAM installed.",
+        "2": "CPU clock speed is determined by the processor hardware itself and cannot be increased by adding RAM.",
+        "1": "Wi-Fi signal strength depends on the wireless adapter and antenna, not system memory."
+      }
+    }
+  },
+  {
+    "question": "Which of the following is an example of system software?",
+    "options": [
+      "Microsoft Word",
+      "An operating system like Windows",
+      "Adobe Photoshop",
+      "A web browser like Firefox"
+    ],
+    "correct": 1,
+    "domain": "Software Types",
+    "explanations": {
+      "correct": "An operating system is system software that manages hardware resources and provides a platform for application software to run.",
+      "wrong": {
+        "0": "Microsoft Word is application software designed for word processing, a specific end-user task.",
+        "2": "Adobe Photoshop is application software used for image editing, not for managing system resources.",
+        "3": "A web browser is application software that allows users to access the internet, not system-level software."
+      }
+    }
+  },
+  {
+    "question": "What distinguishes application software from system software?",
+    "options": [
+      "Application software manages hardware; system software is for end users",
+      "Application software performs specific user tasks; system software manages computer resources",
+      "Application software runs in the kernel; system software runs in user space",
+      "Application software is always free; system software requires a license"
+    ],
+    "correct": 1,
+    "domain": "Software Types",
+    "explanations": {
+      "correct": "Application software is designed for end-user tasks like word processing or browsing, while system software (OS, drivers, utilities) manages and controls computer hardware resources.",
+      "wrong": {
+        "0": "This reverses the definitions. System software manages hardware, and application software serves end users.",
+        "2": "This is backwards. The OS kernel is system software; applications typically run in user space.",
+        "3": "Cost model has nothing to do with the classification. Both system and application software can be free or paid."
+      }
+    }
+  },
+  {
+    "question": "A device driver is best classified as which type of software?",
+    "options": [
+      "Application software",
+      "Middleware",
+      "System software",
+      "Shareware"
+    ],
+    "correct": 2,
+    "domain": "Software Types",
+    "explanations": {
+      "correct": "Device drivers are system software that allow the operating system to communicate with hardware peripherals such as printers, graphics cards, and network adapters.",
+      "wrong": {
+        "0": "Application software performs end-user tasks. Drivers operate at the system level to interface between the OS and hardware.",
+        "1": "Middleware connects different software applications or layers in distributed systems, not hardware to the OS.",
+        "3": "Shareware is a software distribution model (try before you buy), not a classification of software functionality."
+      }
+    }
+  },
+  {
+    "question": "Which of the following is an example of utility software?",
+    "options": [
+      "A spreadsheet application",
+      "A presentation application",
+      "A video game",
+      "A disk defragmentation tool"
+    ],
+    "correct": 3,
+    "domain": "Software Types",
+    "explanations": {
+      "correct": "Disk defragmentation tools are utility software that help maintain and optimize system performance by reorganizing fragmented data on a hard drive.",
+      "wrong": {
+        "0": "Spreadsheet applications like Excel are application software used for data analysis and calculation tasks.",
+        "2": "Video games are application software designed for entertainment, not system maintenance.",
+        "1": "Presentation applications like PowerPoint are application software for creating slideshows."
+      }
+    }
+  },
+  {
+    "question": "Which of the following is a primary function of an operating system?",
+    "options": [
+      "Editing photographs",
+      "Compiling source code",
+      "Creating databases",
+      "Managing memory allocation for running processes"
+    ],
+    "correct": 3,
+    "domain": "Operating Systems",
+    "explanations": {
+      "correct": "One of the OS's primary functions is memory management \u2014 allocating and deallocating RAM to running processes so they can execute efficiently without conflicts.",
+      "wrong": {
+        "0": "Editing photographs is an application-level task performed by software like Photoshop, not the OS itself.",
+        "2": "Creating databases is performed by database management applications (e.g., MySQL), not the operating system.",
+        "1": "Compiling source code is done by compilers (e.g., GCC), which are developer tools, not core OS functions."
+      }
+    }
+  },
+  {
+    "question": "In a multitasking operating system, what mechanism allows multiple processes to share a single CPU?",
+    "options": [
+      "Time slicing (preemptive scheduling)",
+      "Overclocking",
+      "Disk caching",
+      "Port forwarding"
+    ],
+    "correct": 0,
+    "domain": "Operating Systems",
+    "explanations": {
+      "correct": "Time slicing divides CPU time into small intervals and rapidly switches between processes, giving the illusion that multiple programs run simultaneously on a single core.",
+      "wrong": {
+        "1": "Overclocking increases the CPU clock rate for more performance but does not manage how multiple processes share the processor.",
+        "2": "Disk caching stores frequently accessed disk data in RAM to speed up I/O, but does not schedule CPU time among processes.",
+        "3": "Port forwarding is a networking technique that redirects traffic from one network port to another, unrelated to CPU scheduling."
+      }
+    }
+  },
+  {
+    "question": "What is the function of the kernel in an operating system?",
+    "options": [
+      "It is the core component that manages system resources and hardware communication",
+      "It provides the graphical user interface",
+      "It stores user files on disk",
+      "It connects the computer to the internet"
+    ],
+    "correct": 0,
+    "domain": "Operating Systems",
+    "explanations": {
+      "correct": "The kernel is the core of the OS that manages CPU scheduling, memory management, device I/O, and serves as the bridge between applications and hardware.",
+      "wrong": {
+        "1": "The GUI is provided by the desktop environment or window manager, which is a separate layer built on top of the kernel.",
+        "2": "File storage on disk is managed by the file system, which the kernel interacts with, but the kernel itself is not a storage mechanism.",
+        "3": "Internet connectivity is handled by network drivers and protocol stacks; the kernel facilitates this but is not solely an internet component."
+      }
+    }
+  },
+  {
+    "question": "Which operating system is open-source and commonly used on servers?",
+    "options": [
+      "macOS",
+      "Windows Server",
+      "Linux",
+      "iOS"
+    ],
+    "correct": 2,
+    "domain": "Operating Systems",
+    "explanations": {
+      "correct": "Linux is an open-source operating system widely used on servers, cloud infrastructure, and embedded systems due to its flexibility, stability, and zero licensing cost.",
+      "wrong": {
+        "0": "macOS is developed by Apple and is proprietary, not open-source, and is primarily used on Apple desktop/laptop hardware.",
+        "1": "Windows Server is a proprietary OS by Microsoft that requires a commercial license.",
+        "3": "iOS is Apple's proprietary mobile operating system for iPhones and iPads, not a server OS."
+      }
+    }
+  },
+  {
+    "question": "Which layer of the OSI model is responsible for routing packets between networks?",
+    "options": [
+      "Data Link Layer (Layer 2)",
+      "Transport Layer (Layer 4)",
+      "Network Layer (Layer 3)",
+      "Session Layer (Layer 5)"
+    ],
+    "correct": 2,
+    "domain": "Networking Fundamentals",
+    "explanations": {
+      "correct": "The Network Layer (Layer 3) handles logical addressing (IP addresses) and routing of packets across different networks using routers.",
+      "wrong": {
+        "0": "The Data Link Layer (Layer 2) handles MAC addressing and frame delivery within a single local network segment, not routing between networks.",
+        "1": "The Transport Layer (Layer 4) provides end-to-end communication, segmentation, and flow control (TCP/UDP) but does not route packets.",
+        "3": "The Session Layer (Layer 5) manages sessions and connections between applications, not packet routing."
+      }
+    }
+  },
+  {
+    "question": "What protocol does a web browser use by default to retrieve web pages securely?",
+    "options": [
+      "FTP",
+      "SMTP",
+      "HTTPS",
+      "SNMP"
+    ],
+    "correct": 2,
+    "domain": "Networking Fundamentals",
+    "explanations": {
+      "correct": "HTTPS (Hypertext Transfer Protocol Secure) is the standard protocol for securely retrieving web pages, encrypting data in transit using TLS.",
+      "wrong": {
+        "0": "FTP (File Transfer Protocol) is used for transferring files between systems, not for browsing web pages.",
+        "1": "SMTP (Simple Mail Transfer Protocol) is used for sending email, not for web page retrieval.",
+        "3": "SNMP (Simple Network Management Protocol) is used for monitoring and managing network devices, not for web browsing."
+      }
+    }
+  },
+  {
+    "question": "Which TCP/IP layer corresponds to both the Session and Presentation layers of the OSI model?",
+    "options": [
+      "Network Interface Layer",
+      "Internet Layer",
+      "Transport Layer",
+      "Application Layer"
+    ],
+    "correct": 3,
+    "domain": "Networking Fundamentals",
+    "explanations": {
+      "correct": "The TCP/IP Application Layer encompasses OSI Layers 5 (Session), 6 (Presentation), and 7 (Application), combining their functions into a single layer.",
+      "wrong": {
+        "0": "The Network Interface Layer maps to OSI Layers 1 (Physical) and 2 (Data Link), handling physical transmission and local delivery.",
+        "1": "The Internet Layer maps to OSI Layer 3 (Network) and handles IP addressing and routing.",
+        "2": "The Transport Layer maps to OSI Layer 4 and handles end-to-end communication via TCP or UDP."
+      }
+    }
+  },
+  {
+    "question": "What is the primary purpose of DNS in networking?",
+    "options": [
+      "To translate human-readable domain names into IP addresses",
+      "To assign IP addresses automatically to devices",
+      "To encrypt data traveling across the internet",
+      "To filter malicious network traffic"
+    ],
+    "correct": 0,
+    "domain": "Networking Fundamentals",
+    "explanations": {
+      "correct": "DNS (Domain Name System) resolves human-readable domain names like example.com into IP addresses that computers use to locate servers on the network.",
+      "wrong": {
+        "1": "Automatic IP address assignment is handled by DHCP (Dynamic Host Configuration Protocol), not DNS.",
+        "2": "Data encryption in transit is handled by protocols like TLS/SSL, not DNS.",
+        "3": "Filtering malicious traffic is the role of firewalls and intrusion prevention systems, not DNS."
+      }
+    }
+  },
+  {
+    "question": "Which transport layer protocol provides reliable, ordered delivery of data?",
+    "options": [
+      "UDP",
+      "ARP",
+      "ICMP",
+      "TCP"
+    ],
+    "correct": 3,
+    "domain": "Networking Fundamentals",
+    "explanations": {
+      "correct": "TCP (Transmission Control Protocol) provides reliable, ordered, and error-checked delivery of data through mechanisms like three-way handshakes, sequence numbers, and acknowledgments.",
+      "wrong": {
+        "0": "UDP (User Datagram Protocol) is connectionless and provides fast but unreliable delivery with no guarantee of order or receipt.",
+        "2": "ICMP (Internet Control Message Protocol) is used for diagnostic and error-reporting purposes (e.g., ping), not for transporting application data.",
+        "1": "ARP (Address Resolution Protocol) maps IP addresses to MAC addresses on a local network and operates at Layer 2, not the transport layer."
+      }
+    }
+  },
+  {
+    "question": "A network administrator notices that device A can ping device B by IP but not by hostname. Which service should the administrator troubleshoot?",
+    "options": [
+      "DHCP",
+      "DNS",
+      "NAT",
+      "FTP"
+    ],
+    "correct": 1,
+    "domain": "Networking Fundamentals",
+    "explanations": {
+      "correct": "If IP connectivity works but hostname resolution fails, the DNS service is the likely problem since it is responsible for translating hostnames to IP addresses.",
+      "wrong": {
+        "0": "DHCP assigns IP addresses, but since the device already has a working IP (proven by successful ping), DHCP is functioning correctly.",
+        "2": "NAT (Network Address Translation) translates private IPs to public IPs for internet access and would affect all connectivity, not just hostname resolution.",
+        "3": "FTP is a file transfer protocol and has nothing to do with hostname resolution."
+      }
+    }
+  },
+  {
+    "question": "What is the default subnet mask for a Class C IPv4 network?",
+    "options": [
+      "255.0.0.0",
+      "255.255.0.0",
+      "255.255.255.0",
+      "255.255.255.255"
+    ],
+    "correct": 2,
+    "domain": "Networking Fundamentals",
+    "explanations": {
+      "correct": "A Class C network uses a /24 subnet mask (255.255.255.0), which allows for 254 usable host addresses within the network.",
+      "wrong": {
+        "0": "255.0.0.0 (/8) is the default subnet mask for a Class A network, supporting millions of hosts.",
+        "1": "255.255.0.0 (/16) is the default subnet mask for a Class B network, supporting about 65,534 hosts.",
+        "3": "255.255.255.255 (/32) represents a single host address and is not a standard network subnet mask."
+      }
+    }
+  },
+  {
+    "question": "Which protocol operates at the application layer and is used to send email?",
+    "options": [
+      "TCP",
+      "IP",
+      "SMTP",
+      "ICMP"
+    ],
+    "correct": 2,
+    "domain": "Networking Fundamentals",
+    "explanations": {
+      "correct": "SMTP (Simple Mail Transfer Protocol) operates at the application layer and is the standard protocol for sending email between mail servers.",
+      "wrong": {
+        "0": "TCP is a transport layer protocol that provides reliable data delivery; it underlies SMTP but does not handle email specifically.",
+        "1": "IP (Internet Protocol) operates at the network layer and handles addressing and routing, not email transmission.",
+        "3": "ICMP (Internet Control Message Protocol) is used for error reporting and diagnostics (e.g., ping and traceroute), not email."
+      }
+    }
+  },
+  {
+    "question": "In a relational database, what is a primary key?",
+    "options": [
+      "A field that allows duplicate values across rows",
+      "A unique identifier for each record in a table",
+      "A pointer to a record in another table",
+      "The first column created in any table"
+    ],
+    "correct": 1,
+    "domain": "Database Concepts",
+    "explanations": {
+      "correct": "A primary key is a column (or set of columns) that uniquely identifies each row in a table, ensuring no duplicate or null values exist in that field.",
+      "wrong": {
+        "0": "A primary key specifically prohibits duplicate values; allowing duplicates would violate its uniqueness constraint.",
+        "2": "A pointer to a record in another table describes a foreign key, not a primary key.",
+        "3": "A primary key is defined by constraint, not by column order. Any column can be designated as the primary key."
+      }
+    }
+  },
+  {
+    "question": "Which SQL statement is used to retrieve data from a database table?",
+    "options": [
+      "INSERT",
+      "UPDATE",
+      "SELECT",
+      "DELETE"
+    ],
+    "correct": 2,
+    "domain": "Database Concepts",
+    "explanations": {
+      "correct": "The SELECT statement is used to query and retrieve data from one or more tables in a relational database.",
+      "wrong": {
+        "0": "INSERT is used to add new rows of data into a table, not to retrieve existing data.",
+        "1": "UPDATE modifies existing records in a table but does not retrieve or display data.",
+        "3": "DELETE removes rows from a table and does not return data to the user."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of a foreign key in a relational database?",
+    "options": [
+      "To encrypt sensitive data in a column",
+      "To establish a link between data in two tables",
+      "To automatically generate unique row IDs",
+      "To define the data type of a column"
+    ],
+    "correct": 1,
+    "domain": "Database Concepts",
+    "explanations": {
+      "correct": "A foreign key is a column in one table that references the primary key of another table, creating a relationship between the two tables and enforcing referential integrity.",
+      "wrong": {
+        "0": "Encryption of column data is handled through database encryption features or application logic, not foreign keys.",
+        "2": "Automatically generating unique IDs is the function of auto-increment or sequence features, not foreign keys.",
+        "3": "Data type definitions are set by the column type declaration (e.g., INT, VARCHAR), not by foreign key constraints."
+      }
+    }
+  },
+  {
+    "question": "Which SQL clause is used to filter rows based on a condition?",
+    "options": [
+      "ORDER BY",
+      "GROUP BY",
+      "WHERE",
+      "HAVING"
+    ],
+    "correct": 2,
+    "domain": "Database Concepts",
+    "explanations": {
+      "correct": "The WHERE clause filters rows based on specified conditions before any grouping occurs, returning only rows that meet the criteria.",
+      "wrong": {
+        "0": "ORDER BY sorts the result set by one or more columns but does not filter which rows are included.",
+        "1": "GROUP BY groups rows sharing common values into summary rows, often used with aggregate functions, but does not filter individual rows.",
+        "3": "HAVING filters groups after GROUP BY has been applied, whereas WHERE filters individual rows before grouping."
+      }
+    }
+  },
+  {
+    "question": "A database table has columns: id, name, email, and department. Which SQL query returns only employees in the 'Engineering' department?",
+    "options": [
+      "SELECT * FROM employees ORDER BY department = 'Engineering'",
+      "SELECT department FROM employees HAVING 'Engineering'",
+      "SELECT * FROM employees GROUP BY 'Engineering'",
+      "SELECT * FROM employees WHERE department = 'Engineering'"
+    ],
+    "correct": 3,
+    "domain": "Database Concepts",
+    "explanations": {
+      "correct": "The WHERE clause filters rows to return only those where the department column equals 'Engineering', which is the correct way to filter records by a condition.",
+      "wrong": {
+        "0": "ORDER BY is used for sorting results, not for filtering. This query would not limit results to Engineering employees.",
+        "2": "GROUP BY groups rows for aggregation; using it with a literal string 'Engineering' is syntactically incorrect and does not filter rows.",
+        "1": "HAVING is used to filter aggregated groups, and this syntax is invalid \u2014 it would not return the desired results."
+      }
+    }
+  },
+  {
+    "question": "What is a variable in programming?",
+    "options": [
+      "A named storage location that holds data which can change",
+      "A fixed value that never changes",
+      "A function that returns a value",
+      "A loop that iterates over data"
+    ],
+    "correct": 0,
+    "domain": "Programming Concepts",
+    "explanations": {
+      "correct": "A variable is a named reference to a storage location in memory that holds a value, and that value can be read and modified during program execution.",
+      "wrong": {
+        "1": "A fixed value that never changes is called a constant, not a variable.",
+        "2": "A function is a reusable block of code that performs a task and may return a value; it is not the same as a variable.",
+        "3": "A loop is a control structure that repeats a block of code; it is not a data storage mechanism like a variable."
+      }
+    }
+  },
+  {
+    "question": "Which programming construct repeats a block of code while a condition is true?",
+    "options": [
+      "If statement",
+      "Function declaration",
+      "While loop",
+      "Variable assignment"
+    ],
+    "correct": 2,
+    "domain": "Programming Concepts",
+    "explanations": {
+      "correct": "A while loop repeatedly executes a block of code as long as its specified condition evaluates to true, stopping when the condition becomes false.",
+      "wrong": {
+        "0": "An if statement performs conditional branching \u2014 it executes a block once if the condition is true, but does not repeat it.",
+        "1": "A function declaration defines a reusable block of code that can be called elsewhere, but it does not inherently repeat.",
+        "3": "Variable assignment stores a value in a named location; it is a single operation, not a repetition mechanism."
+      }
+    }
+  },
+  {
+    "question": "What does it mean for a programming language to be 'object-oriented'?",
+    "options": [
+      "It can only manipulate physical hardware objects",
+      "It organizes code around objects that combine data and behavior",
+      "It exclusively uses command-line interfaces",
+      "It is compiled rather than interpreted"
+    ],
+    "correct": 1,
+    "domain": "Programming Concepts",
+    "explanations": {
+      "correct": "Object-oriented programming (OOP) structures code into objects that encapsulate both data (attributes) and behavior (methods), supporting concepts like inheritance and polymorphism.",
+      "wrong": {
+        "0": "Objects in OOP are software abstractions, not physical hardware components.",
+        "2": "The user interface style (CLI vs GUI) is independent of the programming paradigm. OOP languages can be used to build any type of interface.",
+        "3": "Compilation vs. interpretation is about how the language is executed, not its paradigm. OOP languages can be compiled (Java, C++) or interpreted (Python, Ruby)."
+      }
+    }
+  },
+  {
+    "question": "In programming, what is a function?",
+    "options": [
+      "A reusable block of code that performs a specific task",
+      "A type of variable that stores multiple values",
+      "A database query that returns records",
+      "A hardware component that processes data"
+    ],
+    "correct": 0,
+    "domain": "Programming Concepts",
+    "explanations": {
+      "correct": "A function is a named, reusable block of code that takes optional inputs (parameters), performs a specific task, and may return a result.",
+      "wrong": {
+        "1": "A variable that stores multiple values is typically called an array or list, not a function.",
+        "2": "Database queries are SQL statements executed against a database, which is a different concept from a programming function.",
+        "3": "The hardware component that processes data is the CPU. Functions are software constructs, not hardware."
+      }
+    }
+  },
+  {
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Transfer Markup Language",
+      "Hypertext Management Language",
+      "High-Level Text Machine Language",
+      "Hypertext Markup Language"
+    ],
+    "correct": 3,
+    "domain": "Internet & Web Technologies",
+    "explanations": {
+      "correct": "HTML stands for Hypertext Markup Language. It is the standard markup language for creating the structure and content of web pages.",
+      "wrong": {
+        "0": "The correct expansion uses 'Hypertext' not 'Hyper Transfer'. HTTP uses 'Transfer' but HTML does not.",
+        "2": "HTML is a markup language, not a machine language. Machine languages are low-level binary instructions for CPUs.",
+        "1": "The 'M' in HTML stands for Markup, not Management. HTML structures content with tags, not management functions."
+      }
+    }
+  },
+  {
+    "question": "Which technology is used to style the visual presentation of a web page?",
+    "options": [
+      "HTML",
+      "SQL",
+      "CSS",
+      "TCP"
+    ],
+    "correct": 2,
+    "domain": "Internet & Web Technologies",
+    "explanations": {
+      "correct": "CSS (Cascading Style Sheets) controls the visual presentation of web pages, including layout, colors, fonts, and responsive design.",
+      "wrong": {
+        "0": "HTML defines the structure and content of a web page (headings, paragraphs, links) but not its visual styling.",
+        "1": "SQL (Structured Query Language) is used to query and manage relational databases, not to style web pages.",
+        "3": "TCP (Transmission Control Protocol) is a transport layer protocol for reliable data delivery, unrelated to web page styling."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of JavaScript in web development?",
+    "options": [
+      "To define the structure of a web page",
+      "To manage database records on the server",
+      "To add interactivity and dynamic behavior to web pages",
+      "To configure network routing tables"
+    ],
+    "correct": 2,
+    "domain": "Internet & Web Technologies",
+    "explanations": {
+      "correct": "JavaScript is a programming language that runs in the browser to add interactivity, handle events, manipulate the DOM, and create dynamic content on web pages.",
+      "wrong": {
+        "0": "Defining web page structure is the role of HTML with its element tags.",
+        "1": "While server-side JavaScript (Node.js) can access databases, JavaScript's primary web role is client-side interactivity, not direct database management.",
+        "3": "Network routing tables are configured on routers and switches, not through JavaScript."
+      }
+    }
+  },
+  {
+    "question": "Which protocol ensures that data transferred between a browser and a web server is encrypted?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "TLS/SSL",
+      "ARP"
+    ],
+    "correct": 2,
+    "domain": "Internet & Web Technologies",
+    "explanations": {
+      "correct": "TLS (Transport Layer Security), the successor to SSL, encrypts data between a browser and web server, providing confidentiality and integrity for HTTPS connections.",
+      "wrong": {
+        "0": "HTTP transmits data in plaintext without encryption, making it vulnerable to eavesdropping.",
+        "1": "FTP is a file transfer protocol that, in its basic form, transmits data unencrypted (FTPS adds encryption separately).",
+        "3": "ARP (Address Resolution Protocol) resolves IP addresses to MAC addresses on local networks and has no encryption capability."
+      }
+    }
+  },
+  {
+    "question": "Which of the following best describes software piracy?",
+    "options": [
+      "Using open-source software without contributing back",
+      "Unauthorized copying, distribution, or use of copyrighted software",
+      "Developing software that competes with an existing product",
+      "Reverse-engineering software for interoperability purposes"
+    ],
+    "correct": 1,
+    "domain": "Ethics in Computing",
+    "explanations": {
+      "correct": "Software piracy involves the illegal copying, distribution, or use of software in violation of its license agreement and copyright protections.",
+      "wrong": {
+        "0": "Most open-source licenses do not require contribution back. Using open-source software per its license terms is legal and ethical.",
+        "2": "Developing competing software is normal market competition and is perfectly legal, not piracy.",
+        "3": "Reverse engineering for interoperability may be legally protected under fair use or specific legislation in many jurisdictions."
+      }
+    }
+  },
+  {
+    "question": "What ethical principle requires IT professionals to protect user data from unauthorized access?",
+    "options": [
+      "Net neutrality",
+      "Confidentiality",
+      "Open access",
+      "Fair use"
+    ],
+    "correct": 1,
+    "domain": "Ethics in Computing",
+    "explanations": {
+      "correct": "Confidentiality is the ethical and security principle that requires protecting sensitive information from unauthorized access, ensuring only authorized parties can view the data.",
+      "wrong": {
+        "0": "Net neutrality is the principle that internet service providers should treat all internet traffic equally, not about protecting user data.",
+        "2": "Open access promotes making research and information freely available, which can conflict with data protection requirements.",
+        "3": "Fair use is a legal doctrine allowing limited use of copyrighted material without permission, unrelated to data protection."
+      }
+    }
+  },
+  {
+    "question": "A company collects customer browsing data without informing users. Which ethical concern does this raise?",
+    "options": [
+      "Lack of informed consent and privacy violation",
+      "Intellectual property infringement",
+      "Software licensing violation",
+      "Digital divide"
+    ],
+    "correct": 0,
+    "domain": "Ethics in Computing",
+    "explanations": {
+      "correct": "Collecting personal data without user knowledge or consent violates privacy ethics and regulations like GDPR, which require informed consent before data collection.",
+      "wrong": {
+        "1": "Intellectual property infringement involves unauthorized use of patents, copyrights, or trademarks, not personal data collection.",
+        "2": "Software licensing violations involve using software beyond the terms of its license, not data collection practices.",
+        "3": "The digital divide refers to the gap between those with and without access to technology, unrelated to data collection ethics."
+      }
+    }
+  },
+  {
+    "question": "What does the Linux command 'chmod 755 script.sh' do?",
+    "options": [
+      "Deletes the file script.sh",
+      "Changes the owner of script.sh to root",
+      "Encrypts the file script.sh",
+      "Sets read/write/execute for owner, read/execute for group and others"
+    ],
+    "correct": 3,
+    "domain": "File Permissions",
+    "explanations": {
+      "correct": "chmod 755 sets permissions: owner gets rwx (7=4+2+1), group gets r-x (5=4+0+1), and others get r-x (5=4+0+1), allowing the owner full access and everyone else read and execute.",
+      "wrong": {
+        "0": "Deleting files is done with the 'rm' command, not chmod. chmod only changes file permissions.",
+        "2": "File encryption uses tools like gpg or openssl. chmod manages access permissions, not encryption.",
+        "1": "Changing file ownership is done with the 'chown' command, not chmod."
+      }
+    }
+  },
+  {
+    "question": "In Linux file permissions, what does the 'x' permission allow for a directory?",
+    "options": [
+      "Execute programs stored in the directory",
+      "Write new files to the directory",
+      "Delete the directory",
+      "Access and traverse (cd into) the directory"
+    ],
+    "correct": 3,
+    "domain": "File Permissions",
+    "explanations": {
+      "correct": "For directories, the execute (x) permission allows users to access the directory's contents and traverse into it using the 'cd' command. Without x, a user cannot enter the directory.",
+      "wrong": {
+        "0": "Executing programs requires execute permission on the program file itself, not just on the directory.",
+        "2": "Deleting a directory requires write permission on its parent directory, not execute permission on the directory itself.",
+        "1": "Writing new files into a directory requires the write (w) permission on that directory, not execute."
+      }
+    }
+  },
+  {
+    "question": "What numeric value represents read-only permission for all users in chmod?",
+    "options": [
+      "chmod 777",
+      "chmod 000",
+      "chmod 111",
+      "chmod 444"
+    ],
+    "correct": 3,
+    "domain": "File Permissions",
+    "explanations": {
+      "correct": "chmod 444 gives read-only (r--) permission to owner, group, and others. The value 4 represents read permission in the octal notation (4=read, 2=write, 1=execute).",
+      "wrong": {
+        "0": "chmod 777 gives full read, write, and execute permissions to everyone \u2014 far more than read-only.",
+        "2": "chmod 111 gives execute-only permission to all users, with no read or write access.",
+        "1": "chmod 000 removes all permissions for all users, making the file inaccessible to everyone except root."
+      }
+    }
+  },
+  {
+    "question": "Which security policy defines the acceptable behaviors and responsibilities of employees when using company IT resources?",
+    "options": [
+      "Service Level Agreement (SLA)",
+      "Acceptable Use Policy (AUP)",
+      "Business Continuity Plan (BCP)",
+      "Disaster Recovery Plan (DRP)"
+    ],
+    "correct": 1,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "An Acceptable Use Policy defines what employees can and cannot do with company IT resources, including internet usage, email, and software installation guidelines.",
+      "wrong": {
+        "0": "An SLA is a contract between a service provider and customer that defines performance metrics and service expectations, not employee behavior rules.",
+        "2": "A BCP ensures critical business functions continue during and after a disaster, not day-to-day IT usage rules.",
+        "3": "A DRP focuses on restoring IT infrastructure after a disaster, not on defining acceptable employee behavior."
+      }
+    }
+  },
+  {
+    "question": "What is the primary purpose of a change management process in IT security operations?",
+    "options": [
+      "To ensure changes to systems are evaluated, approved, and documented to minimize risk",
+      "To detect intrusions in real time",
+      "To recover data after a ransomware attack",
+      "To assign user access levels"
+    ],
+    "correct": 0,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "Change management ensures that modifications to IT systems are properly planned, evaluated for risk, approved, tested, and documented to prevent outages and security issues.",
+      "wrong": {
+        "1": "Real-time intrusion detection is the role of IDS/IPS systems, not the change management process.",
+        "2": "Recovering from ransomware falls under incident response and disaster recovery, not change management.",
+        "3": "Assigning user access levels is part of access control management, a separate security function."
+      }
+    }
+  },
+  {
+    "question": "Which type of security audit involves an external team simulating real-world attacks against an organization?",
+    "options": [
+      "Compliance audit",
+      "Penetration test",
+      "Configuration review",
+      "Log analysis"
+    ],
+    "correct": 1,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "A penetration test uses ethical hackers to simulate real-world attacks against systems, networks, or applications to identify exploitable vulnerabilities before malicious actors do.",
+      "wrong": {
+        "0": "A compliance audit checks whether an organization meets regulatory and policy requirements, not whether systems can withstand attacks.",
+        "2": "A configuration review examines system settings against security baselines but does not actively exploit vulnerabilities.",
+        "3": "Log analysis reviews recorded events to detect anomalies or incidents but does not involve actively attacking systems."
+      }
+    }
+  },
+  {
+    "question": "What is the goal of security awareness training for employees?",
+    "options": [
+      "To configure firewalls correctly",
+      "To reduce human-related security risks by educating staff on threats and best practices",
+      "To perform vulnerability scanning on servers",
+      "To develop new security software"
+    ],
+    "correct": 1,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "Security awareness training educates employees about threats like phishing, social engineering, and password hygiene, reducing the risk of human error leading to security breaches.",
+      "wrong": {
+        "0": "Configuring firewalls is a technical task performed by network administrators, not the purpose of awareness training.",
+        "2": "Vulnerability scanning is a technical activity conducted by security tools, separate from employee education.",
+        "3": "Developing security software is a software engineering function, not the goal of awareness training."
+      }
+    }
+  },
+  {
+    "question": "What does system hardening involve?",
+    "options": [
+      "Adding more RAM to improve system performance",
+      "Reducing the attack surface by disabling unnecessary services, applying patches, and tightening configurations",
+      "Installing additional applications for enhanced functionality",
+      "Increasing network bandwidth capacity"
+    ],
+    "correct": 1,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "System hardening reduces the attack surface by removing unnecessary software, disabling unused services, applying security patches, and configuring strong security settings.",
+      "wrong": {
+        "0": "Adding RAM improves system performance but does not reduce security vulnerabilities or the attack surface.",
+        "2": "Installing additional applications actually increases the attack surface by adding more potential vulnerabilities.",
+        "3": "Increasing bandwidth is a network capacity upgrade, not a security hardening measure."
+      }
+    }
+  },
+  {
+    "question": "An organization requires all system changes to be reviewed by a Change Advisory Board before implementation. What process does this describe?",
+    "options": [
+      "Incident response",
+      "Vulnerability management",
+      "Change management",
+      "Access provisioning"
+    ],
+    "correct": 2,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "A Change Advisory Board (CAB) is a key component of change management that reviews proposed changes to assess their risk, impact, and readiness before approval.",
+      "wrong": {
+        "0": "Incident response deals with detecting, containing, and recovering from security incidents, not reviewing proposed changes.",
+        "1": "Vulnerability management involves identifying and remediating security weaknesses, not reviewing system changes through a board.",
+        "3": "Access provisioning involves granting, modifying, or revoking user access rights, not reviewing system changes."
+      }
+    }
+  },
+  {
+    "question": "Which principle states that security controls should be layered so that if one fails, others still provide protection?",
+    "options": [
+      "Defense in depth",
+      "Least privilege",
+      "Separation of duties",
+      "Need to know"
+    ],
+    "correct": 0,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "Defense in depth uses multiple layers of security controls (firewalls, IDS, encryption, access controls) so that the failure of one layer does not compromise the entire system.",
+      "wrong": {
+        "1": "Least privilege grants users only the minimum access needed for their job, but it is a single access control principle, not a layering strategy.",
+        "2": "Separation of duties divides critical tasks among multiple people to prevent fraud, not about layering security controls.",
+        "3": "Need to know restricts information access to only those who require it for their role, not about layering defenses."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of a security baseline?",
+    "options": [
+      "To define the minimum level of security configuration for systems",
+      "To identify the most advanced threat actors",
+      "To measure network bandwidth utilization",
+      "To catalog all software licenses in use"
+    ],
+    "correct": 0,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "A security baseline establishes a minimum standard of security configurations that all systems must meet, providing a consistent foundation for hardening and compliance.",
+      "wrong": {
+        "1": "Identifying advanced threat actors is part of threat intelligence, not baseline configuration management.",
+        "2": "Measuring network bandwidth is a performance monitoring task, not a security configuration standard.",
+        "3": "Cataloging software licenses is part of asset and license management, not security baselines."
+      }
+    }
+  },
+  {
+    "question": "Which security operations practice involves continuously reviewing system logs to detect suspicious activity?",
+    "options": [
+      "Patch management",
+      "Security monitoring",
+      "Data classification",
+      "Physical security"
+    ],
+    "correct": 1,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "Security monitoring involves continuous review and analysis of logs, alerts, and events from systems and networks to detect and respond to suspicious activity in a timely manner.",
+      "wrong": {
+        "0": "Patch management involves identifying, testing, and applying software updates to fix vulnerabilities, not monitoring logs.",
+        "2": "Data classification categorizes data by sensitivity level (public, confidential, secret) to apply appropriate protections.",
+        "3": "Physical security involves protecting the physical premises, equipment, and people \u2014 locks, cameras, guards \u2014 not log analysis."
+      }
+    }
+  },
+  {
+    "question": "What is the primary benefit of conducting regular security audits?",
+    "options": [
+      "To identify gaps in security controls and verify compliance with policies",
+      "To increase system processing speed",
+      "To reduce software licensing costs",
+      "To improve user interface design"
+    ],
+    "correct": 0,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "Regular security audits systematically evaluate an organization's security posture, identifying weaknesses in controls, policy violations, and areas for improvement.",
+      "wrong": {
+        "1": "System processing speed is a performance concern addressed by hardware upgrades or optimization, not security audits.",
+        "2": "Reducing licensing costs is a budget and procurement matter, not the purpose of security audits.",
+        "3": "UI design improvements are a software development concern, not related to security auditing."
+      }
+    }
+  },
+  {
+    "question": "A new employee is granted access to systems on their first day with default admin privileges. Which security operations principle is violated?",
+    "options": [
+      "Separation of duties",
+      "Security through obscurity",
+      "Defense in depth",
+      "Least privilege"
+    ],
+    "correct": 3,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "Least privilege requires users receive only the minimum access necessary for their job. Granting default admin privileges violates this by giving excessive permissions.",
+      "wrong": {
+        "0": "Separation of duties ensures no single person controls all parts of a critical process. Admin access for a new hire may not necessarily violate this principle.",
+        "2": "Defense in depth concerns layered security controls, not individual user permission levels.",
+        "1": "Security through obscurity relies on keeping system details hidden. It is not a recommended security practice and is unrelated to user provisioning."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of a configuration management database (CMDB)?",
+    "options": [
+      "To track and manage IT assets and their configurations",
+      "To store encrypted user passwords",
+      "To block malicious network traffic",
+      "To back up user files daily"
+    ],
+    "correct": 0,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "A CMDB tracks IT assets (hardware, software, configurations, relationships) to support change management, incident response, and maintaining a known good state.",
+      "wrong": {
+        "1": "Storing encrypted passwords is the role of a credential vault or password manager, not a CMDB.",
+        "2": "Blocking malicious traffic is the role of firewalls and IPS devices, not a CMDB.",
+        "3": "Daily file backups are managed by backup software and storage systems, not a CMDB."
+      }
+    }
+  },
+  {
+    "question": "Which document outlines the procedures for responding to specific types of security events?",
+    "options": [
+      "Acceptable Use Policy",
+      "Incident Response Playbook",
+      "Service Level Agreement",
+      "Data Retention Policy"
+    ],
+    "correct": 1,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "An Incident Response Playbook contains step-by-step procedures for handling specific types of security incidents, ensuring consistent and effective responses.",
+      "wrong": {
+        "0": "An AUP defines acceptable behavior for IT resource usage, not procedures for responding to security events.",
+        "2": "An SLA defines service performance expectations between a provider and customer, not incident response procedures.",
+        "3": "A Data Retention Policy defines how long data should be kept, not how to respond to security incidents."
+      }
+    }
+  },
+  {
+    "question": "What is the main purpose of a security information and event management (SIEM) system?",
+    "options": [
+      "To encrypt data at rest",
+      "To provide VPN connectivity",
+      "To manage user passwords",
+      "To aggregate, correlate, and analyze security events from multiple sources in real time"
+    ],
+    "correct": 3,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "A SIEM collects log data from multiple systems, correlates events, and provides real-time analysis and alerts to help security teams detect and respond to threats.",
+      "wrong": {
+        "0": "Data-at-rest encryption is handled by encryption tools and disk encryption solutions, not SIEM systems.",
+        "2": "Password management is handled by identity management systems and password vaults, not SIEM.",
+        "1": "VPN connectivity is provided by VPN servers and clients, not SIEM systems."
+      }
+    }
+  },
+  {
+    "question": "Which type of security control includes background checks and security clearance verification?",
+    "options": [
+      "Administrative controls",
+      "Technical controls",
+      "Physical controls",
+      "Compensating controls"
+    ],
+    "correct": 0,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "Administrative (or management) controls include policies, procedures, background checks, and security training that govern how security is managed within an organization.",
+      "wrong": {
+        "1": "Technical controls are implemented through technology such as firewalls, encryption, and access control software.",
+        "2": "Physical controls protect physical assets through locks, surveillance cameras, fences, and security guards.",
+        "3": "Compensating controls are alternative measures used when primary controls cannot be implemented, not a category for background checks."
+      }
+    }
+  },
+  {
+    "question": "Patch management is critical to security operations because it:",
+    "options": [
+      "Fixes known vulnerabilities that attackers could exploit",
+      "Increases system storage capacity",
+      "Speeds up network traffic",
+      "Creates new user accounts automatically"
+    ],
+    "correct": 0,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "Patch management addresses known software vulnerabilities by applying updates, preventing attackers from exploiting those weaknesses to compromise systems.",
+      "wrong": {
+        "1": "Storage capacity is increased by adding or upgrading drives, not by applying patches.",
+        "2": "Network speed depends on bandwidth and infrastructure, not on patching software vulnerabilities.",
+        "3": "User account creation is an identity management function, not related to patching."
+      }
+    }
+  },
+  {
+    "question": "What is multi-factor authentication (MFA)?",
+    "options": [
+      "Using multiple passwords for the same account",
+      "Encrypting a password with multiple algorithms",
+      "Logging into multiple accounts simultaneously",
+      "Requiring two or more distinct types of authentication factors to verify identity"
+    ],
+    "correct": 3,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "MFA requires users to provide two or more different types of authentication factors \u2014 something you know, something you have, or something you are \u2014 to verify their identity.",
+      "wrong": {
+        "0": "Multiple passwords are still the same factor type (something you know), which does not constitute MFA.",
+        "2": "Logging into multiple accounts simultaneously is about session management, not authentication factors.",
+        "1": "Encrypting a password with multiple algorithms is a cryptographic implementation detail, not an authentication method."
+      }
+    }
+  },
+  {
+    "question": "Which access control model assigns permissions based on a user's job function or role within the organization?",
+    "options": [
+      "Discretionary Access Control (DAC)",
+      "Mandatory Access Control (MAC)",
+      "Role-Based Access Control (RBAC)",
+      "Attribute-Based Access Control (ABAC)"
+    ],
+    "correct": 2,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "RBAC assigns permissions to roles (e.g., manager, analyst, admin) rather than individual users. Users inherit permissions by being assigned to appropriate roles.",
+      "wrong": {
+        "0": "DAC allows resource owners to decide who can access their resources, granting access at the owner's discretion rather than based on roles.",
+        "1": "MAC uses classification labels and security clearances set by a central authority, commonly used in military systems, not job role assignments.",
+        "3": "ABAC evaluates access requests based on multiple attributes (user, resource, environment, action) rather than predefined roles."
+      }
+    }
+  },
+  {
+    "question": "The principle of least privilege requires that:",
+    "options": [
+      "All users have admin access to perform any task",
+      "Access is granted based on seniority alone",
+      "Privileges are shared equally among all employees",
+      "Users are granted only the minimum access necessary to perform their duties"
+    ],
+    "correct": 3,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "Least privilege ensures users, programs, and processes have only the minimum access rights needed for their legitimate function, reducing the potential damage from errors or attacks.",
+      "wrong": {
+        "0": "Giving all users admin access is the opposite of least privilege and greatly increases security risk.",
+        "2": "Equal privilege sharing ignores the fact that different roles need different access levels, violating least privilege.",
+        "1": "Seniority-based access does not consider actual job requirements and could grant unnecessary permissions."
+      }
+    }
+  },
+  {
+    "question": "Which authentication factor category does a fingerprint scan belong to?",
+    "options": [
+      "Something you know",
+      "Something you have",
+      "Something you are",
+      "Somewhere you are"
+    ],
+    "correct": 2,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "A fingerprint is a biometric characteristic \u2014 something you are. Biometric factors use unique physical or behavioral traits for authentication.",
+      "wrong": {
+        "0": "Something you know refers to knowledge-based factors like passwords, PINs, or security questions.",
+        "1": "Something you have refers to possession-based factors like smart cards, hardware tokens, or mobile phones.",
+        "3": "Somewhere you are refers to location-based authentication, such as GPS data or network-based location verification."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of an access control list (ACL)?",
+    "options": [
+      "To define which users or systems are allowed or denied access to a resource",
+      "To encrypt network traffic",
+      "To log all authentication attempts",
+      "To compress files for storage"
+    ],
+    "correct": 0,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "An ACL specifies which users, groups, or systems have permission to access a resource and what operations they may perform (read, write, execute, etc.).",
+      "wrong": {
+        "1": "Network traffic encryption is handled by protocols like TLS and IPSec, not ACLs.",
+        "2": "Logging authentication attempts is done by audit logs and SIEM systems, not ACLs.",
+        "3": "File compression is performed by archiving tools like zip or gzip, unrelated to access control."
+      }
+    }
+  },
+  {
+    "question": "A user authenticates with a password and then must enter a code from a mobile authenticator app. What type of authentication is this?",
+    "options": [
+      "Single-factor authentication",
+      "Certificate-based authentication",
+      "Federated authentication",
+      "Two-factor authentication"
+    ],
+    "correct": 3,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "This is two-factor authentication: the password is something you know, and the authenticator app code is something you have (the mobile device), using two distinct factor types.",
+      "wrong": {
+        "0": "Single-factor uses only one type of factor (e.g., just a password). Using a password plus an authenticator code involves two factors.",
+        "2": "Federated authentication allows using one identity across multiple systems (like SSO), not the combination of a password and mobile code.",
+        "1": "Certificate-based authentication uses digital certificates, not mobile authenticator apps."
+      }
+    }
+  },
+  {
+    "question": "What is Single Sign-On (SSO)?",
+    "options": [
+      "A method requiring users to sign in separately to each application",
+      "An authentication mechanism that allows one login to access multiple applications",
+      "A type of biometric scanner",
+      "A firewall rule that allows only one connection at a time"
+    ],
+    "correct": 1,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "SSO allows users to authenticate once and then access multiple related applications without re-entering credentials, improving usability while centralizing authentication.",
+      "wrong": {
+        "0": "Requiring separate logins for each application is the opposite of SSO and is the traditional approach SSO was designed to replace.",
+        "2": "Biometric scanners are hardware devices for reading physical characteristics; they are an authentication method, not SSO.",
+        "3": "Connection limitations are network-level controls managed by firewalls, not an authentication mechanism."
+      }
+    }
+  },
+  {
+    "question": "In Mandatory Access Control (MAC), who determines the access rights to resources?",
+    "options": [
+      "The resource owner",
+      "The end user",
+      "A central authority based on security labels",
+      "The application developer"
+    ],
+    "correct": 2,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "In MAC, a central authority (typically a security administrator) assigns classification labels to resources and clearance levels to users. Access is determined by matching labels, not by individual discretion.",
+      "wrong": {
+        "0": "Resource owners determining access rights describes Discretionary Access Control (DAC), not MAC.",
+        "1": "End users cannot grant themselves or others access in MAC; this is controlled centrally by the security policy.",
+        "3": "Application developers write software but do not set access control policies in a MAC environment."
+      }
+    }
+  },
+  {
+    "question": "What is privilege escalation?",
+    "options": [
+      "Granting temporary elevated access through a formal request process",
+      "The process of increasing network bandwidth for admin tasks",
+      "An attack where a user gains higher access rights than originally authorized",
+      "Upgrading a user account from free to premium"
+    ],
+    "correct": 2,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "Privilege escalation is an attack or exploit where a user or process obtains higher access rights than intended, potentially gaining admin or root access to compromise the system.",
+      "wrong": {
+        "0": "Formal elevation through a request process is legitimate privilege management, not an attack.",
+        "1": "Increasing network bandwidth is a network capacity issue, not related to access control or security.",
+        "3": "Upgrading an account tier is a business operation, not a security concept."
+      }
+    }
+  },
+  {
+    "question": "Which access control model allows the owner of a resource to decide who can access it?",
+    "options": [
+      "Mandatory Access Control (MAC)",
+      "Role-Based Access Control (RBAC)",
+      "Discretionary Access Control (DAC)",
+      "Rule-Based Access Control"
+    ],
+    "correct": 2,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "In DAC, the resource owner has discretion to grant or revoke access to their resources, such as setting file permissions in standard operating systems.",
+      "wrong": {
+        "0": "MAC uses centrally assigned labels and clearances; resource owners cannot override the access policy.",
+        "1": "RBAC grants access based on organizational roles, not individual owner decisions.",
+        "3": "Rule-Based Access Control uses predefined rules (e.g., time of day, IP address) to determine access, not owner discretion."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of account lockout policies?",
+    "options": [
+      "To prevent brute force attacks by disabling accounts after repeated failed login attempts",
+      "To automatically log users out after a period of inactivity",
+      "To restrict account creation to administrators only",
+      "To encrypt user credentials in the database"
+    ],
+    "correct": 0,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "Account lockout policies temporarily disable an account after a threshold of failed login attempts, preventing attackers from repeatedly guessing passwords in brute force attacks.",
+      "wrong": {
+        "1": "Automatic logout after inactivity is a session timeout policy, which is a separate security mechanism.",
+        "2": "Restricting account creation is an administrative policy, not specifically an account lockout mechanism.",
+        "3": "Encrypting credentials is part of data protection and secure storage, not account lockout functionality."
+      }
+    }
+  },
+  {
+    "question": "An organization requires two people to authorize high-value financial transactions. Which security principle does this implement?",
+    "options": [
+      "Least privilege",
+      "Defense in depth",
+      "Separation of duties",
+      "Single sign-on"
+    ],
+    "correct": 2,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "Separation of duties (also called dual control) requires more than one person to complete a critical task, preventing fraud and reducing the risk of a single point of compromise.",
+      "wrong": {
+        "0": "Least privilege restricts each user's access to only what is necessary, but does not require multiple people for one action.",
+        "1": "Defense in depth layers multiple security controls, but this scenario specifically involves splitting human responsibilities.",
+        "3": "SSO allows one login for multiple systems and is an authentication convenience feature, not about splitting duties."
+      }
+    }
+  },
+  {
+    "question": "Which protocol is commonly used for centralized authentication, authorization, and accounting (AAA) on network devices?",
+    "options": [
+      "RADIUS",
+      "SNMP",
+      "DNS",
+      "DHCP"
+    ],
+    "correct": 0,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "RADIUS (Remote Authentication Dial-In User Service) is a networking protocol that provides centralized AAA management for users connecting to network services.",
+      "wrong": {
+        "1": "SNMP (Simple Network Management Protocol) is used for monitoring and managing network devices, not authentication.",
+        "2": "DNS resolves domain names to IP addresses and has no authentication or authorization capabilities.",
+        "3": "DHCP dynamically assigns IP addresses to devices on a network and does not handle authentication."
+      }
+    }
+  },
+  {
+    "question": "What is the difference between authentication and authorization?",
+    "options": [
+      "Authentication verifies who you are; authorization determines what you can access",
+      "Authentication determines what you can access; authorization verifies who you are",
+      "They are the same thing with different names",
+      "Authentication is for users; authorization is for devices"
+    ],
+    "correct": 0,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "Authentication verifies identity (proving you are who you claim to be), while authorization determines what resources and actions the authenticated identity is permitted to access.",
+      "wrong": {
+        "1": "This reverses the definitions. Authentication is about identity verification, and authorization is about access permissions.",
+        "2": "They are distinct security functions. Authentication must occur before authorization \u2014 you must prove identity before access decisions can be made.",
+        "3": "Both authentication and authorization apply to users, devices, services, and applications, not limited by entity type."
+      }
+    }
+  },
+  {
+    "question": "A security analyst reviewing session logs finds that an attacker reused a stolen session token to access a web application. What type of attack is this?",
+    "options": [
+      "SQL injection",
+      "Cross-site scripting",
+      "Session hijacking",
+      "Denial of service"
+    ],
+    "correct": 2,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "Session hijacking occurs when an attacker steals or intercepts a valid session token to impersonate the legitimate user and gain unauthorized access to the application.",
+      "wrong": {
+        "0": "SQL injection involves inserting malicious SQL queries into input fields to manipulate a database, not stealing session tokens.",
+        "1": "Cross-site scripting (XSS) injects malicious scripts into web pages viewed by other users, though it can sometimes be used to steal session tokens as a precursor.",
+        "3": "Denial of service overwhelms a system with traffic to make it unavailable, not about impersonating users."
+      }
+    }
+  },
+  {
+    "question": "What is the primary purpose of a risk assessment?",
+    "options": [
+      "To identify, analyze, and evaluate risks to organizational assets",
+      "To install security software on all devices",
+      "To conduct employee performance reviews",
+      "To configure network firewalls"
+    ],
+    "correct": 0,
+    "domain": "Risk Identification & Analysis",
+    "explanations": {
+      "correct": "A risk assessment systematically identifies threats and vulnerabilities, analyzes the likelihood and potential impact of each risk, and evaluates which risks need treatment.",
+      "wrong": {
+        "1": "Installing security software is a risk mitigation action that may result from a risk assessment, but is not the assessment itself.",
+        "2": "Employee performance reviews are an HR function, not a security risk assessment activity.",
+        "3": "Configuring firewalls is an operational security task, not the purpose of a risk assessment."
+      }
+    }
+  },
+  {
+    "question": "What is a vulnerability in the context of cybersecurity?",
+    "options": [
+      "A weakness in a system that could be exploited by a threat",
+      "A potential cause of an unwanted incident",
+      "A deliberate attack against a network",
+      "An insurance policy covering cyber losses"
+    ],
+    "correct": 0,
+    "domain": "Risk Identification & Analysis",
+    "explanations": {
+      "correct": "A vulnerability is a weakness or flaw in a system, software, or process that can be exploited by a threat actor to gain unauthorized access or cause harm.",
+      "wrong": {
+        "1": "A potential cause of an unwanted incident describes a threat, not a vulnerability. Threats exploit vulnerabilities.",
+        "2": "A deliberate attack is a threat action or exploit, not a vulnerability. The vulnerability is the weakness that allows the attack to succeed.",
+        "3": "Cyber insurance is a financial risk transfer mechanism, not a vulnerability."
+      }
+    }
+  },
+  {
+    "question": "Which of the following is an example of a threat actor?",
+    "options": [
+      "A cybercriminal organization",
+      "An unpatched web server",
+      "A weak password policy",
+      "An open firewall port"
+    ],
+    "correct": 0,
+    "domain": "Risk Identification & Analysis",
+    "explanations": {
+      "correct": "A threat actor is an individual or group that carries out attacks. Cybercriminal organizations are threat actors motivated by financial gain.",
+      "wrong": {
+        "1": "An unpatched web server is a vulnerability (a weakness that could be exploited), not a threat actor.",
+        "2": "A weak password policy is a vulnerability in security controls, not an entity that carries out attacks.",
+        "3": "An open firewall port is a vulnerability or misconfiguration that could be exploited, not a threat actor."
+      }
+    }
+  },
+  {
+    "question": "What does a vulnerability scan do?",
+    "options": [
+      "Automatically identifies known vulnerabilities in systems and software",
+      "Actively exploits weaknesses to demonstrate impact",
+      "Encrypts network traffic to prevent eavesdropping",
+      "Monitors employee internet usage"
+    ],
+    "correct": 0,
+    "domain": "Risk Identification & Analysis",
+    "explanations": {
+      "correct": "A vulnerability scan uses automated tools to probe systems and software for known vulnerabilities, misconfigurations, and missing patches, producing a report of findings.",
+      "wrong": {
+        "1": "Actively exploiting weaknesses describes penetration testing, which goes beyond scanning to demonstrate actual impact.",
+        "2": "Encrypting network traffic is the function of protocols like TLS/IPSec, not vulnerability scanning.",
+        "3": "Monitoring employee internet usage is a user activity monitoring function, not vulnerability scanning."
+      }
+    }
+  },
+  {
+    "question": "In risk analysis, what does 'risk = threat \u00d7 vulnerability \u00d7 impact' represent?",
+    "options": [
+      "The cost of insurance premiums",
+      "A formula for calculating the overall risk level based on threat likelihood, vulnerability exposure, and potential impact",
+      "The required number of security staff",
+      "The speed of network traffic"
+    ],
+    "correct": 1,
+    "domain": "Risk Identification & Analysis",
+    "explanations": {
+      "correct": "This formula shows that risk is a function of how likely a threat is, how exposed the vulnerability is, and how severe the potential impact would be. All three factors determine the overall risk level.",
+      "wrong": {
+        "0": "Insurance premiums are calculated by insurance companies based on many factors, not directly by this security risk formula.",
+        "2": "Staffing requirements are determined by organizational needs and budgets, not by a risk calculation formula.",
+        "3": "Network traffic speed is a performance metric measured in Mbps/Gbps, not related to risk analysis."
+      }
+    }
+  },
+  {
+    "question": "What is the difference between a vulnerability scan and a penetration test?",
+    "options": [
+      "There is no difference; they are the same activity",
+      "A vulnerability scan identifies weaknesses; a penetration test attempts to exploit them",
+      "A vulnerability scan is more invasive than a penetration test",
+      "A penetration test only checks for compliance"
+    ],
+    "correct": 1,
+    "domain": "Risk Identification & Analysis",
+    "explanations": {
+      "correct": "Vulnerability scans automate the detection of known weaknesses, while penetration tests go further by actively attempting to exploit vulnerabilities to assess real-world impact.",
+      "wrong": {
+        "0": "They are different activities with different scopes, methodologies, and goals.",
+        "2": "Penetration testing is more invasive because it involves active exploitation; vulnerability scanning is a passive identification process.",
+        "3": "Penetration tests evaluate security posture through simulated attacks, not just compliance checks."
+      }
+    }
+  },
+  {
+    "question": "Which risk response strategy involves purchasing insurance to cover potential losses from a cyber incident?",
+    "options": [
+      "Risk avoidance",
+      "Risk mitigation",
+      "Risk transference",
+      "Risk acceptance"
+    ],
+    "correct": 2,
+    "domain": "Risk Identification & Analysis",
+    "explanations": {
+      "correct": "Risk transference shifts the financial consequences of a risk to a third party, such as by purchasing cyber insurance or outsourcing to a managed security provider.",
+      "wrong": {
+        "0": "Risk avoidance eliminates the risk entirely by discontinuing the activity that creates it.",
+        "1": "Risk mitigation reduces the likelihood or impact of a risk through security controls, not by transferring it to another party.",
+        "3": "Risk acceptance means acknowledging the risk and choosing to bear the potential consequences without additional action."
+      }
+    }
+  },
+  {
+    "question": "What is a zero-day vulnerability?",
+    "options": [
+      "A vulnerability that has existed for zero days",
+      "A vulnerability fixed immediately upon discovery",
+      "A vulnerability that takes zero days to exploit",
+      "A previously unknown vulnerability with no available patch at the time of discovery"
+    ],
+    "correct": 3,
+    "domain": "Risk Identification & Analysis",
+    "explanations": {
+      "correct": "A zero-day vulnerability is a flaw unknown to the vendor and public, meaning there are zero days of available patches or defenses when it is first exploited or disclosed.",
+      "wrong": {
+        "0": "The term 'zero-day' refers to the zero days of available fixes, not the age of the vulnerability itself.",
+        "2": "Exploitation time varies; 'zero-day' refers to the lack of patches, not how quickly it can be exploited.",
+        "1": "If it were fixed immediately, it would no longer be a zero-day. The defining characteristic is the absence of a fix."
+      }
+    }
+  },
+  {
+    "question": "A company decides to stop offering a particular online service because the security risks outweigh the business benefits. Which risk response is this?",
+    "options": [
+      "Risk acceptance",
+      "Risk transference",
+      "Risk mitigation",
+      "Risk avoidance"
+    ],
+    "correct": 3,
+    "domain": "Risk Identification & Analysis",
+    "explanations": {
+      "correct": "Risk avoidance eliminates the risk entirely by discontinuing the activity or service that creates it. Stopping the service removes the associated security risks.",
+      "wrong": {
+        "0": "Risk acceptance means continuing with the service while acknowledging the risk, which is not what happened here.",
+        "1": "Risk transference shifts risk to a third party; discontinuing the service eliminates it rather than transferring it.",
+        "2": "Risk mitigation would involve implementing controls to reduce the risk while continuing the service."
+      }
+    }
+  },
+  {
+    "question": "Which type of threat actor is typically motivated by political or social causes?",
+    "options": [
+      "Script kiddies",
+      "Advanced Persistent Threats (APTs)",
+      "Insider threats",
+      "Hacktivists"
+    ],
+    "correct": 3,
+    "domain": "Risk Identification & Analysis",
+    "explanations": {
+      "correct": "Hacktivists are threat actors who use cyberattacks to promote political, social, or ideological causes, often through defacement, data leaks, or denial-of-service attacks.",
+      "wrong": {
+        "0": "Script kiddies are unskilled attackers who use pre-built tools for amusement or notoriety, typically without ideological motivation.",
+        "2": "Insider threats are employees or contractors who misuse their authorized access, motivated by various factors including financial gain or revenge.",
+        "1": "APTs are sophisticated, state-sponsored groups primarily motivated by espionage and strategic intelligence gathering."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of a risk register?",
+    "options": [
+      "To block IP addresses of known attackers",
+      "To document identified risks, their assessments, and planned responses",
+      "To encrypt sensitive data at rest",
+      "To train employees on security policies"
+    ],
+    "correct": 1,
+    "domain": "Risk Identification & Analysis",
+    "explanations": {
+      "correct": "A risk register is a document that records all identified risks, their likelihood, impact, risk level, assigned owners, and planned treatment actions for tracking and management.",
+      "wrong": {
+        "0": "Blocking attacker IP addresses is an operational security task handled by firewalls and IPS, not a risk register.",
+        "2": "Data encryption is a technical security control, not a risk documentation tool.",
+        "3": "Training employees is security awareness, which may be a risk mitigation action recorded in a risk register, but is not the register itself."
+      }
+    }
+  },
+  {
+    "question": "Which of the following describes a qualitative risk analysis approach?",
+    "options": [
+      "Calculating the exact dollar value of expected annual losses",
+      "Counting the number of vulnerability scan findings",
+      "Measuring the time between successive security incidents",
+      "Using categories such as high, medium, and low to rate risk likelihood and impact"
+    ],
+    "correct": 3,
+    "domain": "Risk Identification & Analysis",
+    "explanations": {
+      "correct": "Qualitative risk analysis uses subjective categories (high, medium, low) to assess and prioritize risks, rather than precise numerical values, making it faster and more intuitive.",
+      "wrong": {
+        "0": "Calculating exact dollar values (e.g., ALE = SLE \u00d7 ARO) is a quantitative risk analysis approach.",
+        "2": "Measuring time between incidents is a quantitative metric, not a qualitative risk rating.",
+        "1": "Counting vulnerability findings is a quantitative measurement of scan results, not a qualitative assessment."
+      }
+    }
+  },
+  {
+    "question": "An organization performs annual quantitative risk analysis. Which formula calculates the Annualized Loss Expectancy (ALE)?",
+    "options": [
+      "ALE = Asset Value \u00d7 Exposure Factor",
+      "ALE = Number of Incidents \u00d7 Cost per Incident Response",
+      "ALE = Total Cost of Ownership / Number of Years",
+      "ALE = Single Loss Expectancy \u00d7 Annualized Rate of Occurrence"
+    ],
+    "correct": 3,
+    "domain": "Risk Identification & Analysis",
+    "explanations": {
+      "correct": "ALE = SLE \u00d7 ARO. The Single Loss Expectancy (expected loss per incident) multiplied by the Annualized Rate of Occurrence (frequency per year) gives the expected annual loss.",
+      "wrong": {
+        "0": "Asset Value \u00d7 Exposure Factor calculates the Single Loss Expectancy (SLE), not the ALE.",
+        "2": "Total Cost of Ownership divided by years is a financial depreciation calculation, not a risk analysis formula.",
+        "1": "While related to incident costs, this is not the standard quantitative risk analysis formula for ALE."
+      }
+    }
+  },
+  {
+    "question": "What is the primary goal of a Business Impact Analysis (BIA)?",
+    "options": [
+      "To identify critical business functions and the impact of their disruption",
+      "To determine which employees should be terminated",
+      "To select which antivirus software to purchase",
+      "To design the corporate network architecture"
+    ],
+    "correct": 0,
+    "domain": "Risk Identification & Analysis",
+    "explanations": {
+      "correct": "A BIA identifies critical business processes, determines the impact of disruption, and establishes recovery priorities including Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).",
+      "wrong": {
+        "1": "Employee termination decisions are an HR matter, not the purpose of a BIA.",
+        "2": "Software procurement is an operational decision that may be informed by risk analysis but is not the goal of a BIA.",
+        "3": "Network architecture design is an IT infrastructure task, not the purpose of a business impact analysis."
+      }
+    }
+  },
+  {
+    "question": "What is the first step in an incident response process?",
+    "options": [
+      "Eradication",
+      "Containment",
+      "Preparation",
+      "Recovery"
+    ],
+    "correct": 2,
+    "domain": "Incident Response",
+    "explanations": {
+      "correct": "Preparation is the first phase of incident response, involving creating IR plans, training the team, deploying tools, and establishing communication procedures before any incident occurs.",
+      "wrong": {
+        "0": "Eradication is a later phase where the root cause is removed after the incident has been contained.",
+        "1": "Containment occurs after detection and analysis, when the team works to limit the spread of the incident.",
+        "3": "Recovery is a late phase where affected systems are restored to normal operations after eradication."
+      }
+    }
+  },
+  {
+    "question": "What is the correct order of the NIST incident response lifecycle phases?",
+    "options": [
+      "Detection, Containment, Preparation, Recovery",
+      "Containment, Detection, Recovery, Eradication",
+      "Recovery, Analysis, Containment, Preparation",
+      "Preparation, Detection & Analysis, Containment/Eradication/Recovery, Post-Incident Activity"
+    ],
+    "correct": 3,
+    "domain": "Incident Response",
+    "explanations": {
+      "correct": "The NIST SP 800-61 framework defines four phases: Preparation; Detection & Analysis; Containment, Eradication & Recovery; and Post-Incident Activity (lessons learned).",
+      "wrong": {
+        "0": "This order skips preparation (the crucial first step) and incorrectly places detection before it.",
+        "2": "This reverses the logical order \u2014 you cannot recover before you detect and contain an incident.",
+        "1": "This order is incorrect; detection must occur before containment, and preparation must come first."
+      }
+    }
+  },
+  {
+    "question": "What is the primary purpose of a Business Continuity Plan (BCP)?",
+    "options": [
+      "To ensure critical business operations continue during and after a disruptive event",
+      "To recover IT systems after a failure",
+      "To investigate the root cause of a security breach",
+      "To train new employees on company policies"
+    ],
+    "correct": 0,
+    "domain": "Incident Response",
+    "explanations": {
+      "correct": "A BCP ensures that essential business functions can continue during a disruption (natural disaster, cyberattack, etc.) and provides a framework for restoring full operations.",
+      "wrong": {
+        "1": "Recovering IT systems specifically is the focus of a Disaster Recovery Plan (DRP), which is a subset of the BCP.",
+        "2": "Root cause investigation is part of incident response and post-incident analysis, not the BCP's primary purpose.",
+        "3": "Employee training is part of onboarding and operations, not the primary purpose of a BCP."
+      }
+    }
+  },
+  {
+    "question": "What distinguishes a Disaster Recovery Plan (DRP) from a Business Continuity Plan (BCP)?",
+    "options": [
+      "A DRP is broader in scope than a BCP",
+      "A BCP only applies to natural disasters while a DRP covers cyberattacks",
+      "A DRP replaces the need for a BCP",
+      "A DRP focuses specifically on restoring IT systems and data; a BCP covers all critical business functions"
+    ],
+    "correct": 3,
+    "domain": "Incident Response",
+    "explanations": {
+      "correct": "A DRP specifically addresses the recovery of IT infrastructure and data after a disaster, while a BCP is broader, covering the continuity of all critical business operations.",
+      "wrong": {
+        "0": "The BCP is broader in scope; the DRP is a subset that focuses specifically on IT recovery.",
+        "2": "A DRP does not replace a BCP \u2014 it is a component of it. Both are needed for comprehensive resilience.",
+        "1": "Both BCP and DRP cover all types of disruptions including natural disasters, cyberattacks, and equipment failures."
+      }
+    }
+  },
+  {
+    "question": "Which backup type copies only data that has changed since the last full backup?",
+    "options": [
+      "Full backup",
+      "Differential backup",
+      "Incremental backup",
+      "Mirror backup"
+    ],
+    "correct": 1,
+    "domain": "Incident Response",
+    "explanations": {
+      "correct": "A differential backup copies all data that has changed since the last full backup. It grows larger each day until the next full backup is performed.",
+      "wrong": {
+        "0": "A full backup copies all selected data regardless of changes, which is time-consuming and storage-intensive.",
+        "2": "An incremental backup copies only data changed since the last backup of any type (full or incremental), making each backup smaller but requiring all incrementals for full restore.",
+        "3": "A mirror backup creates an exact copy of the source at that point in time, without tracking changes from a previous backup."
+      }
+    }
+  },
+  {
+    "question": "What is the Recovery Time Objective (RTO)?",
+    "options": [
+      "The maximum acceptable time to restore a system or service after a disruption",
+      "The maximum amount of data loss an organization can tolerate",
+      "The time it takes to detect a security incident",
+      "The frequency of backup operations"
+    ],
+    "correct": 0,
+    "domain": "Incident Response",
+    "explanations": {
+      "correct": "RTO defines the maximum duration a system can be offline before the impact becomes unacceptable, guiding recovery priorities and resource allocation.",
+      "wrong": {
+        "1": "Maximum tolerable data loss is defined by the Recovery Point Objective (RPO), not RTO.",
+        "2": "Detection time is measured separately (Mean Time to Detect \u2014 MTTD) and is not the same as RTO.",
+        "3": "Backup frequency is determined by RPO requirements and operational policy, not directly by RTO."
+      }
+    }
+  },
+  {
+    "question": "During which incident response phase are lessons learned documented?",
+    "options": [
+      "Preparation",
+      "Detection and Analysis",
+      "Containment",
+      "Post-Incident Activity"
+    ],
+    "correct": 3,
+    "domain": "Incident Response",
+    "explanations": {
+      "correct": "Post-Incident Activity is the final phase where the team reviews the incident, documents lessons learned, identifies improvements, and updates the IR plan accordingly.",
+      "wrong": {
+        "0": "Preparation occurs before an incident and involves planning and training, not reviewing past incidents.",
+        "1": "Detection and Analysis focuses on identifying and understanding the current incident, not documenting lessons from it.",
+        "2": "Containment focuses on stopping the spread of the incident, not reviewing what happened afterward."
+      }
+    }
+  },
+  {
+    "question": "What does the Recovery Point Objective (RPO) determine?",
+    "options": [
+      "How quickly systems must be restored",
+      "The budget allocated for disaster recovery",
+      "The number of incidents per year",
+      "The maximum tolerable amount of data loss measured in time"
+    ],
+    "correct": 3,
+    "domain": "Incident Response",
+    "explanations": {
+      "correct": "RPO defines the maximum acceptable age of data that can be lost during a disruption. An RPO of 4 hours means backups must occur at least every 4 hours.",
+      "wrong": {
+        "0": "How quickly systems must be restored is defined by the Recovery Time Objective (RTO), not RPO.",
+        "2": "The number of incidents per year is tracked by incident metrics, not defined by RPO.",
+        "1": "Budget allocation is a financial planning matter, not defined by RPO."
+      }
+    }
+  },
+  {
+    "question": "An organization discovers a ransomware infection on several workstations. What should be done FIRST after detection?",
+    "options": [
+      "Pay the ransom immediately",
+      "Send a press release about the incident",
+      "Reformat all company computers",
+      "Isolate the affected systems from the network"
+    ],
+    "correct": 3,
+    "domain": "Incident Response",
+    "explanations": {
+      "correct": "Immediately isolating affected systems prevents the ransomware from spreading to other devices on the network, which is a critical containment step.",
+      "wrong": {
+        "0": "Paying the ransom is generally discouraged by security experts because it funds criminal activity and does not guarantee data recovery.",
+        "2": "Reformatting all computers is excessive and destructive; you should first contain and assess the scope before taking such drastic action.",
+        "1": "External communication should follow established procedures and occur after containment and assessment, not as the first response."
+      }
+    }
+  },
+  {
+    "question": "Which type of backup copies only data that has changed since the last backup of any type?",
+    "options": [
+      "Full backup",
+      "Differential backup",
+      "Incremental backup",
+      "Snapshot backup"
+    ],
+    "correct": 2,
+    "domain": "Incident Response",
+    "explanations": {
+      "correct": "An incremental backup copies only data changed since the most recent backup (whether full or incremental), making it the fastest and smallest backup type.",
+      "wrong": {
+        "0": "A full backup copies all selected data regardless of changes, which is the most time-consuming and storage-intensive type.",
+        "1": "A differential backup copies data changed since the last full backup specifically, not since any backup type.",
+        "3": "A snapshot captures the state of a volume at a point in time using copy-on-write technology, which is a different mechanism from incremental backup."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of a hot site in disaster recovery?",
+    "options": [
+      "A fully operational duplicate facility that can take over immediately during a disaster",
+      "A location for storing paper-based backup records",
+      "A site where employees report for fire drills",
+      "A warm storage location for backup tapes"
+    ],
+    "correct": 0,
+    "domain": "Incident Response",
+    "explanations": {
+      "correct": "A hot site is a fully equipped and operational duplicate of the primary site, with real-time data replication, allowing near-immediate failover during a disaster.",
+      "wrong": {
+        "1": "Paper-based record storage is an off-site archive, not a hot site. Hot sites contain live, functioning IT infrastructure.",
+        "2": "Fire drill locations are part of physical safety planning, not disaster recovery IT infrastructure.",
+        "3": "Warm tape storage describes an off-site vault. A hot site has live systems, not just stored media."
+      }
+    }
+  },
+  {
+    "question": "Why is preserving evidence important during incident response?",
+    "options": [
+      "To speed up system recovery",
+      "To ensure that forensic data is available for investigation and potential legal proceedings",
+      "To reduce the cost of incident response",
+      "To prevent future software updates"
+    ],
+    "correct": 1,
+    "domain": "Incident Response",
+    "explanations": {
+      "correct": "Preserving evidence using proper chain of custody procedures ensures forensic integrity so that findings can support internal investigations, law enforcement, and legal proceedings.",
+      "wrong": {
+        "0": "While important, evidence preservation may actually slow recovery since it requires careful handling before systems are restored.",
+        "2": "Evidence preservation can increase costs due to forensic tools and expertise, but it is essential for accountability.",
+        "3": "Software updates are unrelated to evidence preservation; updates are part of patch management and recovery."
+      }
+    }
+  },
+  {
+    "question": "An incident response team wants to test their plan without affecting production systems. Which exercise type should they use?",
+    "options": [
+      "Full-scale live exercise",
+      "Production failover test",
+      "Unannounced penetration test",
+      "Tabletop exercise"
+    ],
+    "correct": 3,
+    "domain": "Incident Response",
+    "explanations": {
+      "correct": "A tabletop exercise is a discussion-based walkthrough where team members talk through their response to a simulated scenario without touching production systems.",
+      "wrong": {
+        "0": "A full-scale live exercise tests actual response procedures on real or near-real systems, which can affect production.",
+        "2": "An unannounced penetration test actively probes production systems and could cause disruptions.",
+        "1": "A production failover test actually switches operations to backup systems, directly impacting the production environment."
+      }
+    }
+  },
+  {
+    "question": "What is the difference between symmetric and asymmetric encryption?",
+    "options": [
+      "Symmetric is slower; asymmetric is faster",
+      "Symmetric uses one shared key; asymmetric uses a public-private key pair",
+      "Symmetric is only for hashing; asymmetric is for encryption",
+      "Symmetric requires a certificate authority; asymmetric does not"
+    ],
+    "correct": 1,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "Symmetric encryption uses one shared secret key for both encryption and decryption, while asymmetric encryption uses a pair of mathematically related keys: a public key for encryption and a private key for decryption.",
+      "wrong": {
+        "0": "Symmetric encryption is actually faster than asymmetric due to simpler mathematical operations.",
+        "2": "Hashing is a one-way function, not encryption. Both symmetric and asymmetric methods perform actual encryption and decryption.",
+        "3": "Asymmetric cryptography typically uses certificate authorities for PKI; symmetric encryption does not require them."
+      }
+    }
+  },
+  {
+    "question": "Which algorithm is a widely used symmetric encryption standard?",
+    "options": [
+      "RSA",
+      "ECC",
+      "Diffie-Hellman",
+      "AES"
+    ],
+    "correct": 3,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "AES (Advanced Encryption Standard) is the most widely used symmetric encryption algorithm, adopted by governments and industries worldwide for protecting sensitive data.",
+      "wrong": {
+        "0": "RSA is an asymmetric algorithm used for key exchange and digital signatures, not a symmetric cipher.",
+        "2": "Diffie-Hellman is a key exchange protocol that allows two parties to establish a shared secret over an insecure channel; it is not an encryption algorithm itself.",
+        "1": "ECC (Elliptic Curve Cryptography) is an asymmetric approach that uses elliptic curves for key generation, not a symmetric algorithm."
+      }
+    }
+  },
+  {
+    "question": "What is RSA primarily used for?",
+    "options": [
+      "Asymmetric encryption and digital signatures",
+      "Hashing passwords",
+      "Compressing data",
+      "Generating random numbers"
+    ],
+    "correct": 0,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "RSA is an asymmetric cryptographic algorithm used for encrypting small amounts of data (like symmetric keys), creating digital signatures, and enabling secure key exchange.",
+      "wrong": {
+        "1": "Password hashing uses one-way hash functions like bcrypt or SHA-256, not RSA.",
+        "2": "Data compression uses algorithms like gzip, LZ77, or Huffman coding, not RSA. RSA actually increases data size.",
+        "3": "Random number generation uses dedicated RNG/PRNG algorithms, not RSA."
+      }
+    }
+  },
+  {
+    "question": "What is the primary purpose of a cryptographic hash function?",
+    "options": [
+      "To produce a fixed-size unique fingerprint of data for integrity verification",
+      "To encrypt data so it can be decrypted later",
+      "To compress large files into smaller ones",
+      "To generate encryption keys from a password"
+    ],
+    "correct": 0,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "A cryptographic hash function takes arbitrary input and produces a fixed-size output (digest) that serves as a unique fingerprint. Any change to the input produces a completely different hash, enabling integrity verification.",
+      "wrong": {
+        "1": "Hash functions are one-way and cannot be reversed to recover the original data. Encryption is a different process that allows decryption.",
+        "2": "Compression reduces file size while preserving the ability to reconstruct the original. Hashing produces a fixed-size digest regardless of input size.",
+        "3": "Generating keys from passwords is done by key derivation functions (KDFs) like PBKDF2, which use hash functions internally but serve a different purpose."
+      }
+    }
+  },
+  {
+    "question": "Which hashing algorithm is considered insecure for cryptographic purposes due to known collision vulnerabilities?",
+    "options": [
+      "SHA-256",
+      "SHA-3",
+      "MD5",
+      "bcrypt"
+    ],
+    "correct": 2,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "MD5 has known collision vulnerabilities where different inputs can produce the same hash, making it unsuitable for security-critical applications like digital signatures or certificate verification.",
+      "wrong": {
+        "0": "SHA-256 is part of the SHA-2 family and remains cryptographically secure with no practical collision attacks.",
+        "1": "SHA-3 is the newest secure hash standard based on a different design (Keccak) and has no known vulnerabilities.",
+        "3": "bcrypt is a password hashing function designed to be slow and resistant to brute force; it is not vulnerable to collision attacks."
+      }
+    }
+  },
+  {
+    "question": "What is a digital signature?",
+    "options": [
+      "An image of a handwritten signature attached to a document",
+      "A cryptographic mechanism that verifies the authenticity and integrity of a message using the sender's private key",
+      "A watermark placed on digital photographs",
+      "An encrypted email address used for verification"
+    ],
+    "correct": 1,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "A digital signature is created by hashing a message and encrypting the hash with the sender's private key. Recipients verify it using the sender's public key, confirming both authenticity and integrity.",
+      "wrong": {
+        "0": "An image of a handwritten signature provides no cryptographic assurance and can be easily copied or forged.",
+        "2": "Digital watermarks embed hidden information in media for copyright purposes but do not provide authentication or integrity verification.",
+        "3": "An encrypted email address is not a recognized security mechanism and does not verify message authenticity."
+      }
+    }
+  },
+  {
+    "question": "What is the role of a Certificate Authority (CA) in PKI?",
+    "options": [
+      "To issue, manage, and revoke digital certificates that bind public keys to identities",
+      "To generate symmetric encryption keys",
+      "To scan networks for vulnerabilities",
+      "To store user passwords securely"
+    ],
+    "correct": 0,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "A Certificate Authority is a trusted third party that issues digital certificates, verifying that a public key belongs to the claimed entity, enabling trust in asymmetric cryptography.",
+      "wrong": {
+        "1": "Symmetric key generation is handled by cryptographic algorithms and key management systems, not certificate authorities.",
+        "2": "Vulnerability scanning is performed by security tools like Nessus or Qualys, not by certificate authorities.",
+        "3": "Password storage is handled by authentication systems using hashing, not by CAs."
+      }
+    }
+  },
+  {
+    "question": "What does PKI stand for and what is its purpose?",
+    "options": [
+      "Private Key Infrastructure \u2014 it manages private key storage",
+      "Public Key Infrastructure \u2014 it manages digital certificates and public-key encryption",
+      "Protected Kernel Interface \u2014 it secures operating system kernels",
+      "Primary Key Index \u2014 it manages database primary keys"
+    ],
+    "correct": 1,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "PKI (Public Key Infrastructure) is a framework of policies, technologies, and procedures for managing digital certificates and public-key encryption, enabling secure authentication and communication.",
+      "wrong": {
+        "0": "While PKI does involve private keys, the acronym stands for Public Key Infrastructure and encompasses much more than just private key storage.",
+        "2": "Protected Kernel Interface is not a real term. PKI is about cryptographic certificate management, not operating system security.",
+        "3": "Primary Key Index relates to database indexing, not cryptography or certificate management."
+      }
+    }
+  },
+  {
+    "question": "Which encryption mode is recommended for encrypting large amounts of data with AES?",
+    "options": [
+      "ECB (Electronic Codebook)",
+      "Base64",
+      "ROT13",
+      "CBC (Cipher Block Chaining)"
+    ],
+    "correct": 3,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "CBC mode chains each block's encryption to the previous block, preventing pattern detection. It is widely recommended for encrypting large data, though GCM mode is now preferred for authenticated encryption.",
+      "wrong": {
+        "0": "ECB encrypts each block independently, causing identical plaintext blocks to produce identical ciphertext, which reveals data patterns and is insecure for most uses.",
+        "2": "ROT13 is a trivial letter-substitution cipher that provides no real security and is not an encryption mode.",
+        "1": "Base64 is an encoding scheme that converts binary data to text representation; it provides no encryption or confidentiality."
+      }
+    }
+  },
+  {
+    "question": "What is perfect forward secrecy (PFS)?",
+    "options": [
+      "A guarantee that encrypted data can never be decrypted",
+      "A backup mechanism for encryption keys",
+      "A property ensuring that session keys cannot be compromised even if the server's private key is later compromised",
+      "A method for generating unbreakable passwords"
+    ],
+    "correct": 2,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "PFS ensures that each session uses a unique ephemeral key, so if a server's long-term private key is compromised, previously recorded sessions remain secure because each session key was independently generated.",
+      "wrong": {
+        "0": "No encryption provides an absolute guarantee against future decryption; PFS specifically protects past sessions from future key compromise.",
+        "1": "Key backup is part of key management, not the concept of forward secrecy.",
+        "3": "Password generation is unrelated to PFS, which concerns the protection of session encryption keys."
+      }
+    }
+  },
+  {
+    "question": "A web administrator needs to ensure that data between the browser and server cannot be read by an eavesdropper. Which technology should be implemented?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "TLS encryption",
+      "Telnet"
+    ],
+    "correct": 2,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "TLS (Transport Layer Security) encrypts data in transit between client and server, preventing eavesdroppers from reading the communication. It is the foundation of HTTPS.",
+      "wrong": {
+        "0": "HTTP transmits data in plaintext, making it fully readable by anyone intercepting the traffic.",
+        "1": "Standard FTP transmits data and credentials in plaintext, offering no encryption against eavesdropping.",
+        "3": "Telnet transmits all data, including passwords, in plaintext and is highly insecure."
+      }
+    }
+  },
+  {
+    "question": "What is a key exchange protocol used to establish a shared secret over an insecure channel?",
+    "options": [
+      "AES",
+      "SHA-256",
+      "Diffie-Hellman",
+      "MD5"
+    ],
+    "correct": 2,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "The Diffie-Hellman protocol allows two parties to jointly establish a shared secret key over an insecure channel without transmitting the key itself, using mathematical properties of modular exponentiation.",
+      "wrong": {
+        "0": "AES is a symmetric encryption algorithm used after a key is established, not a key exchange protocol.",
+        "1": "SHA-256 is a hash function for generating message digests, not for establishing shared secrets.",
+        "3": "MD5 is a deprecated hash function, not a key exchange mechanism."
+      }
+    }
+  },
+  {
+    "question": "What is the difference between encryption and hashing?",
+    "options": [
+      "Encryption is reversible with a key; hashing is a one-way function that cannot be reversed",
+      "There is no difference",
+      "Hashing is faster than encryption in all cases",
+      "Encryption produces a fixed-size output; hashing produces variable-size output"
+    ],
+    "correct": 0,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "Encryption transforms data into ciphertext that can be decrypted back with the correct key. Hashing produces a fixed-size digest that cannot be reversed to recover the original data.",
+      "wrong": {
+        "1": "They serve fundamentally different purposes: encryption provides confidentiality (reversible), hashing provides integrity (one-way).",
+        "2": "Speed depends on the specific algorithms and implementations; this is not the fundamental distinction between them.",
+        "3": "This is reversed. Hashing produces a fixed-size output regardless of input size, while encryption output varies with input size."
+      }
+    }
+  },
+  {
+    "question": "Which of the following is a secure hash algorithm suitable for password storage?",
+    "options": [
+      "MD5",
+      "SHA-1",
+      "bcrypt",
+      "CRC32"
+    ],
+    "correct": 2,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "bcrypt is specifically designed for password hashing with a built-in salt and adjustable work factor, making it computationally expensive to resist brute force and rainbow table attacks.",
+      "wrong": {
+        "0": "MD5 is fast and has known vulnerabilities; its speed makes it particularly poor for password hashing since attackers can try billions of guesses per second.",
+        "1": "SHA-1 has known collision weaknesses and, like MD5, is too fast for password hashing without additional measures.",
+        "3": "CRC32 is a checksum algorithm designed for error detection, not cryptographic security. It is trivially reversible."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of a salt in password hashing?",
+    "options": [
+      "To make the password longer for better security",
+      "To add random data to each password before hashing, preventing identical passwords from producing the same hash",
+      "To encrypt the password with a symmetric key",
+      "To compress the hash value for storage"
+    ],
+    "correct": 1,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "A salt is random data prepended or appended to a password before hashing, ensuring that identical passwords produce different hashes and defeating precomputed rainbow table attacks.",
+      "wrong": {
+        "0": "While adding data does lengthen the input, the purpose is uniqueness per hash, not simply making passwords longer.",
+        "2": "Salting is part of hashing, not symmetric encryption. The salt is stored alongside the hash, not kept secret like an encryption key.",
+        "3": "Hashes are already fixed-size and do not need compression. Salting adds data to the input, not to the output."
+      }
+    }
+  },
+  {
+    "question": "Which algorithm is an example of Elliptic Curve Cryptography?",
+    "options": [
+      "AES-256",
+      "Blowfish",
+      "ECDSA",
+      "3DES"
+    ],
+    "correct": 2,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "ECDSA (Elliptic Curve Digital Signature Algorithm) uses elliptic curve mathematics for digital signatures, providing equivalent security to RSA with much smaller key sizes.",
+      "wrong": {
+        "0": "AES-256 is a symmetric encryption algorithm based on substitution-permutation networks, not elliptic curves.",
+        "1": "Blowfish is a symmetric block cipher designed by Bruce Schneier, not based on elliptic curve mathematics.",
+        "3": "3DES (Triple DES) applies the DES symmetric cipher three times, using Feistel network structure, not elliptic curves."
+      }
+    }
+  },
+  {
+    "question": "A developer needs to verify that a downloaded file has not been tampered with. Which cryptographic technique should they use?",
+    "options": [
+      "Comparing the file's hash against a known-good hash value",
+      "Symmetric encryption of the file",
+      "Compressing the file with a password",
+      "Converting the file to Base64"
+    ],
+    "correct": 0,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "By computing the hash of the downloaded file and comparing it to a trusted hash value published by the source, the developer can verify the file's integrity and detect any tampering.",
+      "wrong": {
+        "1": "Encryption provides confidentiality but does not inherently verify that a file has not been modified.",
+        "2": "Password-protected compression provides access control to the archive but does not verify file integrity against tampering.",
+        "3": "Base64 is an encoding format that converts binary to text and provides no integrity verification."
+      }
+    }
+  },
+  {
+    "question": "What is the main advantage of AES-256 over AES-128?",
+    "options": [
+      "AES-256 is faster to compute",
+      "AES-256 provides a larger key space, making brute-force attacks significantly harder",
+      "AES-256 produces smaller ciphertext",
+      "AES-256 does not require an initialization vector"
+    ],
+    "correct": 1,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "AES-256 uses a 256-bit key, providing 2^256 possible keys compared to 2^128 for AES-128. This exponentially larger key space makes brute-force attacks computationally infeasible.",
+      "wrong": {
+        "0": "AES-256 is actually slightly slower than AES-128 due to more encryption rounds (14 vs. 10).",
+        "2": "Both AES-128 and AES-256 produce the same size ciphertext for the same plaintext; key length does not affect output size.",
+        "3": "Both AES-128 and AES-256 use initialization vectors in modes like CBC and GCM; this is determined by the mode, not the key length."
+      }
+    }
+  },
+  {
+    "question": "What is a Certificate Revocation List (CRL)?",
+    "options": [
+      "A published list of certificates that have been revoked before their expiration date",
+      "A list of all issued digital certificates",
+      "A backup of encryption keys",
+      "A log of all TLS connections"
+    ],
+    "correct": 0,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "A CRL is published by a Certificate Authority listing certificates that have been revoked (due to compromise, misissuance, etc.) before their scheduled expiration, so systems can check if a certificate is still trusted.",
+      "wrong": {
+        "1": "A list of all issued certificates would be a certificate inventory, not a revocation list. CRLs only contain revoked certificates.",
+        "2": "Key backup is part of key management infrastructure, not a CRL.",
+        "3": "TLS connection logs are maintained by servers and monitoring systems, not by certificate revocation mechanisms."
+      }
+    }
+  },
+  {
+    "question": "What is the primary function of a firewall?",
+    "options": [
+      "To encrypt stored data",
+      "To manage user authentication",
+      "To back up critical system files",
+      "To monitor and control incoming and outgoing network traffic based on predefined security rules"
+    ],
+    "correct": 3,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "A firewall examines network traffic and enforces security rules by allowing or blocking packets based on criteria such as IP addresses, ports, protocols, and application data.",
+      "wrong": {
+        "0": "Data-at-rest encryption is handled by encryption software or hardware, not firewalls.",
+        "2": "System file backup is performed by backup software, not firewalls.",
+        "1": "User authentication is managed by identity and access management systems, not firewalls."
+      }
+    }
+  },
+  {
+    "question": "What is the difference between an IDS and an IPS?",
+    "options": [
+      "IDS and IPS are the same technology",
+      "An IDS detects and alerts on threats; an IPS detects and actively blocks threats",
+      "An IDS blocks traffic; an IPS only monitors",
+      "IDS is for wired networks; IPS is for wireless"
+    ],
+    "correct": 1,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "An Intrusion Detection System (IDS) monitors traffic and generates alerts when suspicious activity is detected. An Intrusion Prevention System (IPS) does the same but can also take automated action to block the threat.",
+      "wrong": {
+        "0": "While they share detection capabilities, IPS adds active prevention/blocking that IDS does not provide.",
+        "2": "This reverses their functions. IDS detects and alerts; IPS detects, alerts, and blocks.",
+        "3": "Both IDS and IPS can be deployed on wired or wireless networks; the technology type does not determine the network medium."
+      }
+    }
+  },
+  {
+    "question": "What is a VPN and what does it provide?",
+    "options": [
+      "A virus protection network that blocks malware",
+      "A vulnerability patch notification system",
+      "A virtual public network for sharing files",
+      "A Virtual Private Network that creates an encrypted tunnel over a public network"
+    ],
+    "correct": 3,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "A VPN creates an encrypted tunnel between two endpoints over a public network like the internet, providing confidentiality, integrity, and secure remote access to private networks.",
+      "wrong": {
+        "0": "VPN stands for Virtual Private Network, not virus protection network. Malware blocking is done by antivirus and endpoint protection tools.",
+        "2": "A VPN creates private, encrypted connections \u2014 the opposite of a public file-sharing network.",
+        "1": "Vulnerability patch notifications come from patch management systems, not VPNs."
+      }
+    }
+  },
+  {
+    "question": "What is a DMZ (Demilitarized Zone) in network security?",
+    "options": [
+      "A network segment that sits between the internal network and the internet, hosting public-facing services",
+      "A military-grade encryption standard",
+      "A secure area where backup tapes are stored",
+      "A type of denial-of-service attack"
+    ],
+    "correct": 0,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "A DMZ is a perimeter network segment that hosts public-facing services (web servers, email servers) while keeping them isolated from the internal network, adding a layer of protection.",
+      "wrong": {
+        "1": "DMZ is a network architecture concept, not an encryption standard.",
+        "2": "Physical storage of backup tapes is part of physical security and off-site storage, not a DMZ.",
+        "3": "DMZ is a defensive network design, not a type of attack."
+      }
+    }
+  },
+  {
+    "question": "Which protocol provides secure remote command-line access to servers?",
+    "options": [
+      "Telnet",
+      "SSH",
+      "HTTP",
+      "SNMP"
+    ],
+    "correct": 1,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "SSH (Secure Shell) provides encrypted remote command-line access, file transfer, and tunneling capabilities, replacing insecure protocols like Telnet.",
+      "wrong": {
+        "0": "Telnet provides remote command-line access but transmits everything (including passwords) in plaintext, making it insecure.",
+        "2": "HTTP is a protocol for web page delivery, not for remote server administration.",
+        "3": "SNMP monitors and manages network devices but does not provide interactive command-line access."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of a Web Application Firewall (WAF)?",
+    "options": [
+      "To protect web applications by filtering and monitoring HTTP/HTTPS traffic for attacks like SQL injection and XSS",
+      "To manage DNS resolution",
+      "To compress web content for faster delivery",
+      "To balance load across multiple servers"
+    ],
+    "correct": 0,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "A WAF inspects HTTP/HTTPS traffic to and from a web application, blocking attacks like SQL injection, cross-site scripting, and other OWASP Top 10 threats at the application layer.",
+      "wrong": {
+        "1": "DNS resolution is handled by DNS servers and resolvers, not WAFs.",
+        "2": "Content compression is handled by web servers and CDNs, not WAFs.",
+        "3": "Load balancing distributes traffic across servers for performance and availability; this is a load balancer's function, not a WAF's."
+      }
+    }
+  },
+  {
+    "question": "Which version of TLS should be used to secure modern web communications?",
+    "options": [
+      "SSL 2.0",
+      "SSL 3.0",
+      "TLS 1.0",
+      "TLS 1.3"
+    ],
+    "correct": 3,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "TLS 1.3 is the latest version, offering improved security with faster handshakes, stronger cipher suites, and removal of outdated cryptographic algorithms.",
+      "wrong": {
+        "0": "SSL 2.0 was deprecated in 2011 due to serious security vulnerabilities and should never be used.",
+        "1": "SSL 3.0 is vulnerable to the POODLE attack and has been deprecated since 2015.",
+        "2": "TLS 1.0 has known weaknesses (e.g., BEAST attack) and has been deprecated by major browsers and industry standards."
+      }
+    }
+  },
+  {
+    "question": "What does a network-based IDS monitor?",
+    "options": [
+      "Individual file changes on a server",
+      "Physical access to the server room",
+      "User login attempts only",
+      "Network traffic passing through a network segment for suspicious patterns"
+    ],
+    "correct": 3,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "A network-based IDS (NIDS) analyzes network traffic on a segment by inspecting packet contents and headers for signatures of known attacks or anomalous behavior patterns.",
+      "wrong": {
+        "0": "Monitoring file changes on a server is the function of a host-based IDS (HIDS) or file integrity monitoring (FIM) tool.",
+        "2": "While login attempts may generate network traffic analyzed by a NIDS, it monitors all network traffic types, not just authentication.",
+        "1": "Physical access monitoring uses surveillance cameras, badge readers, and guards \u2014 these are physical security controls."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of network segmentation?",
+    "options": [
+      "To divide a network into isolated zones to limit the spread of attacks and control traffic flow",
+      "To increase internet connection speed",
+      "To merge multiple networks into one for simplicity",
+      "To eliminate the need for firewalls"
+    ],
+    "correct": 0,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "Network segmentation divides a network into smaller, isolated segments, restricting lateral movement of attackers and enabling granular security controls between segments.",
+      "wrong": {
+        "1": "Internet speed depends on bandwidth from the ISP and network infrastructure, not on segmentation.",
+        "2": "Merging networks into one increases the attack surface \u2014 the opposite of segmentation's purpose.",
+        "3": "Segmentation typically increases the need for firewalls to control inter-segment traffic."
+      }
+    }
+  },
+  {
+    "question": "Which network device operates at Layer 7 of the OSI model to distribute traffic across multiple servers?",
+    "options": [
+      "Network switch",
+      "Router",
+      "Application load balancer",
+      "Network hub"
+    ],
+    "correct": 2,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "An application load balancer operates at Layer 7 (Application), inspecting HTTP/HTTPS content to make intelligent routing decisions and distribute traffic across backend servers.",
+      "wrong": {
+        "0": "A network switch operates at Layer 2 (Data Link), forwarding frames based on MAC addresses within a LAN.",
+        "1": "A router operates at Layer 3 (Network), forwarding packets between networks based on IP addresses.",
+        "3": "A network hub operates at Layer 1 (Physical), blindly broadcasting all traffic to all ports without intelligence."
+      }
+    }
+  },
+  {
+    "question": "What attack does ARP spoofing enable?",
+    "options": [
+      "Man-in-the-middle attacks by associating the attacker's MAC address with a legitimate IP",
+      "Denial of service through bandwidth exhaustion",
+      "Brute force password guessing",
+      "SQL injection against a database"
+    ],
+    "correct": 0,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "ARP spoofing sends falsified ARP messages to link the attacker's MAC address with a victim's IP address, redirecting traffic through the attacker for interception (man-in-the-middle).",
+      "wrong": {
+        "1": "While ARP spoofing can disrupt communications, its primary purpose is traffic interception, not bandwidth exhaustion.",
+        "2": "Brute force attacks try many password combinations and are unrelated to ARP, which operates at the data link layer.",
+        "3": "SQL injection targets web application databases through malicious input, unrelated to ARP or Layer 2 protocols."
+      }
+    }
+  },
+  {
+    "question": "What is the primary security benefit of using 802.1X for network access control?",
+    "options": [
+      "It encrypts stored files on the network",
+      "It authenticates devices before granting them access to the network",
+      "It speeds up network data transfer",
+      "It provides automatic IP address assignment"
+    ],
+    "correct": 1,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "802.1X is a port-based network access control protocol that requires devices to authenticate (typically via RADIUS) before being granted network access, preventing unauthorized devices from connecting.",
+      "wrong": {
+        "0": "File encryption at rest is handled by disk or file-level encryption tools, not 802.1X.",
+        "2": "802.1X adds an authentication step before network access; it does not improve data transfer speeds.",
+        "3": "Automatic IP assignment is DHCP's function. 802.1X handles authentication, not addressing."
+      }
+    }
+  },
+  {
+    "question": "A company wants to ensure that remote employees' internet traffic is routed through the corporate network for security inspection. Which technology achieves this?",
+    "options": [
+      "Content Delivery Network (CDN)",
+      "Bluetooth tethering",
+      "DNS caching",
+      "Full-tunnel VPN"
+    ],
+    "correct": 3,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "A full-tunnel VPN routes all of a remote user's traffic through the corporate network, allowing security tools to inspect, filter, and log all internet activity.",
+      "wrong": {
+        "0": "A CDN distributes content from edge servers to improve delivery speed, not to route employee traffic for security inspection.",
+        "2": "DNS caching stores DNS query results locally for faster resolution but does not route traffic through a corporate network.",
+        "1": "Bluetooth tethering shares a mobile device's internet connection over short range and does not route traffic through a corporate network."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of a honeypot in network security?",
+    "options": [
+      "To store backup encryption keys",
+      "To act as a decoy system that attracts attackers and allows security teams to study their methods",
+      "To speed up database queries",
+      "To distribute software updates across the network"
+    ],
+    "correct": 1,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "A honeypot is a deliberately vulnerable decoy system designed to lure attackers, allowing security teams to observe attack techniques, collect threat intelligence, and detect intrusions.",
+      "wrong": {
+        "0": "Key storage is managed by key management systems or hardware security modules, not honeypots.",
+        "2": "Database query optimization uses indexing, caching, and query tuning, not honeypots.",
+        "3": "Software update distribution is handled by patch management systems and update servers."
+      }
+    }
+  },
+  {
+    "question": "What is a denial-of-service (DoS) attack?",
+    "options": [
+      "An attack that steals user credentials",
+      "An attack that modifies database records",
+      "An attack that overwhelms a system with traffic or requests to make it unavailable to legitimate users",
+      "An attack that installs a rootkit on a server"
+    ],
+    "correct": 2,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "A DoS attack floods a target system with excessive traffic or requests, exhausting its resources (bandwidth, CPU, memory) and rendering it unavailable to legitimate users.",
+      "wrong": {
+        "0": "Credential theft is accomplished through phishing, keylogging, or credential stuffing, not DoS attacks.",
+        "1": "Modifying database records is associated with SQL injection or unauthorized access, not DoS.",
+        "3": "Rootkit installation is a persistence technique used after initial compromise, not a DoS method."
+      }
+    }
+  },
+  {
+    "question": "Which protocol secures email transmission between mail servers?",
+    "options": [
+      "POP3",
+      "IMAP",
+      "STARTTLS",
+      "TFTP"
+    ],
+    "correct": 2,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "STARTTLS is a protocol extension that upgrades a plain text SMTP connection to an encrypted TLS connection, securing email in transit between mail servers.",
+      "wrong": {
+        "0": "POP3 (Post Office Protocol v3) retrieves email from a server to a client but does not inherently encrypt server-to-server transmission.",
+        "1": "IMAP (Internet Message Access Protocol) allows clients to access email on a server but is not the protocol that secures server-to-server email transmission.",
+        "3": "TFTP (Trivial File Transfer Protocol) is a simple, unencrypted file transfer protocol, not used for email."
+      }
+    }
+  },
+  {
+    "question": "What type of attack uses multiple compromised systems to overwhelm a target simultaneously?",
+    "options": [
+      "Phishing",
+      "Man-in-the-middle",
+      "Distributed Denial of Service (DDoS)",
+      "SQL injection"
+    ],
+    "correct": 2,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "A DDoS attack uses a botnet (many compromised systems) to simultaneously flood a target with traffic, making it much harder to mitigate than a single-source DoS attack.",
+      "wrong": {
+        "0": "Phishing uses deceptive emails or websites to trick users into revealing sensitive information, not to overwhelm systems with traffic.",
+        "1": "A man-in-the-middle attack intercepts communication between two parties to eavesdrop or alter data, not to overwhelm targets.",
+        "3": "SQL injection manipulates database queries through malicious input, targeting data rather than system availability."
+      }
+    }
+  },
+  {
+    "question": "What is the primary purpose of a proxy server in a network security context?",
+    "options": [
+      "To serve as a backup DNS server",
+      "To act as an intermediary that filters, logs, and controls client requests to external resources",
+      "To store encrypted passwords",
+      "To generate SSL certificates"
+    ],
+    "correct": 1,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "A proxy server sits between internal users and external resources, filtering content, enforcing usage policies, logging activity, caching data, and providing anonymity.",
+      "wrong": {
+        "0": "Backup DNS is a redundant DNS server for name resolution; proxies handle request intermediation.",
+        "2": "Password storage is handled by directory services and credential vaults, not proxy servers.",
+        "3": "SSL certificate generation is performed by certificate authorities, not proxy servers."
+      }
+    }
+  },
+  {
+    "question": "What type of malware disguises itself as legitimate software to trick users into installing it?",
+    "options": [
+      "Worm",
+      "Rootkit",
+      "Adware",
+      "Trojan horse"
+    ],
+    "correct": 3,
+    "domain": "Systems & Application Security",
+    "explanations": {
+      "correct": "A Trojan horse malware disguises itself as legitimate or desirable software to trick users into installing it, then performs malicious actions once executed.",
+      "wrong": {
+        "0": "A worm is self-replicating malware that spreads automatically across networks without requiring user interaction or disguise.",
+        "2": "Adware displays unwanted advertisements and may be bundled with software, but its primary function is advertising, not disguise.",
+        "1": "A rootkit hides deep within the OS to maintain persistent, stealthy access, but it does not typically disguise itself as legitimate software to trick users."
+      }
+    }
+  },
+  {
+    "question": "What is SQL injection?",
+    "options": [
+      "A method of optimizing database queries",
+      "An attack that inserts malicious SQL statements into application input fields to manipulate the database",
+      "A tool for backing up SQL databases",
+      "A technique for encrypting database tables"
+    ],
+    "correct": 1,
+    "domain": "Systems & Application Security",
+    "explanations": {
+      "correct": "SQL injection exploits improperly validated input fields by inserting malicious SQL code that the database executes, potentially exposing, modifying, or deleting data.",
+      "wrong": {
+        "0": "Query optimization improves database performance through indexing and query planning, not injection.",
+        "2": "Database backup uses specialized tools and commands, not injection techniques.",
+        "3": "Database encryption uses algorithms like AES or TDE (Transparent Data Encryption), not SQL injection."
+      }
+    }
+  },
+  {
+    "question": "What is cross-site scripting (XSS)?",
+    "options": [
+      "A server-side database attack",
+      "An attack where malicious scripts are injected into web pages viewed by other users",
+      "A method for cross-compiling software",
+      "A technique for bypassing firewalls"
+    ],
+    "correct": 1,
+    "domain": "Systems & Application Security",
+    "explanations": {
+      "correct": "XSS injects malicious client-side scripts (usually JavaScript) into web pages that other users view, potentially stealing session cookies, credentials, or performing actions on the victim's behalf.",
+      "wrong": {
+        "0": "XSS primarily targets the client-side browser, not the database server directly. SQL injection is the database attack.",
+        "2": "Cross-compiling is a software development process for building code for a different platform, unrelated to security.",
+        "3": "Firewall bypassing uses techniques like tunneling or port evasion, not XSS."
+      }
+    }
+  },
+  {
+    "question": "Which organization publishes the OWASP Top 10 list of web application security risks?",
+    "options": [
+      "NIST",
+      "ISO",
+      "OWASP (Open Web Application Security Project)",
+      "IEEE"
+    ],
+    "correct": 2,
+    "domain": "Systems & Application Security",
+    "explanations": {
+      "correct": "OWASP (Open Web Application Security Project) publishes the Top 10, a widely recognized list of the most critical web application security risks, updated periodically based on real-world data.",
+      "wrong": {
+        "0": "NIST (National Institute of Standards and Technology) publishes security frameworks and standards (like SP 800-53) but not the OWASP Top 10.",
+        "1": "ISO (International Organization for Standardization) publishes standards like ISO 27001 for information security management, not the OWASP Top 10.",
+        "3": "IEEE (Institute of Electrical and Electronics Engineers) publishes technical standards for electronics and networking, not web application security risk lists."
+      }
+    }
+  },
+  {
+    "question": "What is a supply chain attack?",
+    "options": [
+      "An attack on physical delivery trucks",
+      "An attack that compromises a trusted third-party vendor or software component to reach the ultimate target",
+      "A denial-of-service attack on logistics software",
+      "An insider threat from the supply department"
+    ],
+    "correct": 1,
+    "domain": "Systems & Application Security",
+    "explanations": {
+      "correct": "A supply chain attack compromises a trusted supplier, vendor, or software dependency to inject malicious code that is then distributed to the target organization through normal update or delivery channels.",
+      "wrong": {
+        "0": "While physical supply chains can be attacked, in cybersecurity a supply chain attack specifically targets the software or service supply chain.",
+        "2": "A DoS on logistics software would be an availability attack, not a supply chain compromise that infiltrates through trusted channels.",
+        "3": "An insider threat from a department is an internal threat, not a supply chain attack which comes through external trusted vendors."
+      }
+    }
+  },
+  {
+    "question": "What is the best defense against SQL injection attacks?",
+    "options": [
+      "Installing a VPN",
+      "Using parameterized queries (prepared statements)",
+      "Increasing server RAM",
+      "Disabling JavaScript in the browser"
+    ],
+    "correct": 1,
+    "domain": "Systems & Application Security",
+    "explanations": {
+      "correct": "Parameterized queries (prepared statements) separate SQL code from user input, ensuring that input is treated as data only and cannot be interpreted as executable SQL commands.",
+      "wrong": {
+        "0": "A VPN encrypts network traffic but does not prevent SQL injection, which targets the application layer.",
+        "2": "Increasing server RAM improves performance but provides no protection against SQL injection attacks.",
+        "3": "SQL injection is a server-side attack; disabling client-side JavaScript does not prevent it."
+      }
+    }
+  },
+  {
+    "question": "What is a buffer overflow vulnerability?",
+    "options": [
+      "Running out of disk space on a server",
+      "When network bandwidth is exceeded",
+      "When a database query returns too many results",
+      "When a program writes more data to a buffer than it can hold, potentially allowing code execution"
+    ],
+    "correct": 3,
+    "domain": "Systems & Application Security",
+    "explanations": {
+      "correct": "A buffer overflow occurs when a program writes data beyond the allocated buffer boundary, overwriting adjacent memory. Attackers exploit this to inject and execute arbitrary code.",
+      "wrong": {
+        "0": "Running out of disk space is a resource exhaustion issue, not a buffer overflow vulnerability.",
+        "2": "Excessive query results are a database performance issue, not a memory corruption vulnerability.",
+        "1": "Network bandwidth saturation is a capacity or DoS issue, not a buffer overflow."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of input validation in application security?",
+    "options": [
+      "To ensure user-supplied data conforms to expected formats and prevent injection attacks",
+      "To improve the visual appearance of form fields",
+      "To speed up database queries",
+      "To compress data before storage"
+    ],
+    "correct": 0,
+    "domain": "Systems & Application Security",
+    "explanations": {
+      "correct": "Input validation checks that user-supplied data matches expected patterns, lengths, and types, rejecting malicious input that could lead to injection attacks, XSS, or other exploits.",
+      "wrong": {
+        "1": "Visual form appearance is handled by CSS and UI design, not input validation.",
+        "2": "Database query speed is optimized through indexing and query planning, not input validation.",
+        "3": "Data compression is performed by compression algorithms, not input validation."
+      }
+    }
+  },
+  {
+    "question": "A web application allows users to upload files without checking file types. Which vulnerability does this introduce?",
+    "options": [
+      "Cross-Site Request Forgery",
+      "Broken authentication",
+      "Unrestricted file upload",
+      "Insecure deserialization"
+    ],
+    "correct": 2,
+    "domain": "Systems & Application Security",
+    "explanations": {
+      "correct": "Unrestricted file upload allows attackers to upload malicious files (web shells, malware, scripts) that can be executed on the server, leading to remote code execution.",
+      "wrong": {
+        "0": "CSRF tricks users into performing unwanted actions on a site where they are authenticated, not about file uploads.",
+        "1": "Broken authentication involves flaws in login mechanisms that allow unauthorized access, not file upload validation.",
+        "3": "Insecure deserialization involves exploiting the process of converting serialized data back into objects, unrelated to file upload validation."
+      }
+    }
+  },
+  {
+    "question": "What is privilege escalation in the context of application security?",
+    "options": [
+      "Promoting a user to manager in the HR system",
+      "Exploiting a flaw to gain higher access rights than authorized within an application",
+      "Installing application updates that require admin rights",
+      "Increasing the application's allocated memory"
+    ],
+    "correct": 1,
+    "domain": "Systems & Application Security",
+    "explanations": {
+      "correct": "Application-level privilege escalation exploits vulnerabilities to gain unauthorized elevated permissions, such as accessing admin functionality as a regular user.",
+      "wrong": {
+        "0": "HR promotions are legitimate business processes, not security vulnerabilities.",
+        "2": "Requiring admin rights for updates is a normal system administration task, not an exploit.",
+        "3": "Memory allocation is a system resource management topic, not a security privilege issue."
+      }
+    }
+  },
+  {
+    "question": "Which OWASP Top 10 category addresses the use of components with known vulnerabilities?",
+    "options": [
+      "Injection",
+      "Broken Access Control",
+      "Vulnerable and Outdated Components",
+      "Security Misconfiguration"
+    ],
+    "correct": 2,
+    "domain": "Systems & Application Security",
+    "explanations": {
+      "correct": "The 'Vulnerable and Outdated Components' category warns against using libraries, frameworks, or other components with known security vulnerabilities, emphasizing the need for regular updates and dependency management.",
+      "wrong": {
+        "0": "Injection covers attacks where malicious data is sent to an interpreter (SQL injection, command injection), not component management.",
+        "1": "Broken Access Control involves users accessing resources beyond their permissions, not outdated software components.",
+        "3": "Security Misconfiguration covers improper security settings (default credentials, verbose errors) but not specifically outdated components with known vulnerabilities."
+      }
+    }
+  },
+  {
+    "question": "What is a zero-trust security model?",
+    "options": [
+      "A model that trusts all internal network traffic by default",
+      "A model that only protects the network perimeter",
+      "A model where no security controls are implemented",
+      "A model that requires verification of every user and device regardless of location, assuming no implicit trust"
+    ],
+    "correct": 3,
+    "domain": "Systems & Application Security",
+    "explanations": {
+      "correct": "Zero trust operates on the principle of 'never trust, always verify,' requiring continuous authentication and authorization for every user, device, and request regardless of network location.",
+      "wrong": {
+        "0": "Trusting internal traffic by default is the traditional perimeter security model, which zero trust specifically replaces.",
+        "2": "Zero trust implements extensive controls and verification; it is the opposite of having no security.",
+        "1": "Perimeter-only protection is the traditional castle-and-moat model; zero trust extends security controls throughout the entire network."
+      }
+    }
+  },
+  {
+    "question": "What is a race condition vulnerability?",
+    "options": [
+      "A vulnerability caused by slow network speed",
+      "A flaw where the outcome depends on the timing of events, allowing an attacker to exploit the gap between a check and an action",
+      "A denial-of-service attack using rapid requests",
+      "A vulnerability in speed-optimized code"
+    ],
+    "correct": 1,
+    "domain": "Systems & Application Security",
+    "explanations": {
+      "correct": "A race condition occurs when the behavior of software depends on the sequence or timing of uncontrollable events (like concurrent threads), creating a window where an attacker can interfere between a security check and the corresponding action.",
+      "wrong": {
+        "0": "Network speed does not cause race conditions; they are caused by concurrent execution and timing dependencies in software.",
+        "2": "Rapid requests may indicate a DoS attack, which is different from the timing-dependent logic flaw of a race condition.",
+        "3": "Code optimization for speed is a performance concern, not inherently a race condition vulnerability."
+      }
+    }
+  },
+  {
+    "question": "Which of the following describes a phishing attack?",
+    "options": [
+      "Sending fraudulent communications disguised as a trusted entity to steal sensitive information",
+      "Exploiting a software vulnerability to gain root access",
+      "Overwhelming a server with excessive network traffic",
+      "Using brute force to crack encrypted passwords"
+    ],
+    "correct": 0,
+    "domain": "Systems & Application Security",
+    "explanations": {
+      "correct": "Phishing uses deceptive emails, messages, or websites impersonating trusted entities (banks, employers, services) to trick victims into revealing credentials, financial data, or installing malware.",
+      "wrong": {
+        "1": "Exploiting software vulnerabilities for root access describes a privilege escalation exploit, not phishing.",
+        "2": "Overwhelming a server with traffic describes a denial-of-service attack, not phishing.",
+        "3": "Brute force password cracking is a password attack technique, not phishing."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of a VLAN in network design?",
+    "options": [
+      "To increase internet speed",
+      "To provide wireless connectivity",
+      "To logically segment a physical network into isolated broadcast domains",
+      "To encrypt all network traffic"
+    ],
+    "correct": 2,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "A VLAN (Virtual Local Area Network) logically divides a physical network into separate broadcast domains, improving security and performance by isolating traffic between groups.",
+      "wrong": {
+        "0": "VLANs do not increase internet speed; they segment traffic for security and organization purposes.",
+        "1": "Wireless connectivity is provided by access points and wireless controllers, not VLANs.",
+        "3": "VLANs segment traffic but do not inherently encrypt it. Encryption requires protocols like TLS or IPSec."
+      }
+    }
+  },
+  {
+    "question": "Which port number is used by default for SSH connections?",
+    "options": [
+      "Port 22",
+      "Port 80",
+      "Port 443",
+      "Port 3389"
+    ],
+    "correct": 0,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "SSH uses TCP port 22 by default for secure remote access, file transfers (SFTP/SCP), and encrypted tunneling.",
+      "wrong": {
+        "1": "Port 80 is the default port for HTTP (unencrypted web traffic).",
+        "2": "Port 443 is the default port for HTTPS (encrypted web traffic using TLS).",
+        "3": "Port 3389 is the default port for Microsoft's Remote Desktop Protocol (RDP)."
+      }
+    }
+  },
+  {
+    "question": "What does the principle of 'need to know' mean in access control?",
+    "options": [
+      "All employees should know all company information",
+      "Users should only access information required for their specific job duties",
+      "Managers must share all information with their teams",
+      "IT staff need to know every user's password"
+    ],
+    "correct": 1,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "The need-to-know principle restricts access to information so that users can only view data that is directly relevant and necessary for performing their assigned duties.",
+      "wrong": {
+        "0": "Giving all employees access to all information violates both need-to-know and least privilege principles.",
+        "2": "Managers should only share information that team members need for their roles, not all information indiscriminately.",
+        "3": "IT staff should never know user passwords. Passwords should be hashed and users should reset them through secure processes."
+      }
+    }
+  },
+  {
+    "question": "What is a time-of-check to time-of-use (TOCTOU) vulnerability?",
+    "options": [
+      "A scheduling error in backup systems",
+      "A race condition where a resource changes between verification and use",
+      "A timeout error in authentication systems",
+      "A clock synchronization issue between servers"
+    ],
+    "correct": 1,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "TOCTOU is a race condition vulnerability where a resource's state changes between the time it is checked (verified) and the time it is used, allowing an attacker to exploit the gap.",
+      "wrong": {
+        "0": "Backup scheduling errors are operational issues, not TOCTOU vulnerabilities.",
+        "2": "Authentication timeouts are session management features, not race condition vulnerabilities.",
+        "3": "Clock synchronization (handled by NTP) is a different concern from TOCTOU race conditions."
+      }
+    }
+  },
+  {
+    "question": "Which access control mechanism uses security labels such as 'Top Secret' and 'Confidential'?",
+    "options": [
+      "Discretionary Access Control",
+      "Role-Based Access Control",
+      "Attribute-Based Access Control",
+      "Mandatory Access Control"
+    ],
+    "correct": 3,
+    "domain": "Access Control",
+    "explanations": {
+      "correct": "Mandatory Access Control (MAC) uses security classification labels (Top Secret, Secret, Confidential, Unclassified) assigned by a central authority to enforce access based on clearance levels.",
+      "wrong": {
+        "0": "DAC lets resource owners set permissions at their discretion, without using classification labels.",
+        "1": "RBAC assigns permissions based on organizational roles, not security classification labels.",
+        "2": "ABAC uses multiple attributes for access decisions but does not specifically use military-style classification labels."
+      }
+    }
+  },
+  {
+    "question": "What is the primary purpose of a security policy framework?",
+    "options": [
+      "To replace the need for technical security controls",
+      "To provide a structured set of policies, standards, and procedures that guide an organization's security program",
+      "To automate all security operations",
+      "To eliminate all security risks completely"
+    ],
+    "correct": 1,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "A security policy framework provides a hierarchy of documents \u2014 policies, standards, guidelines, and procedures \u2014 that define how the organization manages and protects its information assets.",
+      "wrong": {
+        "0": "Policy frameworks complement technical controls; they do not replace them. Both are needed for comprehensive security.",
+        "2": "While policies may guide automation efforts, the framework itself is a governance structure, not an automation tool.",
+        "3": "No framework can eliminate all risks. The goal is to manage risk to an acceptable level through structured governance."
+      }
+    }
+  },
+  {
+    "question": "What is job rotation as a security control?",
+    "options": [
+      "Moving servers between data centers periodically",
+      "Switching between different antivirus products",
+      "Rotating encryption keys on a schedule",
+      "Periodically reassigning employees to different roles to prevent fraud and detect irregularities"
+    ],
+    "correct": 3,
+    "domain": "Security Operations",
+    "explanations": {
+      "correct": "Job rotation moves employees between different roles periodically, preventing any single person from having prolonged unchecked control over a process, which helps detect and deter fraud.",
+      "wrong": {
+        "0": "Moving servers between data centers is a data center management decision, not a personnel security control.",
+        "2": "Key rotation is a cryptographic best practice, not the same concept as job rotation in security operations.",
+        "1": "Switching antivirus products is a software procurement decision, not a personnel control."
+      }
+    }
+  },
+  {
+    "question": "During an incident, the team determines that an attacker exploited a vulnerability that has been patched but the patch was not applied. What process failed?",
+    "options": [
+      "Incident response",
+      "Encryption management",
+      "Patch management",
+      "Physical security"
+    ],
+    "correct": 2,
+    "domain": "Incident Response",
+    "explanations": {
+      "correct": "Patch management is the process of identifying, testing, and applying patches in a timely manner. If a known patch was available but not applied, the patch management process failed.",
+      "wrong": {
+        "0": "Incident response handles the detection and recovery from incidents. The failure here was in preventing the incident through proper patching.",
+        "1": "Encryption management handles cryptographic keys and certificates, not software vulnerability patches.",
+        "3": "Physical security protects physical assets and premises, which is unrelated to software patch application."
+      }
+    }
+  },
+  {
+    "question": "What type of assessment uses automated tools to identify security weaknesses without exploiting them?",
+    "options": [
+      "Penetration test",
+      "Red team exercise",
+      "Vulnerability assessment",
+      "Social engineering test"
+    ],
+    "correct": 2,
+    "domain": "Risk Identification & Analysis",
+    "explanations": {
+      "correct": "A vulnerability assessment uses automated scanning tools to identify known vulnerabilities, misconfigurations, and missing patches without attempting to exploit them.",
+      "wrong": {
+        "0": "A penetration test goes beyond scanning by actively attempting to exploit identified vulnerabilities to demonstrate real-world impact.",
+        "1": "A red team exercise simulates a full-scope real-world attack against the organization, including exploitation and social engineering.",
+        "3": "Social engineering tests evaluate human susceptibility to manipulation through phishing, pretexting, or physical intrusion attempts."
+      }
+    }
+  },
+  {
+    "question": "An organization accepts a minor risk because the cost of mitigation exceeds the potential loss. What risk response is this?",
+    "options": [
+      "Risk avoidance",
+      "Risk transference",
+      "Risk mitigation",
+      "Risk acceptance"
+    ],
+    "correct": 3,
+    "domain": "Risk Identification & Analysis",
+    "explanations": {
+      "correct": "Risk acceptance means the organization acknowledges the risk and decides to bear the potential consequences because the cost of addressing it outweighs the expected loss.",
+      "wrong": {
+        "0": "Risk avoidance would mean eliminating the activity that causes the risk, not simply accepting the consequences.",
+        "1": "Risk transference shifts the financial impact to a third party (like insurance), which is not what happened here.",
+        "2": "Risk mitigation would involve implementing controls to reduce the risk, but the organization chose not to spend on mitigation."
+      }
+    }
+  },
+  {
+    "question": "What is steganography?",
+    "options": [
+      "The practice of hiding secret data within ordinary files such as images or audio",
+      "A type of symmetric encryption algorithm",
+      "A network scanning technique",
+      "A password hashing method"
+    ],
+    "correct": 0,
+    "domain": "Cryptography",
+    "explanations": {
+      "correct": "Steganography conceals secret messages within innocent-looking carrier files (images, audio, video) so that the existence of the hidden data is not apparent to observers.",
+      "wrong": {
+        "1": "Symmetric encryption algorithms (like AES) transform plaintext into ciphertext. Steganography hides data within other files rather than encrypting it.",
+        "2": "Network scanning tools like Nmap probe for open ports and services. Steganography is about hiding data, not scanning networks.",
+        "3": "Password hashing converts passwords into fixed-length digests using one-way functions. Steganography embeds data in carrier files."
+      }
+    }
+  }
+]
