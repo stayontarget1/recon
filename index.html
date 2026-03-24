@@ -7,7 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="RECON">
-  <meta name="theme-color" content="#0a0a0a">
+  <meta name="theme-color" content="#f4f2ef">
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icon-192.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -429,7 +429,7 @@
         themeMeta.setAttribute('content', theme === 'dark' ? '#0a0a0a' : '#f4f2ef');
       }
 
-      const saved = localStorage.getItem('recon-theme') || 'dark';
+      const saved = localStorage.getItem('recon-theme') || 'light';
       setTheme(saved);
 
       themeToggle.addEventListener('click', () => {
@@ -470,11 +470,18 @@
         }
       }
 
+      // Shuffle mapping: shuffledIndices[displayPos] = originalIndex
+      let shuffledIndices = [];
+
       function showQuestion() {
         if (queue.length === 0) queue = shuffle(questions);
         current = queue.pop();
         wrongCount = 0;
         answered = false;
+
+        // Build shuffled order of option indices
+        const indices = current.options.map((_, i) => i);
+        shuffledIndices = shuffle(indices);
 
         container.innerHTML = '';
         const wrap = document.createElement('div');
@@ -488,11 +495,11 @@
         const opts = document.createElement('div');
         opts.className = 'options';
 
-        current.options.forEach((text, i) => {
+        shuffledIndices.forEach((origIdx, displayIdx) => {
           const btn = document.createElement('button');
           btn.className = 'option-btn';
-          btn.innerHTML = `<span class="option-badge">${letters[i]}</span><span class="option-text">${text}</span>`;
-          btn.addEventListener('click', () => handleAnswer(i, btn, opts));
+          btn.innerHTML = `<span class="option-badge">${letters[displayIdx]}</span><span class="option-text">${current.options[origIdx]}</span>`;
+          btn.addEventListener('click', () => handleAnswer(origIdx, btn, opts));
           opts.appendChild(btn);
         });
 
@@ -500,21 +507,23 @@
         container.appendChild(wrap);
       }
 
-      function handleAnswer(idx, btn, optsEl) {
+      function handleAnswer(origIdx, btn, optsEl) {
         if (btn.disabled || answered) return;
-        const isCorrect = idx === current.correct;
+        const isCorrect = origIdx === current.correct;
         const allBtns = optsEl.querySelectorAll('.option-btn');
 
         if (isCorrect) {
+          if (navigator.vibrate) navigator.vibrate(50);
           answered = true;
           btn.classList.add('correct');
-          allBtns.forEach((b, i) => {
+          allBtns.forEach((b) => {
             b.disabled = true;
-            if (i !== idx) b.classList.add('dimmed');
+            if (b !== btn) b.classList.add('dimmed');
           });
           updateStreak(streak + 1, 'pulse');
           showFeedback(true, current.explanations.correct, current.domain);
         } else {
+          if (navigator.vibrate) navigator.vibrate([50, 30, 50]);
           btn.classList.add('wrong', 'shake');
           btn.disabled = true;
           wrongCount++;
@@ -522,14 +531,14 @@
 
           if (wrongCount >= 3) {
             answered = true;
-            allBtns.forEach((b, i) => {
+            allBtns.forEach((b, displayIdx) => {
               b.disabled = true;
-              if (i === current.correct) b.classList.add('correct');
+              if (shuffledIndices[displayIdx] === current.correct) b.classList.add('correct');
               else if (!b.classList.contains('wrong')) b.classList.add('dimmed');
             });
             showFeedback(true, current.explanations.correct, current.domain);
           } else {
-            const wrongExplanation = current.explanations.wrong[String(idx)];
+            const wrongExplanation = current.explanations.wrong[String(origIdx)];
             showFeedback(false, wrongExplanation, null);
           }
         }
