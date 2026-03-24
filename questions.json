@@ -3038,5 +3038,1981 @@
         "3": "Password hashing converts passwords into fixed-length digests using one-way functions. Steganography embeds data in carrier files."
       }
     }
+  },
+  {
+    "question": "Which OSI layer is responsible for converting data into electrical, optical, or radio signals?",
+    "options": [
+      "Data Link Layer",
+      "Physical Layer",
+      "Network Layer",
+      "Transport Layer"
+    ],
+    "correct": 1,
+    "domain": "OSI Model",
+    "explanations": {
+      "correct": "The Physical Layer (Layer 1) handles the actual transmission of raw bits over a physical medium \u2014 electrical signals on copper, light pulses on fiber, or radio waves for wireless.",
+      "wrong": {
+        "0": "The Data Link Layer (Layer 2) handles framing and MAC addressing, not the physical signal conversion.",
+        "2": "The Network Layer (Layer 3) handles logical addressing and routing. Signal conversion happens below it at Layer 1.",
+        "3": "The Transport Layer (Layer 4) handles end-to-end communication reliability, not physical signal transmission."
+      }
+    }
+  },
+  {
+    "question": "At which OSI layer does a router primarily operate?",
+    "options": [
+      "Layer 1 \u2014 Physical",
+      "Layer 2 \u2014 Data Link",
+      "Layer 3 \u2014 Network",
+      "Layer 4 \u2014 Transport"
+    ],
+    "correct": 2,
+    "domain": "OSI Model",
+    "explanations": {
+      "correct": "Routers operate at Layer 3 (Network), making forwarding decisions based on IP addresses to route packets between different networks.",
+      "wrong": {
+        "0": "Layer 1 devices like hubs and repeaters deal with raw signals. Routers are far more intelligent than that.",
+        "1": "Layer 2 is where switches operate using MAC addresses. Routers use IP addresses at Layer 3.",
+        "3": "Layer 4 handles transport protocols like TCP/UDP. Routers make decisions based on IP addresses, not port numbers."
+      }
+    }
+  },
+  {
+    "question": "What is the data unit called at the Transport Layer of the OSI model?",
+    "options": [
+      "Frame",
+      "Packet",
+      "Segment",
+      "Bit"
+    ],
+    "correct": 2,
+    "domain": "OSI Model",
+    "explanations": {
+      "correct": "At the Transport Layer (Layer 4), data is called a segment (for TCP) or datagram (for UDP). This is where data is broken into manageable pieces for transmission.",
+      "wrong": {
+        "0": "Frames are the data unit at the Data Link Layer (Layer 2), where MAC addresses are added.",
+        "1": "Packets are the data unit at the Network Layer (Layer 3), where IP addresses are added.",
+        "3": "Bits are the data unit at the Physical Layer (Layer 1), representing raw binary data on the wire."
+      }
+    }
+  },
+  {
+    "question": "Which OSI layer handles data compression and encryption?",
+    "options": [
+      "Application Layer",
+      "Session Layer",
+      "Presentation Layer",
+      "Transport Layer"
+    ],
+    "correct": 2,
+    "domain": "OSI Model",
+    "explanations": {
+      "correct": "The Presentation Layer (Layer 6) handles data formatting, compression, and encryption. It ensures data from the Application Layer is in a format the receiving system can understand.",
+      "wrong": {
+        "0": "The Application Layer (Layer 7) provides the interface for user applications. It doesn't handle compression or encryption directly.",
+        "1": "The Session Layer (Layer 5) manages sessions and connections between applications, not data formatting.",
+        "3": "The Transport Layer (Layer 4) handles segmentation and reliability, not data format conversion."
+      }
+    }
+  },
+  {
+    "question": "A network technician is troubleshooting and discovers that a device can't get an IP address. Which OSI layer is the issue most likely at?",
+    "options": [
+      "Physical Layer",
+      "Data Link Layer",
+      "Network Layer",
+      "Application Layer"
+    ],
+    "correct": 2,
+    "domain": "OSI Model",
+    "explanations": {
+      "correct": "IP addressing is a Network Layer (Layer 3) function. If a device can't get an IP address, the issue is likely with DHCP communication or network layer configuration.",
+      "wrong": {
+        "0": "If it were a Physical Layer issue, the device would have no connectivity at all \u2014 no link light, no signal.",
+        "1": "Data Link issues would affect frame delivery on the local segment, but the symptom described points specifically to IP addressing.",
+        "3": "Application Layer issues would affect specific apps, not the ability to obtain an IP address."
+      }
+    }
+  },
+  {
+    "question": "Which OSI layer establishes, maintains, and terminates connections between applications?",
+    "options": [
+      "Transport Layer",
+      "Session Layer",
+      "Presentation Layer",
+      "Application Layer"
+    ],
+    "correct": 1,
+    "domain": "OSI Model",
+    "explanations": {
+      "correct": "The Session Layer (Layer 5) manages sessions \u2014 establishing, maintaining, and terminating connections between applications. It also handles session checkpointing and recovery.",
+      "wrong": {
+        "0": "The Transport Layer handles end-to-end data transfer reliability, not session management between applications.",
+        "2": "The Presentation Layer handles data formatting, encryption, and compression \u2014 not session management.",
+        "3": "The Application Layer provides network services to user applications but doesn't manage the session lifecycle."
+      }
+    }
+  },
+  {
+    "question": "What is the correct order of the OSI model from bottom to top?",
+    "options": [
+      "Physical, Network, Data Link, Transport, Session, Presentation, Application",
+      "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+      "Application, Presentation, Session, Transport, Network, Data Link, Physical",
+      "Physical, Data Link, Transport, Network, Session, Presentation, Application"
+    ],
+    "correct": 1,
+    "domain": "OSI Model",
+    "explanations": {
+      "correct": "The correct order from Layer 1 to Layer 7 is: Physical, Data Link, Network, Transport, Session, Presentation, Application. A common mnemonic is 'Please Do Not Throw Sausage Pizza Away.'",
+      "wrong": {
+        "0": "Network and Data Link are swapped here. Data Link (Layer 2) comes before Network (Layer 3).",
+        "2": "This is top to bottom (Layer 7 to 1), not bottom to top as the question asks.",
+        "3": "Transport and Network are swapped here. Network (Layer 3) comes before Transport (Layer 4)."
+      }
+    }
+  },
+  {
+    "question": "Which protocol operates at the Application Layer of the OSI model?",
+    "options": [
+      "TCP",
+      "IP",
+      "HTTP",
+      "Ethernet"
+    ],
+    "correct": 2,
+    "domain": "OSI Model",
+    "explanations": {
+      "correct": "HTTP (Hypertext Transfer Protocol) operates at Layer 7 (Application), providing the protocol for web communication between browsers and servers.",
+      "wrong": {
+        "0": "TCP operates at Layer 4 (Transport), providing reliable, connection-oriented data delivery.",
+        "1": "IP operates at Layer 3 (Network), handling logical addressing and routing.",
+        "3": "Ethernet operates at Layer 2 (Data Link), defining how data is framed and transmitted on a local network."
+      }
+    }
+  },
+  {
+    "question": "A switch uses MAC addresses to forward frames. At which OSI layer does this occur?",
+    "options": [
+      "Layer 1",
+      "Layer 2",
+      "Layer 3",
+      "Layer 4"
+    ],
+    "correct": 1,
+    "domain": "OSI Model",
+    "explanations": {
+      "correct": "MAC address-based forwarding happens at Layer 2 (Data Link). Switches maintain a MAC address table to determine which port to forward each frame to.",
+      "wrong": {
+        "0": "Layer 1 (Physical) devices like hubs forward signals to all ports without examining addresses.",
+        "2": "Layer 3 uses IP addresses, not MAC addresses. That's where routers operate.",
+        "3": "Layer 4 uses port numbers for end-to-end communication, not MAC addresses."
+      }
+    }
+  },
+  {
+    "question": "How many layers does the TCP/IP model have?",
+    "options": [
+      "5",
+      "7",
+      "4",
+      "6"
+    ],
+    "correct": 2,
+    "domain": "TCP/IP Model",
+    "explanations": {
+      "correct": "The TCP/IP model has 4 layers: Network Access (or Link), Internet, Transport, and Application. It's a simplified, practical alternative to the 7-layer OSI model.",
+      "wrong": {
+        "0": "Five layers is sometimes used in a hybrid model, but the standard TCP/IP model has four.",
+        "1": "Seven layers is the OSI model, not TCP/IP.",
+        "3": "Six layers isn't used in any standard networking model."
+      }
+    }
+  },
+  {
+    "question": "Which TCP/IP layer corresponds to OSI Layers 5, 6, and 7?",
+    "options": [
+      "Internet Layer",
+      "Transport Layer",
+      "Application Layer",
+      "Network Access Layer"
+    ],
+    "correct": 2,
+    "domain": "TCP/IP Model",
+    "explanations": {
+      "correct": "The TCP/IP Application Layer combines the functions of the OSI Session, Presentation, and Application layers (Layers 5-7) into a single layer.",
+      "wrong": {
+        "0": "The Internet Layer maps to OSI Layer 3 (Network), handling IP addressing and routing.",
+        "1": "The Transport Layer maps to OSI Layer 4, handling TCP and UDP.",
+        "3": "The Network Access Layer maps to OSI Layers 1 and 2 (Physical and Data Link)."
+      }
+    }
+  },
+  {
+    "question": "In the TCP/IP model, which layer is responsible for IP addressing and routing?",
+    "options": [
+      "Application Layer",
+      "Transport Layer",
+      "Internet Layer",
+      "Network Access Layer"
+    ],
+    "correct": 2,
+    "domain": "TCP/IP Model",
+    "explanations": {
+      "correct": "The Internet Layer handles IP addressing, routing, and packet forwarding \u2014 equivalent to the OSI Network Layer (Layer 3).",
+      "wrong": {
+        "0": "The Application Layer handles protocols like HTTP, DNS, and FTP \u2014 not IP routing.",
+        "1": "The Transport Layer handles end-to-end communication via TCP/UDP, not routing.",
+        "3": "The Network Access Layer handles physical transmission and framing on the local network."
+      }
+    }
+  },
+  {
+    "question": "Which step in the TCP three-way handshake comes second?",
+    "options": [
+      "SYN",
+      "ACK",
+      "SYN-ACK",
+      "FIN"
+    ],
+    "correct": 2,
+    "domain": "TCP",
+    "explanations": {
+      "correct": "The sequence is SYN \u2192 SYN-ACK \u2192 ACK. The server responds to the client's initial SYN with a SYN-ACK, acknowledging the request and sending its own synchronization.",
+      "wrong": {
+        "0": "SYN is the first step, sent by the client to initiate the connection.",
+        "1": "ACK is the third and final step, sent by the client to confirm the connection is established.",
+        "3": "FIN is used to terminate a TCP connection, not establish one."
+      }
+    }
+  },
+  {
+    "question": "A video streaming service uses a protocol that prioritizes speed over reliability. Which protocol is it most likely using?",
+    "options": [
+      "TCP",
+      "UDP",
+      "FTP",
+      "SSH"
+    ],
+    "correct": 1,
+    "domain": "TCP vs UDP",
+    "explanations": {
+      "correct": "UDP is connectionless and doesn't guarantee delivery, but it's faster because there's no handshake or acknowledgment overhead. Live streaming, gaming, and VoIP prefer UDP because a dropped frame is better than a delayed one.",
+      "wrong": {
+        "0": "TCP guarantees delivery through acknowledgments and retransmission, which adds latency. Not ideal for real-time streaming.",
+        "2": "FTP is a file transfer protocol that runs over TCP. It's for transferring files, not streaming.",
+        "3": "SSH is for secure remote access, not media streaming."
+      }
+    }
+  },
+  {
+    "question": "Which TCP flag is used to abruptly terminate a connection without the normal shutdown process?",
+    "options": [
+      "FIN",
+      "SYN",
+      "RST",
+      "ACK"
+    ],
+    "correct": 2,
+    "domain": "TCP",
+    "explanations": {
+      "correct": "RST (Reset) immediately terminates a connection without the graceful four-way FIN handshake. It's used when something goes wrong or a connection is refused.",
+      "wrong": {
+        "0": "FIN initiates a graceful connection termination, not an abrupt one.",
+        "1": "SYN is used to initiate a new connection, not terminate one.",
+        "3": "ACK acknowledges received data. It doesn't terminate connections."
+      }
+    }
+  },
+  {
+    "question": "TCP is considered connection-oriented. What does this mean?",
+    "options": [
+      "It requires a physical cable connection",
+      "It establishes a session before transmitting data and ensures delivery",
+      "It connects to multiple destinations simultaneously",
+      "It only works on local area networks"
+    ],
+    "correct": 1,
+    "domain": "TCP",
+    "explanations": {
+      "correct": "Connection-oriented means TCP establishes a dedicated session (via the three-way handshake) before data transfer begins, then tracks delivery with sequence numbers and acknowledgments.",
+      "wrong": {
+        "0": "Connection-oriented refers to the logical session, not a physical cable. TCP works over wireless too.",
+        "2": "TCP connections are point-to-point between two endpoints, not multiple simultaneous destinations.",
+        "3": "TCP works across any network \u2014 LANs, WANs, and the internet."
+      }
+    }
+  },
+  {
+    "question": "Which of the following is a characteristic of UDP but NOT TCP?",
+    "options": [
+      "Guaranteed delivery",
+      "Three-way handshake",
+      "No error recovery or retransmission",
+      "Sequencing of packets"
+    ],
+    "correct": 2,
+    "domain": "TCP vs UDP",
+    "explanations": {
+      "correct": "UDP does not recover from errors or retransmit lost packets. It's fire-and-forget \u2014 the sender transmits and moves on. This makes it faster but unreliable.",
+      "wrong": {
+        "0": "Guaranteed delivery is a TCP feature, not UDP.",
+        "1": "The three-way handshake is TCP's connection establishment process. UDP has no handshake.",
+        "3": "Packet sequencing (ordering) is a TCP feature. UDP doesn't guarantee packets arrive in order."
+      }
+    }
+  },
+  {
+    "question": "A DNS query typically uses which transport protocol?",
+    "options": [
+      "TCP only",
+      "UDP by default, TCP for large responses",
+      "Neither \u2014 DNS has its own transport",
+      "ICMP"
+    ],
+    "correct": 1,
+    "domain": "TCP vs UDP",
+    "explanations": {
+      "correct": "DNS uses UDP port 53 by default for speed since queries are small. TCP port 53 is used when responses exceed 512 bytes or for zone transfers between DNS servers.",
+      "wrong": {
+        "0": "DNS does use TCP, but only for larger responses and zone transfers. Standard queries use UDP.",
+        "2": "DNS relies on standard transport protocols (UDP and TCP), it doesn't have its own.",
+        "3": "ICMP is for network diagnostics like ping. DNS uses UDP and TCP."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of a TCP sequence number?",
+    "options": [
+      "To encrypt the data payload",
+      "To track the order of segments so they can be reassembled correctly",
+      "To count how many connections a server has open",
+      "To assign priority to different data streams"
+    ],
+    "correct": 1,
+    "domain": "TCP",
+    "explanations": {
+      "correct": "TCP sequence numbers label each byte of data so the receiver can reassemble segments in the correct order, detect missing segments, and request retransmission.",
+      "wrong": {
+        "0": "Encryption is handled by protocols like TLS, not TCP sequence numbers.",
+        "2": "Connection tracking uses different mechanisms. Sequence numbers are per-connection data ordering.",
+        "3": "Quality of Service (QoS) handles priority. Sequence numbers handle ordering."
+      }
+    }
+  },
+  {
+    "question": "Which port number does HTTP use by default?",
+    "options": [
+      "443",
+      "22",
+      "80",
+      "8080"
+    ],
+    "correct": 2,
+    "domain": "Networking Protocols",
+    "explanations": {
+      "correct": "HTTP uses port 80 by default for unencrypted web traffic.",
+      "wrong": {
+        "0": "Port 443 is the default for HTTPS (encrypted web traffic).",
+        "1": "Port 22 is the default for SSH (secure remote access).",
+        "3": "Port 8080 is a common alternative HTTP port used for proxies and development servers, not the default."
+      }
+    }
+  },
+  {
+    "question": "Which protocol provides secure file transfer by encrypting both commands and data?",
+    "options": [
+      "FTP",
+      "TFTP",
+      "SFTP",
+      "Telnet"
+    ],
+    "correct": 2,
+    "domain": "Networking Protocols",
+    "explanations": {
+      "correct": "SFTP (SSH File Transfer Protocol) runs over SSH, encrypting all commands, credentials, and data in transit. It's the secure replacement for FTP.",
+      "wrong": {
+        "0": "FTP transmits everything in plaintext, including usernames and passwords. It's not secure.",
+        "1": "TFTP (Trivial FTP) is even simpler and less secure than FTP \u2014 no authentication at all.",
+        "3": "Telnet provides remote command-line access but in plaintext. It's not a file transfer protocol."
+      }
+    }
+  },
+  {
+    "question": "What is the default port for DNS?",
+    "options": [
+      "25",
+      "53",
+      "67",
+      "110"
+    ],
+    "correct": 1,
+    "domain": "Networking Protocols",
+    "explanations": {
+      "correct": "DNS uses port 53 for both UDP (standard queries) and TCP (zone transfers and large responses).",
+      "wrong": {
+        "0": "Port 25 is the default for SMTP (email sending).",
+        "2": "Port 67 is used by DHCP servers to listen for client requests.",
+        "3": "Port 110 is the default for POP3 (email retrieval)."
+      }
+    }
+  },
+  {
+    "question": "Which protocol automatically assigns IP configuration to devices when they connect to a network?",
+    "options": [
+      "DNS",
+      "ARP",
+      "DHCP",
+      "SNMP"
+    ],
+    "correct": 2,
+    "domain": "Networking Protocols",
+    "explanations": {
+      "correct": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses, subnet masks, default gateways, and DNS server addresses to devices joining the network.",
+      "wrong": {
+        "0": "DNS translates domain names to IP addresses. It doesn't assign IP configurations to devices.",
+        "1": "ARP maps IP addresses to MAC addresses on the local network. It doesn't assign IPs.",
+        "3": "SNMP (Simple Network Management Protocol) monitors and manages network devices. It doesn't assign IPs."
+      }
+    }
+  },
+  {
+    "question": "What happens during a DHCP Discover message?",
+    "options": [
+      "The server assigns a specific IP to the client",
+      "The client broadcasts a request to find available DHCP servers",
+      "The client confirms it will use the offered IP",
+      "The server acknowledges the client's IP selection"
+    ],
+    "correct": 1,
+    "domain": "Networking Protocols",
+    "explanations": {
+      "correct": "DHCP Discover is the first step in the DORA process. The client sends a broadcast message asking if any DHCP servers are available. The full process is Discover \u2192 Offer \u2192 Request \u2192 Acknowledge.",
+      "wrong": {
+        "0": "The server assigns an IP in the Offer step, not the Discover step.",
+        "2": "The client confirms its selection in the Request step, the third step of DORA.",
+        "3": "The server acknowledges in the final Acknowledge step."
+      }
+    }
+  },
+  {
+    "question": "An IPv4 address is made up of how many bits?",
+    "options": [
+      "16 bits",
+      "32 bits",
+      "64 bits",
+      "128 bits"
+    ],
+    "correct": 1,
+    "domain": "IP Addressing",
+    "explanations": {
+      "correct": "An IPv4 address is 32 bits long, divided into four 8-bit octets. This gives a theoretical maximum of about 4.3 billion unique addresses.",
+      "wrong": {
+        "0": "16 bits would only allow 65,536 addresses \u2014 far too few for the internet.",
+        "2": "64 bits isn't used for IP addresses in any standard.",
+        "3": "128 bits is the length of an IPv6 address, not IPv4."
+      }
+    }
+  },
+  {
+    "question": "Which of the following is a valid private IPv4 address range?",
+    "options": [
+      "8.8.8.0 \u2013 8.8.8.255",
+      "192.168.0.0 \u2013 192.168.255.255",
+      "1.0.0.0 \u2013 1.255.255.255",
+      "200.0.0.0 \u2013 200.255.255.255"
+    ],
+    "correct": 1,
+    "domain": "IP Addressing",
+    "explanations": {
+      "correct": "192.168.0.0/16 is one of three private IPv4 ranges defined in RFC 1918. The others are 10.0.0.0/8 and 172.16.0.0/12. These addresses aren't routable on the public internet.",
+      "wrong": {
+        "0": "8.8.8.x is Google's public DNS range. It's a public IP address space.",
+        "2": "1.0.0.0/8 is a public IP range managed by APNIC.",
+        "3": "200.0.0.0/8 is a public range assigned to Latin American registries."
+      }
+    }
+  },
+  {
+    "question": "What does the /24 in 192.168.1.0/24 represent?",
+    "options": [
+      "There are 24 devices on the network",
+      "The first 24 bits are the network portion of the address",
+      "The network has 24 available subnets",
+      "The address expires after 24 hours"
+    ],
+    "correct": 1,
+    "domain": "Subnetting",
+    "explanations": {
+      "correct": "The /24 is CIDR notation meaning the first 24 bits identify the network. This leaves 8 bits for host addresses, giving 254 usable hosts (256 minus network and broadcast addresses).",
+      "wrong": {
+        "0": "The /24 refers to the subnet mask length, not the number of devices.",
+        "2": "It defines one subnet's mask length, not the number of subnets.",
+        "3": "CIDR notation has nothing to do with time or expiration."
+      }
+    }
+  },
+  {
+    "question": "How many usable host addresses are available in a /24 network?",
+    "options": [
+      "256",
+      "255",
+      "254",
+      "252"
+    ],
+    "correct": 2,
+    "domain": "Subnetting",
+    "explanations": {
+      "correct": "A /24 network has 256 total addresses (2^8), but the first address is the network address and the last is the broadcast address. That leaves 254 usable host addresses.",
+      "wrong": {
+        "0": "256 is the total number of addresses, but two are reserved (network and broadcast).",
+        "1": "255 only subtracts one reserved address. Both the network address and broadcast address must be excluded.",
+        "3": "252 would be correct for a /30 network (4 addresses minus 2 reserved), not a /24."
+      }
+    }
+  },
+  {
+    "question": "What subnet mask does /16 represent?",
+    "options": [
+      "255.0.0.0",
+      "255.255.0.0",
+      "255.255.255.0",
+      "255.255.255.128"
+    ],
+    "correct": 1,
+    "domain": "Subnetting",
+    "explanations": {
+      "correct": "/16 means the first 16 bits are set to 1 in the subnet mask. That's two full octets: 255.255.0.0. This allows 65,534 usable host addresses.",
+      "wrong": {
+        "0": "255.0.0.0 is a /8 subnet mask, with only the first 8 bits set.",
+        "2": "255.255.255.0 is a /24 subnet mask, with the first 24 bits set.",
+        "3": "255.255.255.128 is a /25 subnet mask."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of the broadcast address in a subnet?",
+    "options": [
+      "It identifies the router for the subnet",
+      "It sends a message to all devices on that subnet simultaneously",
+      "It's the first usable IP in the range",
+      "It masks the network portion of an IP address"
+    ],
+    "correct": 1,
+    "domain": "Subnetting",
+    "explanations": {
+      "correct": "The broadcast address is the last address in a subnet. Any packet sent to it is delivered to every device on that subnet. For 192.168.1.0/24, the broadcast address is 192.168.1.255.",
+      "wrong": {
+        "0": "The default gateway identifies the router, not the broadcast address.",
+        "2": "The broadcast address is the last address in the range and can't be assigned to a host.",
+        "3": "The subnet mask handles that function, not the broadcast address."
+      }
+    }
+  },
+  {
+    "question": "A device has the IP 10.0.0.50 with a subnet mask of 255.255.255.0. What is the network address?",
+    "options": [
+      "10.0.0.1",
+      "10.0.0.0",
+      "10.0.0.255",
+      "10.0.0.50"
+    ],
+    "correct": 1,
+    "domain": "Subnetting",
+    "explanations": {
+      "correct": "With a /24 mask (255.255.255.0), the network address is the IP with all host bits set to 0. The first three octets are the network portion, so the network address is 10.0.0.0.",
+      "wrong": {
+        "0": "10.0.0.1 is typically the default gateway (first usable host), not the network address.",
+        "2": "10.0.0.255 is the broadcast address for this subnet (all host bits set to 1).",
+        "3": "10.0.0.50 is the device's specific host address, not the network address."
+      }
+    }
+  },
+  {
+    "question": "Which subnet mask gives you exactly 2 usable host addresses?",
+    "options": [
+      "/28",
+      "/29",
+      "/30",
+      "/31"
+    ],
+    "correct": 2,
+    "domain": "Subnetting",
+    "explanations": {
+      "correct": "A /30 subnet has 4 total addresses (2^2). Subtract 2 for the network and broadcast addresses, and you get exactly 2 usable hosts. This is commonly used for point-to-point links between routers.",
+      "wrong": {
+        "0": "/28 gives 16 total addresses and 14 usable hosts.",
+        "1": "/29 gives 8 total addresses and 6 usable hosts.",
+        "3": "/31 gives only 2 total addresses. Traditionally this leaves 0 usable hosts, though RFC 3021 allows it for point-to-point links."
+      }
+    }
+  },
+  {
+    "question": "An IPv6 address is how many bits long?",
+    "options": [
+      "32 bits",
+      "64 bits",
+      "128 bits",
+      "256 bits"
+    ],
+    "correct": 2,
+    "domain": "IP Addressing",
+    "explanations": {
+      "correct": "IPv6 addresses are 128 bits long, written as eight groups of four hexadecimal digits. This provides roughly 340 undecillion unique addresses \u2014 effectively unlimited.",
+      "wrong": {
+        "0": "32 bits is the length of an IPv4 address.",
+        "1": "64 bits is half of an IPv6 address. The network prefix is often 64 bits, but the full address is 128.",
+        "3": "256 bits isn't used in any standard IP addressing scheme."
+      }
+    }
+  },
+  {
+    "question": "What does ARP resolve?",
+    "options": [
+      "Domain names to IP addresses",
+      "IP addresses to MAC addresses",
+      "MAC addresses to port numbers",
+      "Hostnames to email servers"
+    ],
+    "correct": 1,
+    "domain": "Networking Protocols",
+    "explanations": {
+      "correct": "ARP (Address Resolution Protocol) takes a known IP address and finds the corresponding MAC address on the local network by broadcasting an ARP request.",
+      "wrong": {
+        "0": "Domain-to-IP resolution is handled by DNS, not ARP.",
+        "2": "ARP resolves IPs to MACs, not MACs to port numbers.",
+        "3": "MX record lookups in DNS handle email server resolution, not ARP."
+      }
+    }
+  },
+  {
+    "question": "What is an ARP table?",
+    "options": [
+      "A routing table used by routers to forward packets",
+      "A cache that maps IP addresses to MAC addresses on the local network",
+      "A firewall rule set for filtering traffic",
+      "A DNS cache that stores recently resolved domains"
+    ],
+    "correct": 1,
+    "domain": "Networking Protocols",
+    "explanations": {
+      "correct": "The ARP table (or ARP cache) stores recently resolved IP-to-MAC mappings so the device doesn't have to broadcast an ARP request every time it communicates with a known host.",
+      "wrong": {
+        "0": "Routing tables map destination networks to next-hop addresses. ARP tables map IPs to MACs.",
+        "2": "Firewall rules control traffic flow. ARP tables handle address resolution.",
+        "3": "DNS caches store domain-to-IP mappings. ARP caches store IP-to-MAC mappings."
+      }
+    }
+  },
+  {
+    "question": "What type of attack exploits ARP by sending falsified ARP messages?",
+    "options": [
+      "DNS poisoning",
+      "ARP spoofing",
+      "SYN flood",
+      "Brute force"
+    ],
+    "correct": 1,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "ARP spoofing (or ARP poisoning) sends fake ARP replies to associate the attacker's MAC address with a legitimate IP, allowing them to intercept, modify, or stop traffic \u2014 a man-in-the-middle attack.",
+      "wrong": {
+        "0": "DNS poisoning corrupts DNS cache entries to redirect traffic. It targets DNS, not ARP.",
+        "2": "A SYN flood overwhelms a target with TCP SYN requests. It's a DoS attack, not an ARP exploit.",
+        "3": "Brute force tries many password combinations. It's unrelated to ARP."
+      }
+    }
+  },
+  {
+    "question": "What is encapsulation in networking?",
+    "options": [
+      "Encrypting data before sending it over the network",
+      "The process of wrapping data with protocol headers as it moves down the OSI layers",
+      "Compressing data to reduce bandwidth usage",
+      "Converting analog signals to digital for transmission"
+    ],
+    "correct": 1,
+    "domain": "Encapsulation",
+    "explanations": {
+      "correct": "Encapsulation wraps data with headers (and sometimes trailers) at each OSI layer as it moves downward. Application data becomes a segment, then a packet, then a frame, then bits.",
+      "wrong": {
+        "0": "Encryption protects data confidentiality. Encapsulation is about adding protocol information at each layer.",
+        "2": "Compression reduces data size. Encapsulation adds protocol information.",
+        "3": "Analog-to-digital conversion happens at the Physical Layer, but that's signal processing, not encapsulation."
+      }
+    }
+  },
+  {
+    "question": "During encapsulation, what is added at the Data Link Layer?",
+    "options": [
+      "IP header with source and destination IP",
+      "TCP/UDP header with port numbers",
+      "Frame header with MAC addresses and a trailer with error-checking",
+      "HTTP header with request method"
+    ],
+    "correct": 2,
+    "domain": "Encapsulation",
+    "explanations": {
+      "correct": "At Layer 2, the Data Link Layer adds a frame header containing source and destination MAC addresses, plus a trailer with a Frame Check Sequence (FCS) for error detection.",
+      "wrong": {
+        "0": "IP headers are added at Layer 3 (Network Layer).",
+        "1": "TCP/UDP headers with port numbers are added at Layer 4 (Transport Layer).",
+        "3": "HTTP headers are part of the Application Layer (Layer 7) data."
+      }
+    }
+  },
+  {
+    "question": "What is de-encapsulation?",
+    "options": [
+      "Adding headers to data before transmission",
+      "The process of stripping headers as data moves up the OSI layers at the receiver",
+      "Converting encrypted data back to plaintext",
+      "Breaking a packet into smaller fragments"
+    ],
+    "correct": 1,
+    "domain": "Encapsulation",
+    "explanations": {
+      "correct": "De-encapsulation is the reverse of encapsulation. As data moves up the OSI layers at the receiving device, each layer removes its corresponding header to extract the payload for the layer above.",
+      "wrong": {
+        "0": "Adding headers is encapsulation, not de-encapsulation.",
+        "2": "Decryption converts ciphertext to plaintext. De-encapsulation removes protocol headers.",
+        "3": "Fragmentation breaks packets into smaller pieces. De-encapsulation removes layer headers."
+      }
+    }
+  },
+  {
+    "question": "At which point during encapsulation does data become a 'packet'?",
+    "options": [
+      "When TCP/UDP headers are added at the Transport Layer",
+      "When MAC addresses are added at the Data Link Layer",
+      "When an IP header is added at the Network Layer",
+      "When the data reaches the Physical Layer"
+    ],
+    "correct": 2,
+    "domain": "Encapsulation",
+    "explanations": {
+      "correct": "Data becomes a packet when the Network Layer (Layer 3) adds the IP header containing source and destination IP addresses. Before this, at Layer 4, it's called a segment.",
+      "wrong": {
+        "0": "At the Transport Layer, the data unit is called a segment (TCP) or datagram (UDP), not a packet.",
+        "1": "At the Data Link Layer, the data unit becomes a frame, not a packet.",
+        "3": "At the Physical Layer, data is converted to bits for transmission."
+      }
+    }
+  },
+  {
+    "question": "Why was Telnet replaced by SSH?",
+    "options": [
+      "Telnet was too slow for modern networks",
+      "Telnet transmits everything in plaintext, including passwords",
+      "Telnet doesn't support remote command execution",
+      "Telnet only works on Windows systems"
+    ],
+    "correct": 1,
+    "domain": "Networking Protocols",
+    "explanations": {
+      "correct": "Telnet sends all data \u2014 including login credentials \u2014 as unencrypted plaintext. Anyone sniffing the network can read everything. SSH encrypts the entire session.",
+      "wrong": {
+        "0": "Speed isn't the issue. Telnet is actually lighter than SSH. The problem is security.",
+        "2": "Telnet does support remote command execution \u2014 that's its primary purpose. It just does it insecurely.",
+        "3": "Telnet is cross-platform and works on Linux, Unix, Windows, and more."
+      }
+    }
+  },
+  {
+    "question": "What port does Telnet use by default?",
+    "options": [
+      "21",
+      "22",
+      "23",
+      "25"
+    ],
+    "correct": 2,
+    "domain": "Networking Protocols",
+    "explanations": {
+      "correct": "Telnet uses port 23 by default. Its secure replacement, SSH, uses port 22.",
+      "wrong": {
+        "0": "Port 21 is the default for FTP control connections.",
+        "1": "Port 22 is the default for SSH, not Telnet.",
+        "3": "Port 25 is the default for SMTP (email sending)."
+      }
+    }
+  },
+  {
+    "question": "Which component of a computer executes instructions and performs calculations?",
+    "options": [
+      "RAM",
+      "CPU",
+      "SSD",
+      "Motherboard"
+    ],
+    "correct": 1,
+    "domain": "Computer Fundamentals",
+    "explanations": {
+      "correct": "The CPU (Central Processing Unit) is the brain of the computer \u2014 it fetches, decodes, and executes instructions from programs. Its speed is measured in GHz.",
+      "wrong": {
+        "0": "RAM temporarily stores data for quick access but doesn't execute instructions.",
+        "2": "An SSD stores data permanently but doesn't process or execute anything.",
+        "3": "The motherboard connects all components together but doesn't execute instructions itself."
+      }
+    }
+  },
+  {
+    "question": "What is the difference between volatile and non-volatile memory?",
+    "options": [
+      "Volatile is faster; non-volatile is slower",
+      "Volatile loses data when power is off; non-volatile retains it",
+      "Volatile is for storage; non-volatile is for processing",
+      "There is no practical difference"
+    ],
+    "correct": 1,
+    "domain": "Computer Fundamentals",
+    "explanations": {
+      "correct": "Volatile memory (like RAM) requires power to maintain data \u2014 turn off the computer and it's gone. Non-volatile memory (like SSDs and hard drives) retains data without power.",
+      "wrong": {
+        "0": "While volatile memory is typically faster, the defining difference is data persistence, not speed.",
+        "2": "It's the reverse \u2014 volatile memory (RAM) is for active processing, non-volatile is for permanent storage.",
+        "3": "The difference is fundamental to how computers manage data and is critical in forensics and security."
+      }
+    }
+  },
+  {
+    "question": "What is the function of the BIOS/UEFI?",
+    "options": [
+      "It manages files and folders on the hard drive",
+      "It initializes hardware and starts the boot process when the computer powers on",
+      "It provides the graphical user interface",
+      "It connects the computer to the network"
+    ],
+    "correct": 1,
+    "domain": "Computer Fundamentals",
+    "explanations": {
+      "correct": "BIOS (Basic Input/Output System) or its modern replacement UEFI initializes and tests hardware components during POST (Power-On Self-Test), then hands control to the operating system's bootloader.",
+      "wrong": {
+        "0": "File management is handled by the operating system's file system, not BIOS/UEFI.",
+        "2": "The GUI is provided by the operating system and window manager, not BIOS/UEFI.",
+        "3": "Network connectivity is managed by the OS and network drivers, not BIOS/UEFI."
+      }
+    }
+  },
+  {
+    "question": "What does the kernel of an operating system do?",
+    "options": [
+      "Provides a web browser and email client",
+      "Manages hardware resources and provides core services to software",
+      "Encrypts all data stored on the hard drive",
+      "Connects to remote servers for updates"
+    ],
+    "correct": 1,
+    "domain": "Operating Systems",
+    "explanations": {
+      "correct": "The kernel is the core of the OS. It manages CPU scheduling, memory allocation, device I/O, and system calls. It's the bridge between applications and the physical hardware.",
+      "wrong": {
+        "0": "Browsers and email clients are user applications that run on top of the OS, not part of the kernel.",
+        "2": "Full-disk encryption is a security feature that may be built into the OS but isn't the kernel's primary role.",
+        "3": "Update management is an OS service but not a kernel function."
+      }
+    }
+  },
+  {
+    "question": "What is the difference between a process and a thread?",
+    "options": [
+      "They are the same thing",
+      "A process is an independent program; a thread is a lighter unit of execution within a process",
+      "A thread is a program; a process is a single instruction",
+      "Processes run on CPUs; threads run on GPUs"
+    ],
+    "correct": 1,
+    "domain": "Operating Systems",
+    "explanations": {
+      "correct": "A process is an independent running program with its own memory space. A thread is a smaller unit of execution within a process that shares the process's memory, enabling concurrent operations within a single program.",
+      "wrong": {
+        "0": "They're related but distinct. Threads exist within processes.",
+        "2": "This is backwards. A process is the running program; threads are execution units within it.",
+        "3": "Both processes and threads run on CPUs. GPUs handle specialized parallel workloads."
+      }
+    }
+  },
+  {
+    "question": "In Linux, what does the 'sudo' command do?",
+    "options": [
+      "Shuts down the system",
+      "Executes a command with elevated (root) privileges",
+      "Switches between user accounts",
+      "Displays the current directory"
+    ],
+    "correct": 1,
+    "domain": "Operating Systems",
+    "explanations": {
+      "correct": "sudo (Super User DO) temporarily elevates your permissions to root level for a single command. It requires your password and logs the action \u2014 more secure than logging in as root.",
+      "wrong": {
+        "0": "Shutdown commands are 'shutdown' or 'poweroff'. sudo is about privilege elevation.",
+        "2": "'su' (switch user) changes accounts. sudo runs a single command as root without switching.",
+        "3": "'pwd' (print working directory) shows the current directory. sudo is for privilege elevation."
+      }
+    }
+  },
+  {
+    "question": "What is the Linux command to list files in a directory, including hidden files?",
+    "options": [
+      "ls -l",
+      "ls -a",
+      "dir /all",
+      "show -hidden"
+    ],
+    "correct": 1,
+    "domain": "Operating Systems",
+    "explanations": {
+      "correct": "The 'ls -a' command lists all files including hidden ones (files starting with a dot). The '-a' flag stands for 'all.'",
+      "wrong": {
+        "0": "'ls -l' shows files in long format with permissions and details, but doesn't show hidden files.",
+        "2": "'dir /all' is a Windows command syntax, not Linux.",
+        "3": "'show -hidden' isn't a valid Linux command."
+      }
+    }
+  },
+  {
+    "question": "What does the Linux command 'grep' do?",
+    "options": [
+      "Moves files between directories",
+      "Searches for patterns in text files or command output",
+      "Creates new user accounts",
+      "Compresses files into an archive"
+    ],
+    "correct": 1,
+    "domain": "Operating Systems",
+    "explanations": {
+      "correct": "grep (Global Regular Expression Print) searches for text patterns in files or piped output. It's one of the most powerful and frequently used Linux commands for filtering information.",
+      "wrong": {
+        "0": "'mv' moves files between directories, not grep.",
+        "2": "'useradd' or 'adduser' creates new user accounts.",
+        "3": "'tar' or 'gzip' compresses files. grep is for searching text."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of a file system?",
+    "options": [
+      "To encrypt all files on a disk",
+      "To organize, store, and retrieve data on storage devices",
+      "To connect storage devices to the network",
+      "To back up files to the cloud"
+    ],
+    "correct": 1,
+    "domain": "Computer Fundamentals",
+    "explanations": {
+      "correct": "A file system (like NTFS, ext4, or APFS) provides the structure for how data is named, stored, organized, and retrieved on storage devices. Without it, data would be an unorganized mess of bytes.",
+      "wrong": {
+        "0": "Encryption is a security feature separate from the file system's organizational role.",
+        "2": "Network connectivity for storage is handled by protocols like NFS or SMB, not the file system itself.",
+        "3": "Cloud backup is a service. The file system organizes data on local storage."
+      }
+    }
+  },
+  {
+    "question": "What type of software translates high-level programming code into machine code?",
+    "options": [
+      "An operating system",
+      "A compiler",
+      "A database",
+      "A web server"
+    ],
+    "correct": 1,
+    "domain": "Software Basics",
+    "explanations": {
+      "correct": "A compiler translates entire source code written in a high-level language (like C or Java) into machine code that the CPU can execute directly.",
+      "wrong": {
+        "0": "The OS manages hardware and provides services to applications but doesn't translate programming languages.",
+        "2": "A database stores and retrieves structured data. It doesn't translate code.",
+        "3": "A web server serves web content over HTTP. It doesn't compile code."
+      }
+    }
+  },
+  {
+    "question": "What is the difference between an interpreter and a compiler?",
+    "options": [
+      "A compiler is faster; an interpreter uses less memory",
+      "A compiler translates the entire program at once; an interpreter executes code line by line",
+      "An interpreter only works with web languages; a compiler works with system languages",
+      "There is no difference \u2014 they are the same thing"
+    ],
+    "correct": 1,
+    "domain": "Software Basics",
+    "explanations": {
+      "correct": "A compiler translates the entire source code into machine code before execution, producing a standalone executable. An interpreter translates and executes code one line at a time during runtime. Python uses an interpreter; C uses a compiler.",
+      "wrong": {
+        "0": "While compiled code generally runs faster, the defining difference is when translation happens \u2014 all at once vs. line by line.",
+        "2": "Both can work with various language types. Python (interpreted) isn't limited to web, and JavaScript (interpreted) is used everywhere.",
+        "3": "They are fundamentally different approaches to executing code."
+      }
+    }
+  },
+  {
+    "question": "What is an API?",
+    "options": [
+      "A programming language for web development",
+      "A set of rules that allows different software applications to communicate with each other",
+      "An antivirus protection interface",
+      "A type of network protocol"
+    ],
+    "correct": 1,
+    "domain": "Software Basics",
+    "explanations": {
+      "correct": "An API (Application Programming Interface) defines how different software components can interact. It specifies the requests you can make, the data formats, and the responses you'll get back.",
+      "wrong": {
+        "0": "APIs aren't a programming language. They're an interface that can be accessed from any language.",
+        "2": "API stands for Application Programming Interface, not anything related to antivirus.",
+        "3": "While APIs can be accessed over network protocols like HTTP, they're not network protocols themselves."
+      }
+    }
+  },
+  {
+    "question": "What does the HTTP status code 404 mean?",
+    "options": [
+      "The server is temporarily unavailable",
+      "The request was successful",
+      "The requested resource was not found",
+      "Authentication is required"
+    ],
+    "correct": 2,
+    "domain": "Web Foundations",
+    "explanations": {
+      "correct": "HTTP 404 (Not Found) means the server couldn't find the requested resource. The URL may be wrong, the page may have been deleted, or the link is broken.",
+      "wrong": {
+        "0": "Server unavailable is HTTP 503 (Service Unavailable).",
+        "1": "A successful request returns HTTP 200 (OK).",
+        "3": "Authentication required is HTTP 401 (Unauthorized)."
+      }
+    }
+  },
+  {
+    "question": "What HTTP status code indicates a successful request?",
+    "options": [
+      "100",
+      "200",
+      "301",
+      "500"
+    ],
+    "correct": 1,
+    "domain": "Web Foundations",
+    "explanations": {
+      "correct": "HTTP 200 (OK) means the request was successful and the server returned the requested content.",
+      "wrong": {
+        "0": "HTTP 100 (Continue) is an informational response indicating the client should continue with the request.",
+        "2": "HTTP 301 (Moved Permanently) indicates the resource has been permanently moved to a new URL.",
+        "3": "HTTP 500 (Internal Server Error) means something went wrong on the server side."
+      }
+    }
+  },
+  {
+    "question": "What is the difference between HTTP GET and POST methods?",
+    "options": [
+      "GET is encrypted; POST is not",
+      "GET requests data from a server; POST sends data to a server",
+      "GET is faster than POST",
+      "POST can only send text; GET can send any data type"
+    ],
+    "correct": 1,
+    "domain": "Web Foundations",
+    "explanations": {
+      "correct": "GET retrieves data (like loading a web page) and sends parameters in the URL. POST submits data (like a form) in the request body, keeping it out of the URL. POST is used for creating or updating resources.",
+      "wrong": {
+        "0": "Neither GET nor POST is inherently encrypted. Both need HTTPS for encryption.",
+        "2": "Speed depends on many factors. The key difference is their purpose \u2014 retrieving vs. submitting data.",
+        "3": "POST can send any data type including files. GET is limited by URL length."
+      }
+    }
+  },
+  {
+    "question": "What does a URL stand for?",
+    "options": [
+      "Universal Resource Locator",
+      "Uniform Resource Locator",
+      "Unified Remote Link",
+      "Universal Routing Language"
+    ],
+    "correct": 1,
+    "domain": "Web Foundations",
+    "explanations": {
+      "correct": "URL stands for Uniform Resource Locator. It specifies the address of a resource on the internet, including the protocol (https://), domain, path, and optional parameters.",
+      "wrong": {
+        "0": "Close, but the U stands for Uniform, not Universal.",
+        "2": "URLs aren't related to remote connections specifically. They identify any web resource.",
+        "3": "URLs are addresses, not a routing language."
+      }
+    }
+  },
+  {
+    "question": "What is a cookie in web browsing?",
+    "options": [
+      "A virus that infects your browser",
+      "A small piece of data stored by your browser from a website to remember information",
+      "An encryption key used for HTTPS connections",
+      "A type of browser extension"
+    ],
+    "correct": 1,
+    "domain": "Web Foundations",
+    "explanations": {
+      "correct": "Cookies are small text files that websites store in your browser to remember login sessions, preferences, shopping carts, and tracking information. They're sent back to the server with each subsequent request.",
+      "wrong": {
+        "0": "Cookies are not malware. They're a standard web mechanism, though they can be used for tracking.",
+        "2": "HTTPS encryption uses TLS certificates, not cookies.",
+        "3": "Cookies are data stored by websites, not installable extensions."
+      }
+    }
+  },
+  {
+    "question": "What does TLS stand for?",
+    "options": [
+      "Transfer Layer Security",
+      "Transport Layer Security",
+      "Trusted Link System",
+      "Temporary Login Session"
+    ],
+    "correct": 1,
+    "domain": "Secure Protocols",
+    "explanations": {
+      "correct": "Transport Layer Security (TLS) is the protocol that encrypts communication over networks. It's the successor to SSL and is what puts the 'S' in HTTPS.",
+      "wrong": {
+        "0": "Close, but it's Transport, not Transfer.",
+        "2": "TLS is a cryptographic protocol, not a link system.",
+        "3": "TLS handles encryption for entire connections, not just login sessions."
+      }
+    }
+  },
+  {
+    "question": "What is the primary difference between SSL and TLS?",
+    "options": [
+      "SSL is for email; TLS is for web browsing",
+      "TLS is the newer, more secure successor to SSL",
+      "SSL is open-source; TLS is proprietary",
+      "There is no difference \u2014 they are the same protocol"
+    ],
+    "correct": 1,
+    "domain": "Secure Protocols",
+    "explanations": {
+      "correct": "TLS replaced SSL as the standard encryption protocol. SSL 3.0 was the last SSL version before TLS 1.0 took over. All SSL versions are now deprecated due to known vulnerabilities. When people say 'SSL,' they usually mean TLS.",
+      "wrong": {
+        "0": "Both SSL and TLS can secure any type of network communication, not just specific applications.",
+        "2": "Both have open specifications. The difference is that TLS is newer and more secure.",
+        "3": "While closely related, TLS is a distinct protocol with significant security improvements over SSL."
+      }
+    }
+  },
+  {
+    "question": "What port does HTTPS use?",
+    "options": [
+      "80",
+      "443",
+      "8443",
+      "8080"
+    ],
+    "correct": 1,
+    "domain": "Secure Protocols",
+    "explanations": {
+      "correct": "HTTPS (HTTP Secure) uses port 443 by default. Traffic on this port is encrypted using TLS.",
+      "wrong": {
+        "0": "Port 80 is for unencrypted HTTP traffic.",
+        "2": "Port 8443 is an alternative HTTPS port sometimes used for web applications, not the default.",
+        "3": "Port 8080 is a common alternative HTTP port, not HTTPS."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of DNSSEC?",
+    "options": [
+      "To encrypt DNS queries from eavesdroppers",
+      "To authenticate DNS responses and ensure they haven't been tampered with",
+      "To speed up DNS resolution by caching",
+      "To replace DNS with a more secure system"
+    ],
+    "correct": 1,
+    "domain": "Secure Protocols",
+    "explanations": {
+      "correct": "DNSSEC (DNS Security Extensions) adds digital signatures to DNS records, allowing clients to verify that a response actually came from the authoritative server and wasn't modified in transit. It provides authenticity and integrity, not encryption.",
+      "wrong": {
+        "0": "DNSSEC doesn't encrypt queries \u2014 that's what DNS-over-HTTPS (DoH) or DNS-over-TLS (DoT) does. DNSSEC verifies authenticity.",
+        "2": "DNS caching is a standard DNS feature. DNSSEC adds authentication, not caching.",
+        "3": "DNSSEC extends DNS rather than replacing it."
+      }
+    }
+  },
+  {
+    "question": "What is DNS-over-HTTPS (DoH)?",
+    "options": [
+      "A method of hosting DNS servers on HTTPS websites",
+      "A protocol that encrypts DNS queries by sending them over HTTPS connections",
+      "A way to access DNS settings through a web browser",
+      "A DNS server that only resolves HTTPS websites"
+    ],
+    "correct": 1,
+    "domain": "Secure Protocols",
+    "explanations": {
+      "correct": "DNS-over-HTTPS encrypts DNS queries by wrapping them in HTTPS, preventing ISPs, network administrators, and eavesdroppers from seeing which domains you're looking up. The queries look like regular HTTPS traffic.",
+      "wrong": {
+        "0": "DoH is about encrypting queries, not hosting DNS servers on websites.",
+        "2": "DoH is a protocol for encrypted DNS resolution, not a web-based management interface.",
+        "3": "DoH encrypts the DNS lookup process itself. It resolves any domain, not just HTTPS sites."
+      }
+    }
+  },
+  {
+    "question": "Which protocol secures email transmission between mail servers?",
+    "options": [
+      "SMTP",
+      "STARTTLS",
+      "POP3",
+      "IMAP"
+    ],
+    "correct": 1,
+    "domain": "Secure Protocols",
+    "explanations": {
+      "correct": "STARTTLS upgrades an existing plaintext SMTP connection to an encrypted TLS connection. It's the most common method for securing email transmission between mail servers.",
+      "wrong": {
+        "0": "SMTP is the protocol for sending email, but it's unencrypted by default. STARTTLS adds encryption to SMTP.",
+        "2": "POP3 retrieves email from a server. It doesn't handle server-to-server transmission.",
+        "3": "IMAP manages email on the server. It doesn't handle transmission between servers."
+      }
+    }
+  },
+  {
+    "question": "A user connects to a website and sees a padlock icon in the browser. What does this indicate?",
+    "options": [
+      "The website has no malware",
+      "The connection is encrypted with TLS and the site has a valid certificate",
+      "The website is owned by the government",
+      "The user's antivirus is active"
+    ],
+    "correct": 1,
+    "domain": "Secure Protocols",
+    "explanations": {
+      "correct": "The padlock indicates the connection uses HTTPS with a valid TLS certificate. This means data between your browser and the server is encrypted. It does NOT mean the website itself is safe or trustworthy.",
+      "wrong": {
+        "0": "The padlock only means the connection is encrypted. Malicious sites can also have valid certificates.",
+        "2": "Any website can get a TLS certificate. The padlock doesn't indicate ownership.",
+        "3": "The padlock is a browser indicator about the connection, not about local antivirus software."
+      }
+    }
+  },
+  {
+    "question": "What is a SYN flood attack?",
+    "options": [
+      "Flooding a network with encrypted traffic",
+      "Sending a massive number of TCP SYN requests without completing the handshake to exhaust server resources",
+      "Synchronizing multiple computers to launch a coordinated attack",
+      "Overloading a DNS server with lookup requests"
+    ],
+    "correct": 1,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "A SYN flood sends thousands of TCP SYN packets but never completes the three-way handshake (no final ACK). The server keeps half-open connections, consuming resources until it can't accept legitimate connections.",
+      "wrong": {
+        "0": "Encrypted traffic isn't the issue. SYN floods exploit the TCP handshake process specifically.",
+        "2": "That describes a DDoS coordination, not the SYN flood mechanism. SYN floods target the TCP handshake.",
+        "3": "DNS flooding is a different type of DoS attack. SYN floods target TCP connections."
+      }
+    }
+  },
+  {
+    "question": "What is the loopback address for IPv6?",
+    "options": [
+      "127.0.0.1",
+      "::1",
+      "0.0.0.0",
+      "fe80::1"
+    ],
+    "correct": 1,
+    "domain": "IP Addressing",
+    "explanations": {
+      "correct": "::1 is the IPv6 loopback address, equivalent to 127.0.0.1 in IPv4. Traffic sent to ::1 never leaves the device.",
+      "wrong": {
+        "0": "127.0.0.1 is the IPv4 loopback address, not IPv6.",
+        "2": "0.0.0.0 is the IPv4 unspecified address, not a loopback.",
+        "3": "fe80::1 is a link-local address used for communication on the local network, not loopback."
+      }
+    }
+  },
+  {
+    "question": "Which IPv4 address class provides the most host addresses per network?",
+    "options": [
+      "Class A",
+      "Class B",
+      "Class C",
+      "Class D"
+    ],
+    "correct": 0,
+    "domain": "IP Addressing",
+    "explanations": {
+      "correct": "Class A networks (1.0.0.0 \u2013 126.255.255.255) use the first octet for the network and three octets for hosts, providing about 16.7 million host addresses per network.",
+      "wrong": {
+        "1": "Class B uses two octets for hosts, giving about 65,534 host addresses per network \u2014 fewer than Class A.",
+        "2": "Class C uses one octet for hosts, giving only 254 host addresses per network.",
+        "3": "Class D (224.0.0.0 \u2013 239.255.255.255) is reserved for multicast and doesn't have host addresses."
+      }
+    }
+  },
+  {
+    "question": "What is NAT primarily used for?",
+    "options": [
+      "Encrypting traffic between two networks",
+      "Allowing multiple private IP devices to share a single public IP address",
+      "Assigning static IPs to servers",
+      "Blocking unauthorized traffic at the firewall"
+    ],
+    "correct": 1,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "NAT (Network Address Translation) translates private IP addresses to a public IP address, allowing many devices on a local network to access the internet through one public IP. This also conserves the limited IPv4 address space.",
+      "wrong": {
+        "0": "Traffic encryption is handled by VPNs and TLS, not NAT.",
+        "2": "Static IP assignment is done manually or through DHCP reservations, not NAT.",
+        "3": "Firewalls handle traffic filtering. NAT handles address translation."
+      }
+    }
+  },
+  {
+    "question": "What is the difference between static and dynamic IP addresses?",
+    "options": [
+      "Static is faster; dynamic is slower",
+      "Static is manually assigned and doesn't change; dynamic is assigned by DHCP and may change",
+      "Static is for wireless; dynamic is for wired",
+      "Dynamic addresses are more secure than static"
+    ],
+    "correct": 1,
+    "domain": "IP Addressing",
+    "explanations": {
+      "correct": "A static IP is manually configured and remains constant. A dynamic IP is automatically assigned by a DHCP server and may change each time the device connects. Servers typically use static IPs; client devices use dynamic.",
+      "wrong": {
+        "0": "Speed has nothing to do with whether an IP is static or dynamic.",
+        "2": "Both types work over wired and wireless connections.",
+        "3": "Security depends on configuration, not whether the IP is static or dynamic."
+      }
+    }
+  },
+  {
+    "question": "What does ICMP stand for?",
+    "options": [
+      "Internet Control Messaging Platform",
+      "Internet Control Message Protocol",
+      "Internal Communication Management Protocol",
+      "Internet Connection Monitoring Process"
+    ],
+    "correct": 1,
+    "domain": "Networking Protocols",
+    "explanations": {
+      "correct": "Internet Control Message Protocol (ICMP) is used for network diagnostics and error reporting. Tools like ping and traceroute rely on ICMP echo requests and replies.",
+      "wrong": {
+        "0": "The correct expansion uses 'Protocol,' not 'Platform.'",
+        "2": "ICMP is an internet protocol, not an internal communication system.",
+        "3": "ICMP is a protocol, not a monitoring process."
+      }
+    }
+  },
+  {
+    "question": "A network administrator can't reach a remote server. Which command should they use first to test basic connectivity?",
+    "options": [
+      "traceroute",
+      "nslookup",
+      "ping",
+      "netstat"
+    ],
+    "correct": 2,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "Ping is the simplest first step \u2014 it sends ICMP echo requests to test if the remote host is reachable and how long the round trip takes. If ping fails, deeper troubleshooting follows.",
+      "wrong": {
+        "0": "Traceroute is useful but it's a second step. Start with ping to confirm whether the host is reachable at all.",
+        "1": "nslookup tests DNS resolution. It's the right tool if you suspect a DNS problem, but ping should come first.",
+        "3": "netstat shows active network connections on the local machine. It doesn't test connectivity to remote servers."
+      }
+    }
+  },
+  {
+    "question": "What information does the 'netstat' command provide?",
+    "options": [
+      "Current Wi-Fi signal strength",
+      "Active network connections, listening ports, and routing tables",
+      "The speed of your internet connection",
+      "A list of all devices on the network"
+    ],
+    "correct": 1,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "netstat displays active TCP connections, ports the machine is listening on, ethernet statistics, and the routing table. It's essential for seeing what's communicating on your system.",
+      "wrong": {
+        "0": "Wi-Fi diagnostics use different tools. netstat shows connection information, not signal strength.",
+        "2": "Speed tests measure bandwidth. netstat shows active connections and listening services.",
+        "3": "Network scanning tools like nmap discover devices. netstat shows local connection information."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of the 'nslookup' command?",
+    "options": [
+      "To scan for open network ports",
+      "To query DNS servers and resolve domain names to IP addresses",
+      "To monitor real-time network traffic",
+      "To configure network interface settings"
+    ],
+    "correct": 1,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "nslookup queries DNS servers to find the IP address associated with a domain name (or vice versa). It's useful for troubleshooting DNS resolution issues.",
+      "wrong": {
+        "0": "Port scanning is done with tools like nmap, not nslookup.",
+        "2": "Traffic monitoring uses tools like Wireshark or tcpdump.",
+        "3": "Interface configuration uses ifconfig or ip commands, not nslookup."
+      }
+    }
+  },
+  {
+    "question": "What is the difference between a hub and a repeater?",
+    "options": [
+      "A hub connects multiple devices; a repeater amplifies signals between two network segments",
+      "A repeater is smarter than a hub",
+      "A hub works wirelessly; a repeater uses cables",
+      "There is no difference at all"
+    ],
+    "correct": 0,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "A hub has multiple ports and connects several devices in a network, broadcasting all traffic to every port. A repeater has two ports and simply regenerates/amplifies the signal to extend the distance a network can cover. Both operate at Layer 1.",
+      "wrong": {
+        "1": "Neither is 'smart' \u2014 both are Layer 1 devices with no intelligence about addressing or routing.",
+        "2": "Both are wired devices. Wireless repeaters exist but are a different category.",
+        "3": "While similar in being Layer 1 devices, they serve different functions \u2014 multi-port connectivity vs. signal extension."
+      }
+    }
+  },
+  {
+    "question": "What is a default gateway?",
+    "options": [
+      "The DNS server that resolves domain names",
+      "The router that a device sends traffic to when the destination is outside the local network",
+      "The first IP address in a subnet",
+      "A firewall that filters all incoming traffic"
+    ],
+    "correct": 1,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "The default gateway is the router's IP address on your local network. When your device needs to reach something outside the subnet (like the internet), it sends the traffic to the default gateway for forwarding.",
+      "wrong": {
+        "0": "DNS servers and default gateways are different things, though they're both part of network configuration.",
+        "2": "The first address in a subnet is the network address. The default gateway is typically the first usable host address but that's a convention, not a rule.",
+        "3": "A firewall filters traffic. The default gateway routes traffic to other networks."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of the TTL (Time to Live) field in an IP packet?",
+    "options": [
+      "To set an expiration time on DNS records",
+      "To limit the number of hops a packet can make before being discarded",
+      "To define how long a TCP connection stays open",
+      "To set the encryption key lifetime"
+    ],
+    "correct": 1,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "TTL is a counter that decrements by 1 at each router hop. When it reaches 0, the packet is discarded. This prevents packets from circling endlessly in routing loops. Traceroute works by manipulating TTL values.",
+      "wrong": {
+        "0": "DNS records do have TTL values, but the IP packet TTL field is about hop counting, not DNS.",
+        "2": "TCP connection timeouts use different mechanisms, not the IP TTL field.",
+        "3": "Encryption key lifetimes are managed by the security protocol, not IP TTL."
+      }
+    }
+  },
+  {
+    "question": "What is the difference between half-duplex and full-duplex communication?",
+    "options": [
+      "Half-duplex is wired; full-duplex is wireless",
+      "Half-duplex can send OR receive at one time; full-duplex can send AND receive simultaneously",
+      "Full-duplex is faster because it uses more bandwidth",
+      "Half-duplex supports more devices on a network"
+    ],
+    "correct": 1,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "Half-duplex allows communication in both directions but only one direction at a time (like a walkie-talkie). Full-duplex allows simultaneous two-way communication (like a phone call).",
+      "wrong": {
+        "0": "Both modes can work over wired or wireless connections.",
+        "2": "Full-duplex is more efficient because it uses the channel in both directions, but bandwidth allocation varies.",
+        "3": "The number of supported devices depends on the network architecture, not the duplex mode."
+      }
+    }
+  },
+  {
+    "question": "What command in Linux shows your network interface configuration including IP address?",
+    "options": [
+      "ipconfig",
+      "ifconfig",
+      "netstat",
+      "hostname"
+    ],
+    "correct": 1,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "ifconfig displays network interface configuration in Linux/macOS, including IP addresses, subnet masks, and MAC addresses. On newer Linux systems, 'ip addr' or 'ip a' is preferred.",
+      "wrong": {
+        "0": "ipconfig is the Windows equivalent. Linux uses ifconfig or 'ip addr.'",
+        "2": "netstat shows active connections and listening ports, not interface configuration.",
+        "3": "hostname displays or sets the system's hostname, not network configuration details."
+      }
+    }
+  },
+  {
+    "question": "What type of network covers a large geographic area, like a city or country?",
+    "options": [
+      "LAN",
+      "WAN",
+      "PAN",
+      "VLAN"
+    ],
+    "correct": 1,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "A WAN (Wide Area Network) spans large geographic areas. The internet is the largest WAN. Organizations use WANs to connect offices across cities or countries.",
+      "wrong": {
+        "0": "A LAN (Local Area Network) covers a small area like a building or campus.",
+        "2": "A PAN (Personal Area Network) covers a very short range, like Bluetooth connections between your devices.",
+        "3": "A VLAN (Virtual LAN) is a logical network segmentation within a physical network, not a geographic classification."
+      }
+    }
+  },
+  {
+    "question": "What is a MAC address flood attack?",
+    "options": [
+      "Sending too many ARP requests to the router",
+      "Overloading a switch's MAC address table so it starts broadcasting all traffic like a hub",
+      "Changing your MAC address to impersonate another device",
+      "Flooding a network with DHCP requests"
+    ],
+    "correct": 1,
+    "domain": "Network Security",
+    "explanations": {
+      "correct": "A MAC flood sends thousands of frames with random source MAC addresses, filling the switch's CAM table. Once full, the switch can't learn new entries and falls back to broadcasting all frames to all ports \u2014 allowing the attacker to sniff all traffic.",
+      "wrong": {
+        "0": "Excessive ARP requests would be an ARP flood, not a MAC flood.",
+        "2": "Changing your MAC to impersonate another device is MAC spoofing, a different attack.",
+        "3": "Flooding DHCP requests is a DHCP starvation attack, not a MAC flood."
+      }
+    }
+  },
+  {
+    "question": "What does the command 'chmod 644 file.txt' set?",
+    "options": [
+      "Owner: read/write, Group: read, Others: read",
+      "Owner: read/write/execute, Group: read/write, Others: read",
+      "Owner: read, Group: read, Others: read",
+      "Owner: read/write, Group: write, Others: write"
+    ],
+    "correct": 0,
+    "domain": "Operating Systems",
+    "explanations": {
+      "correct": "644 in octal: 6 = read(4)+write(2) for owner, 4 = read for group, 4 = read for others. This is the standard permission set for files that should be readable by everyone but only editable by the owner.",
+      "wrong": {
+        "1": "That would be 764. The 4 in the group and others positions means read-only, not read/write.",
+        "2": "That would be 444 \u2014 read-only for everyone. 644 gives the owner write permission too.",
+        "3": "That would be 622. The 4 in group and others means read, not write."
+      }
+    }
+  },
+  {
+    "question": "In Linux, what does the pipe symbol ( | ) do?",
+    "options": [
+      "Redirects output to a file",
+      "Takes the output of one command and sends it as input to another command",
+      "Runs two commands simultaneously",
+      "Creates a symbolic link between files"
+    ],
+    "correct": 1,
+    "domain": "Operating Systems",
+    "explanations": {
+      "correct": "The pipe ( | ) chains commands together by sending the output (stdout) of the left command as input (stdin) to the right command. Example: 'cat log.txt | grep error' filters log lines containing 'error.'",
+      "wrong": {
+        "0": "Output redirection to a file uses > or >>. The pipe sends output to another command.",
+        "2": "Running commands simultaneously uses & or parallel tools. Pipes are sequential \u2014 output flows from left to right.",
+        "3": "Symbolic links are created with the 'ln -s' command."
+      }
+    }
+  },
+  {
+    "question": "What is SSH port forwarding (tunneling)?",
+    "options": [
+      "Forwarding SSH traffic to a different port number",
+      "Creating an encrypted tunnel through SSH to securely access remote services",
+      "Configuring a firewall to allow SSH connections",
+      "Automatically forwarding emails through an SSH connection"
+    ],
+    "correct": 1,
+    "domain": "Secure Protocols",
+    "explanations": {
+      "correct": "SSH tunneling forwards network traffic through an encrypted SSH connection. It lets you securely access services on remote networks as if they were local \u2014 for example, accessing a database behind a firewall by tunneling through an SSH server.",
+      "wrong": {
+        "0": "Changing SSH's listening port is a hardening technique, not port forwarding/tunneling.",
+        "2": "Firewall configuration for SSH is access control, not tunneling.",
+        "3": "SSH tunneling forwards network traffic, not email specifically."
+      }
+    }
+  },
+  {
+    "question": "What is the well-known port range?",
+    "options": [
+      "0 \u2013 1023",
+      "1024 \u2013 49151",
+      "49152 \u2013 65535",
+      "0 \u2013 65535"
+    ],
+    "correct": 0,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "Ports 0-1023 are the well-known (or system) ports, assigned to common services by IANA. Examples: HTTP (80), HTTPS (443), SSH (22), DNS (53). They typically require root/admin privileges to use.",
+      "wrong": {
+        "1": "Ports 1024-49151 are registered ports, assigned to specific applications but not as universally standardized.",
+        "2": "Ports 49152-65535 are dynamic/ephemeral ports, used temporarily by client applications for outbound connections.",
+        "3": "0-65535 is the entire port range, not just the well-known ports."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of the 'whois' command?",
+    "options": [
+      "To check if a website is online",
+      "To look up registration and ownership information for a domain name or IP address",
+      "To scan a target for open ports",
+      "To test DNS resolution speed"
+    ],
+    "correct": 1,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "whois queries public databases to find registration details for a domain or IP \u2014 including the registrant, registrar, creation date, expiration date, and nameservers. It's commonly used in reconnaissance and incident response.",
+      "wrong": {
+        "0": "Checking if a site is online is done with ping or HTTP requests, not whois.",
+        "2": "Port scanning is done with tools like nmap. whois looks up registration info.",
+        "3": "DNS resolution testing uses dig, nslookup, or specialized tools, not whois."
+      }
+    }
+  },
+  {
+    "question": "What is the function of a network interface card (NIC)?",
+    "options": [
+      "To process and execute CPU instructions",
+      "To provide the physical connection between a computer and a network",
+      "To store network configuration permanently",
+      "To manage power distribution to network devices"
+    ],
+    "correct": 1,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "A NIC provides the hardware interface for connecting to a network \u2014 either via an Ethernet port (wired) or an antenna (wireless). Each NIC has a unique MAC address burned in by the manufacturer.",
+      "wrong": {
+        "0": "The CPU handles instruction processing. The NIC handles network connectivity.",
+        "2": "Network configuration is stored in the OS. The NIC provides the physical hardware connection.",
+        "3": "Power management is handled by the power supply and motherboard, not the NIC."
+      }
+    }
+  },
+  {
+    "question": "A user visits a website and their browser checks if the domain's IP is already cached locally. What is this cache called?",
+    "options": [
+      "ARP cache",
+      "DNS resolver cache",
+      "Routing table",
+      "Browser cookie storage"
+    ],
+    "correct": 1,
+    "domain": "Networking Protocols",
+    "explanations": {
+      "correct": "The DNS resolver cache stores recently resolved domain-to-IP mappings locally. If the domain is cached, the system uses the stored IP without querying an external DNS server, speeding up browsing.",
+      "wrong": {
+        "0": "The ARP cache maps IPs to MAC addresses on the local network, not domain names to IPs.",
+        "2": "Routing tables determine where to forward packets based on destination networks, not domain name resolution.",
+        "3": "Cookies store website data like session info, not DNS resolution results."
+      }
+    }
+  },
+  {
+    "question": "What does the command 'cat /etc/passwd' display on a Linux system?",
+    "options": [
+      "All user passwords in plaintext",
+      "A list of user accounts and their basic information",
+      "The system's network configuration",
+      "A log of all login attempts"
+    ],
+    "correct": 1,
+    "domain": "Operating Systems",
+    "explanations": {
+      "correct": "The /etc/passwd file lists all user accounts with their username, UID, GID, home directory, and default shell. Despite the name, actual password hashes are stored in /etc/shadow, which requires root access.",
+      "wrong": {
+        "0": "Passwords haven't been stored in /etc/passwd since the 1970s. Hashes are in /etc/shadow.",
+        "2": "Network configuration is typically in /etc/network/interfaces or managed by NetworkManager.",
+        "3": "Login attempt logs are in /var/log/auth.log or /var/log/secure."
+      }
+    }
+  },
+  {
+    "question": "What is the primary purpose of the 'traceroute' command?",
+    "options": [
+      "To test if a host is reachable",
+      "To display every router (hop) along the path from source to destination",
+      "To find the MAC address of a remote server",
+      "To scan the route for security vulnerabilities"
+    ],
+    "correct": 1,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "Traceroute maps the complete path packets take, showing each router hop, its IP address, and the latency at each step. It incrementally increases the TTL value to discover each hop.",
+      "wrong": {
+        "0": "Basic reachability testing is ping's job. Traceroute goes further by mapping the entire path.",
+        "2": "MAC addresses are resolved locally via ARP. Traceroute works with IP addresses across networks.",
+        "3": "Traceroute maps the network path. Vulnerability scanning uses different tools like Nmap or Nessus."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of the 'dig' command?",
+    "options": [
+      "To search for files on a Linux system",
+      "To perform detailed DNS lookups and display the full DNS response",
+      "To configure network interfaces",
+      "To monitor system resource usage"
+    ],
+    "correct": 1,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "dig (Domain Information Groper) queries DNS servers and returns detailed information including the answer section, authority section, query time, and the DNS server used. It's more detailed than nslookup.",
+      "wrong": {
+        "0": "Finding files on Linux is done with 'find' or 'locate,' not dig.",
+        "2": "Network interface configuration uses ifconfig or 'ip' commands.",
+        "3": "System resource monitoring uses 'top,' 'htop,' or 'free.'"
+      }
+    }
+  },
+  {
+    "question": "What does 'stateless' mean in the context of UDP?",
+    "options": [
+      "UDP doesn't encrypt its data",
+      "UDP doesn't maintain any connection state or track whether data was received",
+      "UDP can't be used across state boundaries",
+      "UDP doesn't have a header"
+    ],
+    "correct": 1,
+    "domain": "TCP vs UDP",
+    "explanations": {
+      "correct": "Stateless means UDP sends packets without establishing a connection first and doesn't track delivery, ordering, or acknowledgment. Each packet is independent \u2014 the protocol doesn't remember previous packets.",
+      "wrong": {
+        "0": "Being stateless is about connection tracking, not encryption. Neither TCP nor UDP encrypts by default.",
+        "2": "Stateless is a technical networking term about connection state, not geography.",
+        "3": "UDP does have a header \u2014 it contains source port, destination port, length, and checksum. It's just simpler than TCP's header."
+      }
+    }
+  },
+  {
+    "question": "What is the four-way handshake in TCP used for?",
+    "options": [
+      "Establishing a new connection",
+      "Gracefully terminating an existing connection",
+      "Recovering from packet loss",
+      "Negotiating encryption parameters"
+    ],
+    "correct": 1,
+    "domain": "TCP",
+    "explanations": {
+      "correct": "The four-way handshake (FIN \u2192 ACK \u2192 FIN \u2192 ACK) gracefully closes a TCP connection. Each side independently closes its end: one side sends FIN, the other ACKs, then reverses the process.",
+      "wrong": {
+        "0": "Connection establishment uses the three-way handshake (SYN \u2192 SYN-ACK \u2192 ACK).",
+        "2": "Packet loss recovery uses retransmission based on sequence numbers and ACKs, not a four-way handshake.",
+        "3": "Encryption negotiation happens at the TLS layer, not through the TCP four-way handshake."
+      }
+    }
+  },
+  {
+    "question": "What is the maximum number of ports available on a single system?",
+    "options": [
+      "1,024",
+      "32,768",
+      "65,535",
+      "128,000"
+    ],
+    "correct": 2,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "Port numbers range from 0 to 65,535, giving 65,536 total ports. This is because port numbers are stored as 16-bit unsigned integers (2^16 = 65,536).",
+      "wrong": {
+        "0": "1,024 is just the end of the well-known port range. There are many more ports available.",
+        "1": "32,768 is a common starting point for ephemeral ports on some systems, not the maximum.",
+        "3": "128,000 exceeds the 16-bit limit. Port numbers can't go above 65,535."
+      }
+    }
+  },
+  {
+    "question": "What type of DNS record maps a domain name to an IPv4 address?",
+    "options": [
+      "MX record",
+      "CNAME record",
+      "A record",
+      "AAAA record"
+    ],
+    "correct": 2,
+    "domain": "Networking Protocols",
+    "explanations": {
+      "correct": "An A (Address) record maps a domain name to an IPv4 address. For example, example.com \u2192 93.184.216.34.",
+      "wrong": {
+        "0": "MX (Mail Exchange) records specify the email servers responsible for receiving email for a domain.",
+        "1": "CNAME (Canonical Name) records map one domain name to another domain name (an alias).",
+        "3": "AAAA records map a domain to an IPv6 address, not IPv4."
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of an MX record in DNS?",
+    "options": [
+      "To map a domain to an IP address",
+      "To specify the mail servers responsible for receiving email for a domain",
+      "To redirect one domain to another",
+      "To define the TTL for DNS caching"
+    ],
+    "correct": 1,
+    "domain": "Networking Protocols",
+    "explanations": {
+      "correct": "MX (Mail Exchange) records tell other mail servers where to deliver email for a domain. They include a priority value so backup servers can be specified in case the primary is unavailable.",
+      "wrong": {
+        "0": "Domain-to-IP mapping is done by A records (IPv4) and AAAA records (IPv6).",
+        "2": "Domain redirection can use CNAME records or HTTP redirects, not MX records.",
+        "3": "TTL is a property of all DNS records, not a specific record type."
+      }
+    }
+  },
+  {
+    "question": "What is a CNAME record used for?",
+    "options": [
+      "To map a domain directly to an IP address",
+      "To create an alias that points one domain name to another domain name",
+      "To specify which certificate authority issued the SSL certificate",
+      "To define nameservers for a domain"
+    ],
+    "correct": 1,
+    "domain": "Networking Protocols",
+    "explanations": {
+      "correct": "A CNAME (Canonical Name) record creates an alias from one domain to another. For example, www.example.com \u2192 example.com. The alias then resolves using the target's A record.",
+      "wrong": {
+        "0": "Direct domain-to-IP mapping uses A records (IPv4) or AAAA records (IPv6), not CNAME.",
+        "2": "Certificate Authority Authorization uses CAA records, not CNAME.",
+        "3": "Nameserver delegation uses NS records, not CNAME."
+      }
+    }
+  },
+  {
+    "question": "What is TCP window size?",
+    "options": [
+      "The maximum number of simultaneous TCP connections",
+      "The amount of data that can be sent before requiring an acknowledgment",
+      "The size of the TCP header in bytes",
+      "The timeout period before a connection is dropped"
+    ],
+    "correct": 1,
+    "domain": "TCP",
+    "explanations": {
+      "correct": "The TCP window size defines how much data (in bytes) the sender can transmit before it must wait for an acknowledgment from the receiver. It enables flow control, preventing a fast sender from overwhelming a slow receiver.",
+      "wrong": {
+        "0": "Connection limits are managed by the OS, not the TCP window size.",
+        "2": "The TCP header size is defined by the data offset field, not the window size.",
+        "3": "Connection timeouts use keepalive timers, not the window size."
+      }
+    }
+  },
+  {
+    "question": "You run 'ip addr' on Linux and see an interface with the state 'DOWN'. What does this mean?",
+    "options": [
+      "The interface has no IP address assigned",
+      "The network interface is disabled or not connected",
+      "The interface is using DHCP and waiting for an address",
+      "The interface is connected but has no internet access"
+    ],
+    "correct": 1,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "A state of 'DOWN' means the network interface is either administratively disabled or has no physical link (cable unplugged, Wi-Fi not connected). It needs to be brought UP before it can send or receive traffic.",
+      "wrong": {
+        "0": "An interface can be UP with no IP assigned. DOWN specifically means the interface itself is inactive.",
+        "2": "A DHCP-waiting interface would typically show as UP with no address yet, not DOWN.",
+        "3": "An interface that's connected but without internet would show as UP, not DOWN."
+      }
+    }
+  },
+  {
+    "question": "What is the 'hosts' file on a computer used for?",
+    "options": [
+      "Storing Wi-Fi passwords for known networks",
+      "Manually mapping domain names to IP addresses locally, bypassing DNS",
+      "Listing all computers currently on the network",
+      "Configuring firewall rules for specific hosts"
+    ],
+    "correct": 1,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "The hosts file (/etc/hosts on Linux/Mac, C:\\Windows\\System32\\drivers\\etc\\hosts on Windows) provides local DNS overrides. Entries here are checked before querying a DNS server, allowing you to redirect or block domains locally.",
+      "wrong": {
+        "0": "Wi-Fi credentials are stored by the OS network manager, not the hosts file.",
+        "2": "Network device discovery uses protocols like ARP or mDNS, not the hosts file.",
+        "3": "Firewall rules are configured through iptables, firewalld, or similar tools, not the hosts file."
+      }
+    }
+  },
+  {
+    "question": "What is a network topology?",
+    "options": [
+      "The speed at which data travels across a network",
+      "The physical or logical arrangement of devices and connections in a network",
+      "The encryption method used to secure network traffic",
+      "The protocol stack used by network devices"
+    ],
+    "correct": 1,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "Network topology describes how devices are connected and arranged \u2014 physically (actual cable layout) and logically (how data flows). Common topologies include star, bus, ring, mesh, and hybrid.",
+      "wrong": {
+        "0": "Network speed is bandwidth/throughput. Topology is about the arrangement and connections.",
+        "2": "Encryption methods are security configurations, not topology.",
+        "3": "Protocol stacks define communication rules. Topology defines the network's structure."
+      }
+    }
+  },
+  {
+    "question": "In a star topology, what happens if the central device (switch/hub) fails?",
+    "options": [
+      "Only the device connected to the failed port goes down",
+      "The entire network goes down because all devices connect through the central device",
+      "Traffic reroutes through other devices automatically",
+      "Nothing \u2014 star topologies have built-in redundancy"
+    ],
+    "correct": 1,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "In a star topology, all devices connect to a central switch or hub. If that central device fails, no device can communicate with any other \u2014 it's a single point of failure for the entire network.",
+      "wrong": {
+        "0": "A single port failure would only affect one device, but the question asks about the central device itself failing.",
+        "2": "Star topologies don't have automatic failover paths. That's a feature of mesh topologies.",
+        "3": "Star topologies inherently have a single point of failure at the center. Redundancy requires additional design."
+      }
+    }
+  },
+  {
+    "question": "What is the main advantage of a mesh topology?",
+    "options": [
+      "It's the cheapest to implement",
+      "It requires the fewest cables",
+      "It provides redundancy \u2014 if one link fails, traffic can take an alternate path",
+      "It's the easiest to manage"
+    ],
+    "correct": 2,
+    "domain": "Networking Essentials",
+    "explanations": {
+      "correct": "In a mesh topology, devices have multiple connections to each other. If one link or device fails, traffic automatically routes through alternative paths. This redundancy makes it highly resilient.",
+      "wrong": {
+        "0": "Mesh topologies are the most expensive because they require the most connections and cabling.",
+        "1": "Mesh requires the most cables since every device connects to multiple others.",
+        "3": "Managing many interconnections makes mesh topologies more complex to administer."
+      }
+    }
   }
 ]
