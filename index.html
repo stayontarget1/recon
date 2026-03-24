@@ -192,17 +192,18 @@
       color: var(--text);
     }
 
-    .option-btn:hover:not(:disabled) {
+    .option-btn:hover:not(.locked) {
       background: color-mix(in srgb, var(--card) 85%, var(--text) 15%);
       border-color: color-mix(in srgb, var(--border) 60%, var(--text) 40%);
     }
 
-    .option-btn:active:not(:disabled) {
+    .option-btn:active:not(.locked) {
       transform: scale(0.985);
     }
 
-    .option-btn:disabled {
+    .option-btn.locked {
       cursor: default;
+      pointer-events: none;
     }
 
     .option-btn.dimmed {
@@ -508,31 +509,29 @@
       }
 
       function handleAnswer(origIdx, btn, optsEl) {
-        if (btn.disabled || answered) return;
+        if (btn.classList.contains('locked') || answered) return;
         const isCorrect = origIdx === current.correct;
         const allBtns = optsEl.querySelectorAll('.option-btn');
 
         if (isCorrect) {
           if (navigator.vibrate) navigator.vibrate(50);
           answered = true;
-          btn.classList.add('correct');
+          btn.classList.add('correct', 'locked');
           allBtns.forEach((b) => {
-            b.disabled = true;
-            if (b !== btn) b.classList.add('dimmed');
+            if (b !== btn) b.classList.add('dimmed', 'locked');
           });
           updateStreak(streak + 1, 'pulse');
           showFeedback(true, current.explanations.correct, current.domain);
         } else {
           if (navigator.vibrate) navigator.vibrate([50, 30, 50]);
-          btn.classList.add('wrong', 'shake');
-          btn.disabled = true;
+          btn.classList.add('wrong', 'shake', 'locked');
           wrongCount++;
           updateStreak(0, 'dip');
 
           if (wrongCount >= 3) {
             answered = true;
             allBtns.forEach((b, displayIdx) => {
-              b.disabled = true;
+              b.classList.add('locked');
               if (shuffledIndices[displayIdx] === current.correct) b.classList.add('correct');
               else if (!b.classList.contains('wrong')) b.classList.add('dimmed');
             });
