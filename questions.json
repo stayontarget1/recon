@@ -5014,5 +5014,803 @@
         "3": "Managing many interconnections makes mesh topologies more complex to administer."
       }
     }
+  },
+  {
+    "question": "What does the `ls` command do in Linux?",
+    "options": [
+      "Lists directory contents",
+      "Creates a new file",
+      "Deletes a directory",
+      "Changes file permissions"
+    ],
+    "correct": 0,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "The ls command lists files and directories in the current or specified directory.",
+      "wrong": {
+        "1": "Creating a new file is done with touch or a text editor, not ls.",
+        "2": "Deleting a directory is done with rmdir or rm -r, not ls.",
+        "3": "Changing file permissions is done with chmod, not ls."
+      }
+    }
+  },
+  {
+    "question": "What does the `-a` flag do when used with `ls`?",
+    "options": [
+      "Sorts files alphabetically",
+      "Shows all files including hidden ones",
+      "Shows file sizes in bytes",
+      "Lists files in archive format"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "The -a flag shows all files, including hidden files (those starting with a dot).",
+      "wrong": {
+        "0": "Files are sorted alphabetically by default; -a controls visibility of hidden files.",
+        "2": "File sizes are shown with the -s or -l flags, not -a.",
+        "3": "There is no archive format in ls. The -a flag stands for all."
+      }
+    }
+  },
+  {
+    "question": "What does the `cat` command do?",
+    "options": [
+      "Compresses files",
+      "Concatenates and displays file contents",
+      "Creates a new directory",
+      "Changes file ownership"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "cat (concatenate) reads files and outputs their contents to the terminal. It can also combine multiple files.",
+      "wrong": {
+        "0": "File compression is handled by commands like gzip, bzip2, or zip.",
+        "2": "Creating directories is done with mkdir, not cat.",
+        "3": "Changing file ownership is done with chown, not cat."
+      }
+    }
+  },
+  {
+    "question": "Which command is used to change directories in Linux?",
+    "options": [
+      "mv",
+      "cd",
+      "dir",
+      "chdir"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "cd (change directory) navigates between directories in the filesystem.",
+      "wrong": {
+        "0": "mv is used to move or rename files, not to navigate directories.",
+        "2": "dir exists in some systems but cd is the standard Linux command for changing directories.",
+        "3": "chdir is a system call in C, not a standard shell command."
+      }
+    }
+  },
+  {
+    "question": "What does `pwd` display?",
+    "options": [
+      "The password file",
+      "The current working directory",
+      "The list of running processes",
+      "The power status of the system"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "pwd stands for print working directory and shows the full path of your current location in the filesystem.",
+      "wrong": {
+        "0": "The password file is /etc/passwd and is viewed with cat, not pwd.",
+        "2": "Running processes are shown with ps or top, not pwd.",
+        "3": "Power status is not a function of pwd."
+      }
+    }
+  },
+  {
+    "question": "Which command creates a new empty file?",
+    "options": [
+      "mkdir",
+      "touch",
+      "new",
+      "mkfile"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "touch creates a new empty file or updates the timestamp of an existing file.",
+      "wrong": {
+        "0": "mkdir creates directories, not files.",
+        "2": "new is not a standard Linux command.",
+        "3": "mkfile exists on some systems but touch is the standard and portable way to create files."
+      }
+    }
+  },
+  {
+    "question": "What does the `mkdir` command do?",
+    "options": [
+      "Creates a new directory",
+      "Moves a directory",
+      "Deletes a directory",
+      "Renames a directory"
+    ],
+    "correct": 0,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "mkdir (make directory) creates new directories in the filesystem.",
+      "wrong": {
+        "1": "Moving a directory is done with mv, not mkdir.",
+        "2": "Deleting a directory is done with rmdir or rm -r.",
+        "3": "Renaming a directory is done with mv, not mkdir."
+      }
+    }
+  },
+  {
+    "question": "Which command removes a file in Linux?",
+    "options": [
+      "del",
+      "rm",
+      "erase",
+      "remove"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "rm (remove) deletes files. Use rm -r to remove directories and their contents recursively.",
+      "wrong": {
+        "0": "del is a Windows command, not a standard Linux command.",
+        "2": "erase is not a standard Linux command.",
+        "3": "remove is not a standard Linux command; the correct command is rm."
+      }
+    }
+  },
+  {
+    "question": "What does `rm -r` do?",
+    "options": [
+      "Removes a file and sends it to the recycle bin",
+      "Removes a directory and its contents recursively",
+      "Removes read permissions from a file",
+      "Restores a deleted file"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "The -r (recursive) flag tells rm to delete a directory and everything inside it, including subdirectories.",
+      "wrong": {
+        "0": "Linux does not have a recycle bin by default; rm permanently deletes files.",
+        "2": "Read permissions are managed with chmod, not rm.",
+        "3": "rm does not restore files. Deleted files are permanently removed."
+      }
+    }
+  },
+  {
+    "question": "Which command copies files in Linux?",
+    "options": [
+      "cp",
+      "copy",
+      "mv",
+      "duplicate"
+    ],
+    "correct": 0,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "cp (copy) duplicates files or directories from one location to another.",
+      "wrong": {
+        "1": "copy is not a standard Linux command; cp is the correct one.",
+        "2": "mv moves or renames files but does not create a copy.",
+        "3": "duplicate is not a standard Linux command."
+      }
+    }
+  },
+  {
+    "question": "What does the `mv` command do?",
+    "options": [
+      "Modifies file contents",
+      "Moves or renames files and directories",
+      "Mounts a volume",
+      "Creates a virtual file"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "mv moves files/directories to a new location or renames them if the destination is in the same directory.",
+      "wrong": {
+        "0": "Modifying file contents is done with text editors like nano or vim.",
+        "2": "Mounting volumes is done with the mount command.",
+        "3": "There is no standard mv function for creating virtual files."
+      }
+    }
+  },
+  {
+    "question": "What does `chmod` do?",
+    "options": [
+      "Changes file ownership",
+      "Changes file permissions",
+      "Checks file modifications",
+      "Creates a hidden file"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "chmod (change mode) modifies the read, write, and execute permissions of files and directories.",
+      "wrong": {
+        "0": "Changing file ownership is done with chown, not chmod.",
+        "2": "Checking file modifications can be done with stat or ls -l, not chmod.",
+        "3": "Hidden files are created by prefixing the name with a dot, not with chmod."
+      }
+    }
+  },
+  {
+    "question": "What does `chown` do?",
+    "options": [
+      "Changes file permissions",
+      "Changes file ownership",
+      "Checks disk ownership",
+      "Creates a new user"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "chown (change owner) changes the user and/or group ownership of a file or directory.",
+      "wrong": {
+        "0": "Changing permissions is done with chmod, not chown.",
+        "2": "Disk ownership is not a concept managed by chown; it manages file/directory ownership.",
+        "3": "Creating users is done with useradd or adduser, not chown."
+      }
+    }
+  },
+  {
+    "question": "Which command displays the first 10 lines of a file by default?",
+    "options": [
+      "tail",
+      "head",
+      "top",
+      "cat"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "head displays the first 10 lines of a file by default. Use head -n N to specify a different number.",
+      "wrong": {
+        "0": "tail shows the last 10 lines of a file, not the first.",
+        "2": "top displays running processes and system resource usage, not file contents.",
+        "3": "cat displays the entire file, not just the first 10 lines."
+      }
+    }
+  },
+  {
+    "question": "Which command displays the last 10 lines of a file by default?",
+    "options": [
+      "head",
+      "bottom",
+      "tail",
+      "end"
+    ],
+    "correct": 2,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "tail shows the last 10 lines of a file by default. It is commonly used with -f to follow log files in real time.",
+      "wrong": {
+        "0": "head shows the first 10 lines of a file, not the last.",
+        "1": "bottom is not a standard Linux command.",
+        "3": "end is not a standard Linux command."
+      }
+    }
+  },
+  {
+    "question": "What does the `grep` command do?",
+    "options": [
+      "Compresses files using gzip",
+      "Searches for text patterns in files",
+      "Groups files into archives",
+      "Displays disk usage"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "grep searches for lines matching a pattern (text or regex) in files or input streams.",
+      "wrong": {
+        "0": "gzip is the compression utility, not grep.",
+        "2": "tar is used for grouping files into archives, not grep.",
+        "3": "Disk usage is displayed by du or df, not grep."
+      }
+    }
+  },
+  {
+    "question": "What does the `find` command do?",
+    "options": [
+      "Finds and replaces text in files",
+      "Searches for files and directories in a directory hierarchy",
+      "Finds the IP address of a host",
+      "Locates running processes"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "find searches for files and directories based on criteria like name, size, type, and modification time.",
+      "wrong": {
+        "0": "Find and replace is done with sed or within text editors, not the find command.",
+        "2": "IP lookups are done with nslookup, dig, or host, not find.",
+        "3": "Running processes are found with ps or top, not find."
+      }
+    }
+  },
+  {
+    "question": "What does the pipe symbol `|` do in Linux?",
+    "options": [
+      "Redirects output to a file",
+      "Sends the output of one command as input to another",
+      "Runs two commands simultaneously",
+      "Compares two files"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "The pipe (|) takes the standard output of the command on the left and feeds it as standard input to the command on the right.",
+      "wrong": {
+        "0": "Redirecting output to a file is done with > or >>, not |.",
+        "2": "Running commands simultaneously is done with & or parallel tools, not |.",
+        "3": "Comparing files is done with diff or cmp, not |."
+      }
+    }
+  },
+  {
+    "question": "What does `>` do in a Linux command?",
+    "options": [
+      "Pipes output to another command",
+      "Redirects output to a file, overwriting it",
+      "Appends output to a file",
+      "Compares two values"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "The > operator redirects standard output to a file, creating or overwriting it.",
+      "wrong": {
+        "0": "Piping to another command uses |, not >.",
+        "2": "Appending to a file uses >>, not >. The single > overwrites.",
+        "3": "Value comparison is done in shell scripts with operators like -gt or -lt, not >."
+      }
+    }
+  },
+  {
+    "question": "What does `>>` do in a Linux command?",
+    "options": [
+      "Overwrites a file with output",
+      "Appends output to the end of a file",
+      "Redirects standard error",
+      "Shifts bits to the right"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": ">> appends standard output to the end of a file without overwriting existing contents.",
+      "wrong": {
+        "0": "Overwriting a file is done with >, not >>.",
+        "2": "Redirecting standard error uses 2> or 2>>, not >>.",
+        "3": "Bit shifting is a programming operation, not a shell redirect."
+      }
+    }
+  },
+  {
+    "question": "What does the `echo` command do?",
+    "options": [
+      "Displays a line of text or variable value",
+      "Listens for incoming network connections",
+      "Copies a file to a remote server",
+      "Creates an alias for a command"
+    ],
+    "correct": 0,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "echo outputs text or the value of variables to the terminal (standard output).",
+      "wrong": {
+        "1": "Listening for network connections is done with netcat or similar tools.",
+        "2": "Copying files to remote servers is done with scp or rsync.",
+        "3": "Creating aliases is done with the alias command."
+      }
+    }
+  },
+  {
+    "question": "Which command shows running processes in Linux?",
+    "options": [
+      "ls",
+      "ps",
+      "df",
+      "du"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "ps (process status) displays information about currently running processes.",
+      "wrong": {
+        "0": "ls lists directory contents, not processes.",
+        "2": "df shows disk filesystem usage, not processes.",
+        "3": "du shows disk usage by files and directories, not processes."
+      }
+    }
+  },
+  {
+    "question": "What does `ps aux` display?",
+    "options": [
+      "All user executables",
+      "A detailed list of all running processes",
+      "Audio settings",
+      "Auxiliary storage devices"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "ps aux shows all processes (a), for all users (u is user-oriented format), including those not attached to a terminal (x).",
+      "wrong": {
+        "0": "User executables are found with which or whereis, not ps aux.",
+        "2": "Audio settings are managed by tools like alsamixer or pulseaudio.",
+        "3": "Storage devices are listed with lsblk or fdisk, not ps."
+      }
+    }
+  },
+  {
+    "question": "Which command sends a signal to terminate a process by its PID?",
+    "options": [
+      "stop",
+      "end",
+      "kill",
+      "halt"
+    ],
+    "correct": 2,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "kill sends a signal (default SIGTERM) to a process specified by its PID to request termination.",
+      "wrong": {
+        "0": "stop is not a standard command for terminating processes by PID.",
+        "1": "end is not a standard Linux command.",
+        "3": "halt shuts down the entire system, not individual processes."
+      }
+    }
+  },
+  {
+    "question": "What does the `top` command display?",
+    "options": [
+      "The top of a text file",
+      "Real-time system resource usage and process list",
+      "The largest files on disk",
+      "Network topology information"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "top provides a real-time, dynamic view of CPU usage, memory usage, and running processes.",
+      "wrong": {
+        "0": "Viewing the top of a file is done with head, not top.",
+        "2": "Finding the largest files is done with du or find, not top.",
+        "3": "Network topology is not shown by top; tools like traceroute or nmap are used."
+      }
+    }
+  },
+  {
+    "question": "Which command displays disk space usage of filesystems?",
+    "options": [
+      "du",
+      "df",
+      "dd",
+      "ds"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "df (disk free) reports how much space is used and available on mounted filesystems.",
+      "wrong": {
+        "0": "du (disk usage) shows space used by specific files/directories, not overall filesystem usage.",
+        "2": "dd is used for copying and converting data at block level, not displaying disk space.",
+        "3": "ds is not a standard Linux command."
+      }
+    }
+  },
+  {
+    "question": "What does the `man` command do?",
+    "options": [
+      "Manages user accounts",
+      "Displays the manual page for a command",
+      "Manipulates file metadata",
+      "Maps network drives"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "man displays the manual (documentation) page for a specified command, including usage, options, and examples.",
+      "wrong": {
+        "0": "User account management is done with useradd, usermod, or userdel.",
+        "2": "File metadata is viewed with stat or modified with touch/chmod.",
+        "3": "Network drives are mounted with mount or smbclient, not man."
+      }
+    }
+  },
+  {
+    "question": "What does `sudo` do before a command?",
+    "options": [
+      "Schedules the command to run later",
+      "Runs the command with superuser (root) privileges",
+      "Runs the command in the background",
+      "Runs the command in safe mode"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "sudo (superuser do) executes a command with elevated root privileges, typically requiring the user password.",
+      "wrong": {
+        "0": "Scheduling commands is done with cron or at, not sudo.",
+        "2": "Running commands in the background is done by appending &, not with sudo.",
+        "3": "There is no standard safe mode for individual commands in Linux."
+      }
+    }
+  },
+  {
+    "question": "Which command shows your current username?",
+    "options": [
+      "who",
+      "whoami",
+      "id",
+      "hostname"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "whoami prints the username of the current effective user.",
+      "wrong": {
+        "0": "who shows all users currently logged into the system, not just your username.",
+        "2": "id shows user and group IDs along with the username, but whoami is the simplest way to see just the username.",
+        "3": "hostname shows the name of the machine, not the username."
+      }
+    }
+  },
+  {
+    "question": "What does the `wget` command do?",
+    "options": [
+      "Gets system information",
+      "Downloads files from the web",
+      "Checks network latency",
+      "Displays routing tables"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "wget is a non-interactive utility that downloads files from the web using HTTP, HTTPS, and FTP protocols.",
+      "wrong": {
+        "0": "System information is shown by uname or hostnamectl.",
+        "2": "Network latency is checked with ping, not wget.",
+        "3": "Routing tables are displayed with route or ip route, not wget."
+      }
+    }
+  },
+  {
+    "question": "What does the `tar` command do?",
+    "options": [
+      "Tests and repairs filesystems",
+      "Creates or extracts archive files",
+      "Tracks and audits file changes",
+      "Terminates all running processes"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "tar (tape archive) bundles multiple files into a single archive file and can extract them. Often used with compression (-z for gzip, -j for bzip2).",
+      "wrong": {
+        "0": "Filesystem repair is done with fsck, not tar.",
+        "2": "File change tracking is done with tools like inotify or auditd, not tar.",
+        "3": "Terminating processes is done with kill or killall, not tar."
+      }
+    }
+  },
+  {
+    "question": "What does `ls -l` display?",
+    "options": [
+      "Only hidden files",
+      "A detailed (long) listing including permissions, owner, size, and date",
+      "Files sorted by size",
+      "Files in a single column"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "The -l flag produces a long listing format showing permissions, link count, owner, group, size, date, and filename.",
+      "wrong": {
+        "0": "Hidden files are shown with -a, not -l.",
+        "2": "Sorting by size uses -S, not -l.",
+        "3": "Single-column output uses -1, not -l."
+      }
+    }
+  },
+  {
+    "question": "Which command is used to search for a file by name across the filesystem?",
+    "options": [
+      "grep filename",
+      "find / -name filename",
+      "search filename",
+      "ls -R filename"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "find / -name filename searches the entire filesystem starting from root (/) for files matching the given name.",
+      "wrong": {
+        "0": "grep searches inside file contents for text patterns, not for filenames.",
+        "2": "search is not a standard Linux command.",
+        "3": "ls -R lists contents recursively but does not search for a specific filename efficiently."
+      }
+    }
+  },
+  {
+    "question": "What does the `wc` command do?",
+    "options": [
+      "Checks website connectivity",
+      "Counts lines, words, and characters in a file",
+      "Wipes the console screen",
+      "Writes configuration files"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "wc (word count) counts and displays the number of lines, words, and bytes/characters in a file.",
+      "wrong": {
+        "0": "Website connectivity is checked with ping or curl, not wc.",
+        "2": "Clearing the screen is done with clear or Ctrl+L, not wc.",
+        "3": "Writing configuration files is done with text editors, not wc."
+      }
+    }
+  },
+  {
+    "question": "What does the `sort` command do?",
+    "options": [
+      "Sorts files by size in a directory",
+      "Sorts lines of text in a file alphabetically",
+      "Sorts running processes by CPU usage",
+      "Sorts network packets by protocol"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "sort reads lines from a file or stdin and outputs them in sorted order (alphabetically by default).",
+      "wrong": {
+        "0": "Sorting directory files by size is done with ls -S, not the sort command.",
+        "2": "Sorting processes by CPU is done with top or ps --sort, not the sort command alone.",
+        "3": "Network packet analysis is done with tcpdump or Wireshark, not sort."
+      }
+    }
+  },
+  {
+    "question": "What does `uniq` do?",
+    "options": [
+      "Finds unique files in a directory",
+      "Removes consecutive duplicate lines from sorted input",
+      "Generates unique random numbers",
+      "Creates unique user accounts"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "uniq filters out adjacent duplicate lines. It is typically used after sort to remove all duplicates.",
+      "wrong": {
+        "0": "Finding unique files is not a function of uniq; it works on text lines.",
+        "2": "Random number generation is done with shuf, 30129, or /dev/urandom.",
+        "3": "User accounts are created with useradd or adduser, not uniq."
+      }
+    }
+  },
+  {
+    "question": "What does the `diff` command do?",
+    "options": [
+      "Displays disk information",
+      "Compares two files line by line and shows differences",
+      "Formats a disk",
+      "Defragments a filesystem"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "diff compares two files line by line and outputs the lines that differ between them.",
+      "wrong": {
+        "0": "Disk information is shown by df or lsblk, not diff.",
+        "2": "Disk formatting is done with mkfs, not diff.",
+        "3": "Defragmentation is handled by e4defrag or similar tools, not diff."
+      }
+    }
+  },
+  {
+    "question": "What does the `alias` command do?",
+    "options": [
+      "Creates a shortcut name for a longer command",
+      "Lists all user accounts",
+      "Assigns an IP address to an interface",
+      "Aligns text in a file"
+    ],
+    "correct": 0,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "alias creates a shorthand name for a command or command sequence, e.g., alias ll=\"ls -la\".",
+      "wrong": {
+        "1": "User accounts are listed in /etc/passwd or with getent passwd.",
+        "2": "IP addresses are assigned with ip addr or ifconfig, not alias.",
+        "3": "Text alignment is done with column or formatting tools, not alias."
+      }
+    }
+  },
+  {
+    "question": "Which command clears the terminal screen?",
+    "options": [
+      "cls",
+      "clean",
+      "clear",
+      "reset"
+    ],
+    "correct": 2,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "clear clears the terminal screen. The keyboard shortcut Ctrl+L does the same thing.",
+      "wrong": {
+        "0": "cls is the Windows command for clearing the screen, not Linux.",
+        "1": "clean is not a standard terminal clearing command in Linux.",
+        "3": "reset reinitializes the terminal and is a heavier operation than simply clearing the screen."
+      }
+    }
+  },
+  {
+    "question": "What does `history` display?",
+    "options": [
+      "System update history",
+      "A list of previously executed commands",
+      "File modification history",
+      "Login history for all users"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "history shows a numbered list of commands previously typed in the current shell session and saved history.",
+      "wrong": {
+        "0": "System update history is viewed with package manager logs (e.g., /var/log/apt/history.log).",
+        "2": "File modification history is tracked by version control systems like git, not the history command.",
+        "3": "Login history is viewed with last or lastlog, not history."
+      }
+    }
+  },
+  {
+    "question": "What does `which` do in Linux?",
+    "options": [
+      "Shows which users are logged in",
+      "Shows the full path of a command executable",
+      "Shows which files were recently changed",
+      "Shows which ports are open"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "which locates the executable file associated with a command by searching the PATH directories.",
+      "wrong": {
+        "0": "Logged-in users are shown by who or w, not which.",
+        "2": "Recently changed files are found with find -mtime or similar, not which.",
+        "3": "Open ports are shown by netstat, ss, or nmap, not which."
+      }
+    }
+  },
+  {
+    "question": "What does `nano` open?",
+    "options": [
+      "A network analyzer",
+      "A simple command-line text editor",
+      "A system monitor",
+      "A file compressor"
+    ],
+    "correct": 1,
+    "domain": "Linux Commands",
+    "explanations": {
+      "correct": "nano is a simple, user-friendly command-line text editor commonly used for quick file edits.",
+      "wrong": {
+        "0": "Network analysis is done with tools like Wireshark or tcpdump.",
+        "2": "System monitoring is done with top or htop, not nano.",
+        "3": "File compression is done with gzip, zip, or similar tools."
+      }
+    }
   }
 ]

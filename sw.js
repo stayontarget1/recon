@@ -1,4 +1,4 @@
-const CACHE_NAME = 'recon-v4';
+const CACHE_NAME = 'recon-v5';
 const ASSETS = [
   './',
   './index.html',
